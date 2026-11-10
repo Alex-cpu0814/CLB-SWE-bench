@@ -8,31 +8,49 @@ Each task starts from a pinned Docker image and a Base commit. Use the same CLB 
 
 From the repository root, use Python 3.12 in a virtual environment and Docker configured for Linux containers.
 
+### Install the CLI
+
+~~~bash
+python -m pip install -e ".[infer]"
+clb dataset check
+~~~
+
+The infer extra installs the pinned mini-SWE-agent dependencies. For dataset checks and evaluation, run `python -m pip install -e .`
+
 ### Generate a candidate
 
 ~~~bash
-python -m pip install -r agent/requirements-lock.txt
-python agent/run.py clb-pyc-086 --pull --preflight --output-dir runs/case086-preflight
-python agent/run.py clb-pyc-086 --pull --output-dir runs/case086-generation
+clb infer clb-pyc-086 --pull --preflight --output-dir runs/case086-preflight
+clb infer clb-pyc-086 --pull --output-dir runs/case086-generation
 ~~~
 
-The preflight verifies the Base without a model API call. Generation can incur model charges. Set the provider and model in the agent configuration and enter the API key at the local prompt or set the CLB_MODEL_API_KEY environment variable. A successful submission writes model_patch.diff in the output directory. Use a fresh output directory for each run. [Agent configuration](agent/config.json) · [Task guide](tasks/README.md)
+The preflight verifies the Base without a model API call. Generation can incur model charges. Set the provider and model in the agent configuration and enter the API key at the local prompt or set the `CLB_MODEL_API_KEY` environment variable. A successful submission writes `model_patch.diff` in the output directory. Use a fresh output directory for each run. [Agent configuration](agent/config.json) · [Task guide](tasks/README.md)
 
 ### Evaluate the candidate
 
 ~~~bash
-python -m harness.evaluate check
-python -m harness.evaluate run clb-pyc-086 --pull --patch runs/case086-generation/model_patch.diff --output-root grading --run-id case086-first
+clb eval run clb-pyc-086 --pull --patch runs/case086-generation/model_patch.diff --output-root grading --run-id case086-first
 ~~~
 
-Read grading/case086-first/summary.json for the result and test counts. The evaluator returns 0 for resolved, 1 for unresolved, and 2 for an error. [Evaluator guide](evaluation/README.md)
+Read `grading/case086-first/summary.json` for the result and test counts. The evaluator returns 0 for resolved, 1 for unresolved, and 2 for an error. [Evaluator guide](evaluation/README.md)
+
+### Evaluate a batch
+
+Prepare `predictions.jsonl` with one record per line. Each record contains `instance_id` and `model_patch`, where `model_patch` is the candidate Git diff encoded as a JSON string. An empty or null patch is counted as a missing submission.
+
+~~~bash
+clb eval batch --predictions predictions.jsonl --pull --output-root grading --run-id model-first-batch
+~~~
+
+The batch writes its summary to `grading/model-first-batch/summary.json`, with links to the per-case reports.
 
 ## Repository layout
 
 | Directory | Contents |
 | --- | --- |
 | [agent/](agent/run.py) | mini-SWE-agent launcher and Base workspace preparation |
-| [harness/](harness/evaluate.py) | Shared evaluation entry point and asset verification |
+| [clb_swebench/](clb_swebench/cli.py) | Installable command-line interface |
+| [harness/](harness/evaluate.py) | Single and batch evaluation, with a shared evaluator for all cases |
 | [tasks/](tasks/index.json) | Runtime snapshot of the task records and pinned image references |
 | [evaluation/](evaluation/index.json) | Case-specific evaluators, test patches, and scoring lists |
 | [collect/](collect/README.md) | Case selection checks, Base derivation, and patch extraction |

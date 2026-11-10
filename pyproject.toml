@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clb-swebench"
+version = "1.2.0"
+description = "A benchmark for cross-language software repair"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["optional-dependencies"]
+
+[project.scripts]
+clb = "clb_swebench.cli:main"
+
+[tool.setuptools]
+packages = [
+    "clb_swebench",
+    "clb_swebench.agent",
+    "clb_swebench.harness",
+    "clb_swebench.tasks",
+    "clb_swebench.evaluation",
+]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"clb_swebench.agent" = "agent"
+"clb_swebench.harness" = "harness"
+"clb_swebench.tasks" = "tasks"
+"clb_swebench.evaluation" = "evaluation"
+
+[tool.setuptools.package-data]
+"clb_swebench.agent" = ["*.json", "requirements-lock.txt"]
+"clb_swebench.tasks" = ["index.json", "README.md", "cases/*.json"]
+"clb_swebench.evaluation" = [
+    "index.json",
+    "README.md",
+    "cases/*/evaluator/*.py",
+    "cases/*/evaluator/*.sh",
+    "cases/*/evaluator/*.json",
+    "cases/*/evaluator/*.c",
+    "cases/*/grading/*.json",
+    "cases/*/patches/*.diff",
+    "shared/*.sh",
+]
+
+[tool.setuptools.dynamic.optional-dependencies]
+infer = {file = ["agent/requirements-lock.txt"]}

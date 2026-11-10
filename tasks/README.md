@@ -2,11 +2,11 @@
 
 [index.json](index.json) maps `instance_id` to the public statement, Base commit and image identity for each task. The per-task JSON preserves the frozen `problem_statement` text and task identity. The launcher sends the statement through the pinned mini-SWE-agent template.
 
-Run from the project root. In a Python 3.12 virtual environment, install the pinned dependencies using `python -m pip install -r agent/requirements-lock.txt`.
+Run from the project root. In a Python 3.12 virtual environment, install the pinned dependencies using `python -m pip install -e ".[infer]"`.
 
 ~~~bash
-python agent/run.py clb-javac-068 --pull --preflight --output-dir runs/lwjgl-preflight
-python agent/run.py clb-javac-068 --output-dir runs/lwjgl-generation
+clb infer clb-javac-068 --pull --preflight --output-dir runs/lwjgl-preflight
+clb infer clb-javac-068 --output-dir runs/lwjgl-generation
 ~~~
 
 The second command uses a paid model endpoint. Provide the key at the local prompt or through the `CLB_MODEL_API_KEY` environment variable. Each run requires a fresh output directory. Send only the submitted candidate diff and its `instance_id` to the evaluator operator.
