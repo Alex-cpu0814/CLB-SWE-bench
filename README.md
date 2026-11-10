@@ -43,10 +43,38 @@ python -m pip install -e ".[infer]"
 clb infer clb-pyc-086 --task-repo ../CLB-SWE-bench-tasks --pull --preflight --output-dir runs/case086-preflight
 ```
 
-The preflight verifies the Base without a model API call. Generation can incur model charges. Set the provider and model in the agent configuration and enter the API key at the local prompt or set `CLB_MODEL_API_KEY`. [Agent configuration](agent/config.json)
+The Base preflight, dataset checks, and evaluation of existing patches, including Gold Patches, require no model API key.
+
+### Run inference
+
+Select the provider and model in the agent configuration. Use the key for that provider. Generation can incur model charges. [Agent configuration](agent/config.json)
+
+For an interactive run, leave `CLB_MODEL_API_KEY` unset and enter your key at the `Model API key:` prompt. The terminal hides your input.
 
 ```bash
 clb infer clb-pyc-086 --task-repo ../CLB-SWE-bench-tasks --pull --output-dir runs/case086-generation
+```
+
+For scripts or CI, expose the model secret as `CLB_MODEL_API_KEY` before running the same command. When this variable has a value, the CLI uses it without prompting. If your runner already exposes the secret as `PROVIDER_API_KEY`, map it to CLB's variable as shown below.
+
+Set the variable in Bash.
+
+```bash
+export CLB_MODEL_API_KEY="${PROVIDER_API_KEY:?Set PROVIDER_API_KEY first}"
+```
+
+Set the variable in PowerShell.
+
+```powershell
+if (-not $env:PROVIDER_API_KEY) { throw "Set PROVIDER_API_KEY first" }
+$env:CLB_MODEL_API_KEY = $env:PROVIDER_API_KEY
+```
+
+### Score the submitted patch
+
+A successful submission writes `model_patch.diff` in the inference output directory.
+
+```bash
 clb eval run clb-pyc-086 --task-repo ../CLB-SWE-bench-tasks --pull --patch runs/case086-generation/model_patch.diff --output-root grading --run-id case086-first
 ```
 
