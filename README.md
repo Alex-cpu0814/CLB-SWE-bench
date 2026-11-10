@@ -1,59 +1,72 @@
 # CLB SWE-bench
 
-CLB SWE-bench evaluates software repair on 72 cross-language bugs. The test split includes 50 Python–C tasks, 11 Java–C tasks with upstream-derived tests, and 11 Java–C tasks with tests written by the CLB authors.
+CLB SWE-bench evaluates software repair on 72 cross-language bugs. The test split includes 50 Python-C tasks, 11 Java-C tasks with upstream-derived tests, and 11 Java-C tasks with tests written by the CLB authors.
 
-Each task starts from a pinned Docker image and a Base commit. Use the same CLB instance ID in the dataset, the generation runner, and the evaluator. [Hugging Face dataset](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench) · [Pinned dataset revision](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench/tree/4e278eb55c8e58ca202fd2ecd15fbee2f1af5484)
+Each task uses a pinned Docker image and a Base commit. Use the same CLB instance ID for generation and evaluation. [Hugging Face dataset](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench) · [Pinned dataset revision](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench/tree/4e278eb55c8e58ca202fd2ecd15fbee2f1af5484)
 
-## Quickstart
+## Setup
 
-From the repository root, use Python 3.12 in a virtual environment and Docker configured for Linux containers.
+Use Python 3.12 in a virtual environment and Docker configured for Linux containers. The task checkout contains `tasks/index.json` and `evaluation/index.json`. Use a trusted checkout because the harness executes its case evaluators.
 
-### Install the CLI
+Clone the code and check out the [matching task revision](https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks/tree/f4905fa71066fc6452170f9570be119a5afcce0d). If you use a different task directory, substitute its path in the examples below.
 
-~~~bash
+```bash
+git clone https://github.com/Alex-cpu0814/CLB-SWE-bench.git
+cd CLB-SWE-bench
+git clone https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks.git ../CLB-SWE-bench-tasks
+git -C ../CLB-SWE-bench-tasks checkout --detach f4905fa71066fc6452170f9570be119a5afcce0d
+```
+
+From the code repository root, install the CLI and check the task checkout.
+
+```bash
+python -m pip install -e .
+clb dataset check ../CLB-SWE-bench-tasks
+```
+
+## Verify with a reference patch
+
+Run a Gold Patch against a fresh Base container. This uses Docker and requires no model API key.
+
+```bash
+clb eval run clb-pyc-086 --task-repo ../CLB-SWE-bench-tasks --pull --patch ../CLB-SWE-bench-tasks/gold/clb-pyc-086.diff --output-root grading --run-id case086-gold
+```
+
+Read `grading/case086-gold/summary.json`. The expected result is `resolved` with 2 of 2 target tests and 2 of 2 regression tests passing.
+
+## Generate and evaluate a candidate
+
+Install the pinned mini-SWE-agent dependencies and verify the Base before calling a model.
+
+```bash
 python -m pip install -e ".[infer]"
-clb dataset check
-~~~
+clb infer clb-pyc-086 --task-repo ../CLB-SWE-bench-tasks --pull --preflight --output-dir runs/case086-preflight
+```
 
-The infer extra installs the pinned mini-SWE-agent dependencies. For dataset checks and evaluation, run `python -m pip install -e .`
+The preflight verifies the Base without a model API call. Generation can incur model charges. Set the provider and model in the agent configuration and enter the API key at the local prompt or set `CLB_MODEL_API_KEY`. [Agent configuration](agent/config.json)
 
-### Generate a candidate
+```bash
+clb infer clb-pyc-086 --task-repo ../CLB-SWE-bench-tasks --pull --output-dir runs/case086-generation
+clb eval run clb-pyc-086 --task-repo ../CLB-SWE-bench-tasks --pull --patch runs/case086-generation/model_patch.diff --output-root grading --run-id case086-first
+```
 
-~~~bash
-clb infer clb-pyc-086 --pull --preflight --output-dir runs/case086-preflight
-clb infer clb-pyc-086 --pull --output-dir runs/case086-generation
-~~~
+The agent receives the selected statement and an isolated Base checkout. Evaluation reads the case test assets after the candidate is submitted. Use fresh output directories and run IDs. The evaluator returns 0 for resolved, 1 for unresolved, and 2 for an error. The per-case report is `summary.json` under the run directory.
 
-The preflight verifies the Base without a model API call. Generation can incur model charges. Set the provider and model in the agent configuration and enter the API key at the local prompt or set the `CLB_MODEL_API_KEY` environment variable. A successful submission writes `model_patch.diff` in the output directory. Use a fresh output directory for each run. [Agent configuration](agent/config.json) · [Task guide](tasks/README.md)
+## Evaluate a batch
 
-### Evaluate the candidate
+Prepare `predictions.jsonl` with one record per line. Each record contains `instance_id` and `model_patch`, with the patch as a JSON string. An empty or null patch counts as a missing submission.
 
-~~~bash
-clb eval run clb-pyc-086 --pull --patch runs/case086-generation/model_patch.diff --output-root grading --run-id case086-first
-~~~
+```bash
+clb eval batch --task-repo ../CLB-SWE-bench-tasks --predictions predictions.jsonl --pull --output-root grading --run-id model-first-batch
+```
 
-Read `grading/case086-first/summary.json` for the result and test counts. The evaluator returns 0 for resolved, 1 for unresolved, and 2 for an error. [Evaluator guide](evaluation/README.md)
-
-### Evaluate a batch
-
-Prepare `predictions.jsonl` with one record per line. Each record contains `instance_id` and `model_patch`, where `model_patch` is the candidate Git diff encoded as a JSON string. An empty or null patch is counted as a missing submission.
-
-~~~bash
-clb eval batch --predictions predictions.jsonl --pull --output-root grading --run-id model-first-batch
-~~~
-
-The batch writes its summary to `grading/model-first-batch/summary.json`, with links to the per-case reports.
+The batch writes `grading/model-first-batch/summary.json` with paths to per-case reports.
 
 ## Repository layout
 
 | Directory | Contents |
 | --- | --- |
-| [agent/](agent/run.py) | mini-SWE-agent launcher and Base workspace preparation |
 | [clb_swebench/](clb_swebench/cli.py) | Installable command-line interface |
-| [harness/](harness/evaluate.py) | Single and batch evaluation, with a shared evaluator for all cases |
-| [tasks/](tasks/index.json) | Runtime snapshot of the task records and pinned image references |
-| [evaluation/](evaluation/index.json) | Case-specific evaluators, test patches, and scoring lists |
+| [agent/](agent/run.py) | mini-SWE-agent launcher and Base workspace preparation |
+| [harness/](harness/evaluate.py) | Evaluation harness and shared Python-C runner |
 | [collect/](collect/README.md) | Case selection checks, Base derivation, and patch extraction |
-| [data/selection/](data/selection/) | CLB selection workbook, parent records, and extraction plans |
-
-The full dataset contains reference patches and test patches. The generation runner supplies the selected statement to the agent and prepares an isolated Base checkout. The evaluator reads the case test assets after the candidate is submitted.

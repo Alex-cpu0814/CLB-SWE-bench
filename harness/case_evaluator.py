@@ -104,6 +104,7 @@ def evaluate_case(evaluator_file, parse_test_log, argv=None, *, python_c=False,
     parser = argparse.ArgumentParser()
     parser.add_argument("--patch", required=True, type=Path)
     parser.add_argument("--case-dir", type=Path)
+    parser.add_argument("--shared-runner", type=Path, help=argparse.SUPPRESS)
     parser.add_argument("--image")
     parser.add_argument("--output-root", type=Path)
     parser.add_argument("--run-id")
@@ -136,7 +137,7 @@ def evaluate_case(evaluator_file, parse_test_log, argv=None, *, python_c=False,
     case_runner = evaluator_dir / "run_evaluation.sh"
     shell_runner = case_runner
     if python_c and not (args.case_dir and case_runner.is_file()):
-        shell_runner = PROJECT_ROOT / "evaluation/shared/run_python_c.sh"
+        shell_runner = args.shared_runner or Path(__file__).with_name("run_python_c.sh")
     runtime_assets = []
     for asset in config["runtime_assets"]:
         source = case_dir / Path(asset["source"])

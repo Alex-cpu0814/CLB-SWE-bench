@@ -5,16 +5,15 @@ from pathlib import Path
 import subprocess
 import sys
 
-from .harness import runtime
+from .harness import evaluate, runtime
 
 
 PROJECT_ROOT = Path(runtime.__file__).resolve().parents[1]
-RUNNERS = {"infer": "agent/run.py", "eval": "evaluation/evaluate.py"}
 
 
-def check_dataset():
-    tasks_root = PROJECT_ROOT / "tasks"
-    evaluation_root = PROJECT_ROOT / "evaluation"
+def check_dataset(task_repo):
+    tasks_root = (task_repo / "tasks").resolve()
+    evaluation_root = (task_repo / "evaluation").resolve()
     tasks = runtime.load_index(tasks_root / "index.json")
     evaluators = runtime.load_index(evaluation_root / "index.json")
     if tasks.keys() != evaluators.keys():
@@ -40,19 +39,22 @@ def main(argv=None):
     commands.add_parser("infer", help="Generate a patch with mini-SWE-agent")
     commands.add_parser("eval", help="Grade a candidate or a batch of predictions")
     dataset = commands.add_parser("dataset", help="Validate the task and evaluation datasets")
-    dataset.add_subparsers(dest="action", required=True).add_parser(
+    check = dataset.add_subparsers(dest="action", required=True).add_parser(
         "check", help="Check task identities, asset paths, and SHA-256 hashes"
     )
+    check.add_argument("task_repo", type=Path, help="Path to a CLB task repository")
     if not argv:
         parser.print_help()
         return 0
     command = argv[0]
     try:
-        if command in RUNNERS:
-            script = PROJECT_ROOT / RUNNERS[command]
+        if command == "infer":
+            script = PROJECT_ROOT / "agent/run.py"
             return subprocess.run([sys.executable, str(script), *argv[1:]]).returncode
-        parser.parse_args(argv)
-        check_dataset()
+        if command == "eval":
+            return evaluate.main(argv[1:])
+        args = parser.parse_args(argv)
+        check_dataset(args.task_repo)
         return 0
     except (OSError, ValueError, KeyError) as error:
         parser.exit(2, f"{error}\n")

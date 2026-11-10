@@ -15,7 +15,6 @@ from runtime import checked_file, docker_output, ensure_image, load_index, read_
 
 
 AGENT = Path(__file__).resolve().parent
-TASKS = AGENT.parent / "tasks"
 
 
 def run_case(case, task, directory, docker, image_id, *, key=None, preflight=False):
@@ -138,6 +137,8 @@ def prepare_base(env, case, docker, is_java):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("instance_id")
+    parser.add_argument("--task-repo", type=Path, required=True,
+                        help="Path to a CLB task repository")
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--docker", default="docker")
     parser.add_argument("--pull", action="store_true")
@@ -145,8 +146,9 @@ def main():
     args = parser.parse_args()
     key = None
     try:
-        case = load_index(TASKS / "index.json")[args.instance_id]
-        task = read_json(checked_file(TASKS, case["task"]))
+        tasks_root = (args.task_repo / "tasks").resolve()
+        case = load_index(tasks_root / "index.json")[args.instance_id]
+        task = read_json(checked_file(tasks_root, case["task"]))
         image_id = ensure_image(args.docker, case["image"], args.pull)
         if not args.preflight:
             key = os.getenv("CLB_MODEL_API_KEY") or getpass("Model API key: ")
