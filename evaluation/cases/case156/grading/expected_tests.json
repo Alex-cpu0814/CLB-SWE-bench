@@ -1,0 +1,12 @@
+{
+  "instance_id": "clb-pyc-156",
+  "FAIL_TO_PASS": [
+    "lib/test/hooks.py::LimitTests::CheckGetLimit",
+    "lib/test/hooks.py::LimitTests::CheckSetLimit"
+  ],
+  "PASS_TO_PASS": [
+    "lib/test/hooks.py::CollationTests::CheckCreateCollationNotCallable",
+    "lib/test/hooks.py::ProgressTests::CheckProgressHandlerUsed",
+    "lib/test/hooks.py::ProgressTests::CheckCancelOperation"
+  ]
+}

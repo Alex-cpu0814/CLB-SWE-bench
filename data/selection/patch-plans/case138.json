@@ -1,0 +1,19 @@
+{
+  "case_id": "case138",
+  "instance_id": "clb-pyc-138",
+  "repo": "pygobject/pycairo",
+  "base_commit": "afee8cfba448e8c6c100afc6015d31c6aa37e172",
+  "fix_commit": "42eb8a30f57676e74a194be297d051f457cebf23",
+  "upstream_diff_url": "https://github.com/pygobject/pycairo/compare/afee8cfba448e8c6c100afc6015d31c6aa37e172...42eb8a30f57676e74a194be297d051f457cebf23.diff",
+  "upstream_diff_sha256": "0746c259cc9a05550ff4eeb8755aeb34ceff630987855531a726b160ed0c7313",
+  "gold_files": [
+    "NEWS",
+    "cairo/cairomodule.c",
+    "cairo/pattern.c",
+    "cairo/private.h",
+    "docs/reference/patterns.rst"
+  ],
+  "test_files": [
+    "tests/test_pattern.py"
+  ]
+}

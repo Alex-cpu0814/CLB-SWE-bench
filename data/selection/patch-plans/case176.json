@@ -1,0 +1,16 @@
+{
+  "case_id": "case176",
+  "instance_id": "clb-pyc-176",
+  "repo": "bcdev/jpy",
+  "base_commit": "20cdbb714300bdb2502d9ac44740c85c64cce691",
+  "fix_commit": "81bfc112257504a3ab2cc3de3ae38ca6fa4bbf04",
+  "upstream_diff_url": "https://github.com/bcdev/jpy/compare/20cdbb714300bdb2502d9ac44740c85c64cce691...81bfc112257504a3ab2cc3de3ae38ca6fa4bbf04.diff",
+  "upstream_diff_sha256": "66edddb8f5bc4d461a4b71e6e3d6c6497cbc3276253b61e67ca822139887b206",
+  "gold_files": [
+    "CHANGES.txt",
+    "src/main/c/jpy_jobj.c"
+  ],
+  "test_files": [
+    "src/test/python/jpy_array_test.py"
+  ]
+}

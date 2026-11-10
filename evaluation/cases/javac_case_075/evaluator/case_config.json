@@ -1,0 +1,108 @@
+{
+  "template_version": "1.0",
+  "case_number": "075",
+  "instance_id": "clb-javac-075",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/LWJGL/lwjgl3.git",
+  "base_commit": "f40cd981a1ff81e3da603059a062728ee33ddf02",
+  "fix_commit": "e4bbe2db87f2d2d375c37f3f48020d3aa651067e",
+  "image": "local/javac-case-075-lwjgl3:benchmark-v3",
+  "build_image": "local/javac-case-075-lwjgl3:benchmark-v3",
+  "oracle_type": "runtime_behavior",
+  "evaluator_mode": "full_ant_jni_upstream_and_regression",
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/build_project.py",
+      "target": "/benchmark/build_project.py"
+    },
+    {
+      "source": "evaluator/test_runner.py",
+      "target": "/benchmark/test_runner.py"
+    },
+    {
+      "source": "evaluator/upstream_results.py",
+      "target": "/benchmark/upstream_results.py"
+    },
+    {
+      "source": "evaluator/upstream_tests.json",
+      "target": "/benchmark/upstream_tests.json"
+    }
+  ],
+  "FAIL_TO_PASS": [
+    "org.lwjgl.system.OriginalApiRegressionTest::nullBufferNoOp"
+  ],
+  "PASS_TO_PASS": [
+    "org.lwjgl.system.OriginalApiRegressionTest::mallocFree",
+    "org.lwjgl.system.OriginalApiRegressionTest::callocFree",
+    "org.lwjgl.system.OriginalApiRegressionTest::reallocNullFree",
+    "org.lwjgl.system.OriginalApiRegressionTest::unknownPointerRejected",
+    "org.lwjgl.system.OriginalApiRegressionTest::bufferFree",
+    "org.lwjgl.opencl.CLTest::testContext",
+    "org.lwjgl.opencl.CLTest::testEventCallback",
+    "org.lwjgl.opencl.CLTest::testLifecycle",
+    "org.lwjgl.opencl.CLTest::testMemObjectDestructor",
+    "org.lwjgl.opencl.CLTest::testNativeKernel",
+    "org.lwjgl.opencl.CLTest::testSubBuffer",
+    "org.lwjgl.system.APIBufferTest::testAlignment",
+    "org.lwjgl.system.APIBufferTest::testReset",
+    "org.lwjgl.system.APIBufferTest::testStack",
+    "org.lwjgl.system.APIBufferTest::testStackAlignment",
+    "org.lwjgl.system.MemoryUtilTest::testAddress",
+    "org.lwjgl.system.MemoryUtilTest::testDirectAccess",
+    "org.lwjgl.system.MemoryUtilTest::testJNINewBuffer",
+    "org.lwjgl.system.MemoryUtilTest::testMemCopy",
+    "org.lwjgl.system.MemoryUtilTest::testMemSet",
+    "org.lwjgl.system.MemoryUtilTest::testNewBuffer",
+    "org.lwjgl.system.StructTest::testStructConstructor",
+    "org.lwjgl.system.StructTest::testStructInstance",
+    "org.lwjgl.system.StructTest::testStructLayout",
+    "org.lwjgl.system.libffi.LibFFITest::testLibFFI",
+    "org.lwjgl.system.simd.SSETest::testControlRegister"
+  ],
+  "scope": [
+    "Linux x86_64 / Java 8 / exact Base checkout",
+    "Original Kotlin 0.13.1513 and Ant targets regenerate candidate bindings and compile all default Java/JNI targets",
+    "21 original TestNG methods and 5 synthetic P2P controls participate in formal scoring",
+    "PoCL CPU OpenCL runtime and libc system allocator",
+    "Protected regression was designed with reference Fix visible"
+  ],
+  "model_evaluator_verified": true,
+  "PASS_TO_PASS_COUNT": 26,
+  "p2p_sources": {
+    "upstream": [
+      "org.lwjgl.opencl.CLTest::testContext",
+      "org.lwjgl.opencl.CLTest::testEventCallback",
+      "org.lwjgl.opencl.CLTest::testLifecycle",
+      "org.lwjgl.opencl.CLTest::testMemObjectDestructor",
+      "org.lwjgl.opencl.CLTest::testNativeKernel",
+      "org.lwjgl.opencl.CLTest::testSubBuffer",
+      "org.lwjgl.system.APIBufferTest::testAlignment",
+      "org.lwjgl.system.APIBufferTest::testReset",
+      "org.lwjgl.system.APIBufferTest::testStack",
+      "org.lwjgl.system.APIBufferTest::testStackAlignment",
+      "org.lwjgl.system.MemoryUtilTest::testAddress",
+      "org.lwjgl.system.MemoryUtilTest::testDirectAccess",
+      "org.lwjgl.system.MemoryUtilTest::testJNINewBuffer",
+      "org.lwjgl.system.MemoryUtilTest::testMemCopy",
+      "org.lwjgl.system.MemoryUtilTest::testMemSet",
+      "org.lwjgl.system.MemoryUtilTest::testNewBuffer",
+      "org.lwjgl.system.StructTest::testStructConstructor",
+      "org.lwjgl.system.StructTest::testStructInstance",
+      "org.lwjgl.system.StructTest::testStructLayout",
+      "org.lwjgl.system.libffi.LibFFITest::testLibFFI",
+      "org.lwjgl.system.simd.SSETest::testControlRegister"
+    ],
+    "synthetic": [
+      "org.lwjgl.system.OriginalApiRegressionTest::mallocFree",
+      "org.lwjgl.system.OriginalApiRegressionTest::callocFree",
+      "org.lwjgl.system.OriginalApiRegressionTest::reallocNullFree",
+      "org.lwjgl.system.OriginalApiRegressionTest::unknownPointerRejected",
+      "org.lwjgl.system.OriginalApiRegressionTest::bufferFree"
+    ]
+  },
+  "image_id": "sha256:57f4a87865ffa18071bfc3ecb26619c4a7ee79309d58c745d8a786a514c3d56e"
+}

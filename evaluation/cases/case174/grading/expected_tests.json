@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-174",
+  "FAIL_TO_PASS": [
+    "test/test_magnetic_symmetry.cpp::test_magnetic_symmetry.test_spg_get_symmetry_with_tensors_rough_mag_symprec"
+  ],
+  "PASS_TO_PASS": [
+    "test/test_magnetic_symmetry.cpp::test_magnetic_symmetry.test_spg_get_magnetic_symmetry_from_database",
+    "test/test_magnetic_symmetry.cpp::test_magnetic_symmetry.test_spg_get_magnetic_spacegroup_type",
+    "test/test_magnetic_symmetry.cpp::test_magnetic_symmetry.test_spg_get_magnetic_dataset_type4"
+  ]
+}

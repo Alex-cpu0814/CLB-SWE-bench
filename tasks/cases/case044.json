@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-044",
+  "repo": "scipy/scipy",
+  "base_commit": "fc6b387bc0c51b5b252712584580b4f0975498fb",
+  "problem_statement": "segfault from map_coordinates\nI received segmentation faults when running `map_coordinates` with `order=1` on a large array when attempting to access data that was past the 4GB level if the input data array type was `float32`.  I have verified that changing from `float32` -> `float64` or using `order=3` both avoid the problem.  \n\nI suspect these lines in `map_coordinates` should include a coercion to `float64` in the `order <= 1` case:\n\n```\n    if prefilter and order > 1:\n        filtered = spline_filter(input, order, output=numpy.float64)\n    else:\n        filtered = input\n```\n\n"
+}

@@ -1,0 +1,160 @@
+diff --git a/config/tests/case075/org/lwjgl/system/OriginalApiRegressionTest.java b/config/tests/case075/org/lwjgl/system/OriginalApiRegressionTest.java
+new file mode 100644
+--- /dev/null
++++ b/config/tests/case075/org/lwjgl/system/OriginalApiRegressionTest.java
+@@ -0,0 +1,155 @@
++package org.lwjgl.system;
++
++import java.nio.Buffer;
++import java.nio.ByteBuffer;
++import java.util.Locale;
++import java.util.concurrent.atomic.AtomicInteger;
++import java.util.function.LongSupplier;
++import org.lwjgl.system.libc.Stdlib;
++
++/** Protected tests for the historical public MemoryUtil and native stdlib path. */
++public final class OriginalApiRegressionTest {
++    private OriginalApiRegressionTest() {}
++
++    public static void main(String[] args) {
++        if (args.length != 1 || !Boolean.getBoolean("org.lwjgl.util.DebugAllocator"))
++            throw new AssertionError("Run one mode with DebugAllocator enabled");
++        if (!"system".equals(System.getProperty("org.lwjgl.system.allocator")))
++            throw new AssertionError("Use the system allocator for the native stdlib tests");
++
++        switch (args[0]) {
++            case "nullBufferNoOp":
++                MemoryUtil.memFree((Buffer)null);
++                break;
++            case "mallocFree":
++                verifyTrackedFree(() -> MemoryUtil.nmemAlloc(16));
++                break;
++            case "callocFree":
++                verifyTrackedFree(() -> MemoryUtil.nmemCalloc(2, 8));
++                break;
++            case "reallocNullFree":
++                verifyTrackedFree(() -> MemoryUtil.nmemRealloc(MemoryUtil.NULL, 16));
++                break;
++            case "unknownPointerRejected":
++                verifyUnknownPointerRejected();
++                break;
++            case "bufferFree":
++                verifyBufferFree();
++                break;
++            default:
++                throw new AssertionError("Unknown mode: " + args[0]);
++        }
++        System.out.println("[PASS] " + args[0]);
++    }
++
++    private static void verifyTrackedFree(LongSupplier allocate) {
++        int before = liveAllocations();
++        long address = allocate.getAsLong();
++        if (address == MemoryUtil.NULL)
++            throw new AssertionError("Native allocation failed");
++        int allocated = -1;
++        Throwable failure = null;
++        try {
++            allocated = liveAllocations();
++            if (allocated != before + 1)
++                throw new AssertionError("Allocation count did not increase by one: "
++                    + before + " -> " + allocated);
++        } catch (RuntimeException | Error primary) {
++            failure = primary;
++            throw primary;
++        } finally {
++            try {
++                releasePreservingFailure(failure, () -> MemoryUtil.nmemFree(address));
++            } finally {
++                System.out.println("[TRACKING] before=" + before
++                    + " allocated=" + allocated + " freed=" + liveAllocations());
++            }
++        }
++        int freed = liveAllocations();
++        if (freed != before)
++            throw new AssertionError("Freed allocation remains tracked: before=" + before
++                + " allocated=" + allocated + " freed=" + freed);
++    }
++
++    private static int liveAllocations() {
++        AtomicInteger count = new AtomicInteger();
++        MemoryUtil.memReport((memory, threadId, threadName, stacktrace) -> count.incrementAndGet());
++        return count.get();
++    }
++
++    private static void verifyUnknownPointerRejected() {
++        int before = liveAllocations();
++        // Allocate a valid libc block directly, bypassing DebugAllocator's registry.
++        long address = Stdlib.nmalloc(16);
++        if (address == MemoryUtil.NULL)
++            throw new AssertionError("Untracked native allocation failed");
++        boolean reported = false;
++        try {
++            MemoryUtil.nmemFree(address);
++        } catch (IllegalStateException expected) {
++            System.out.println("[UNTRACKED] exception=" + expected.getClass().getName()
++                + " message=" + expected.getMessage());
++            if (!identifiesUntrackedAddress(expected.getMessage()))
++                throw new AssertionError("Unknown pointer failed for an unrelated reason", expected);
++            reported = true;
++        }
++        // The original free() releases the block before untrack() reports the error.
++        // Never free it again here; every mode exits its own JVM.
++        if (!reported)
++            throw new AssertionError("Unknown non-null pointer was silently accepted");
++        if (liveAllocations() != before)
++            throw new AssertionError("Unknown-pointer free changed existing tracked allocations");
++        System.out.println("[UNTRACKED] expected IllegalStateException reported");
++    }
++
++    private static void verifyBufferFree() {
++        int before = liveAllocations();
++        ByteBuffer buffer = MemoryUtil.memAlloc(16);
++        if (buffer == null)
++            throw new AssertionError("Buffer allocation failed");
++        int allocated = -1;
++        Throwable failure = null;
++        try {
++            allocated = liveAllocations();
++            if (allocated != before + 1)
++                throw new AssertionError("Buffer allocation was not tracked: before=" + before
++                    + " allocated=" + allocated);
++            // memFree(Buffer) must use the allocation's base address, not its position.
++            buffer.position(5);
++        } catch (RuntimeException | Error primary) {
++            failure = primary;
++            throw primary;
++        } finally {
++            try {
++                releasePreservingFailure(failure, () -> MemoryUtil.memFree((Buffer)buffer));
++            } finally {
++                System.out.println("[TRACKING] before=" + before
++                    + " allocated=" + allocated + " freed=" + liveAllocations());
++            }
++        }
++        int freed = liveAllocations();
++        String counts = "before=" + before + " allocated=" + allocated + " freed=" + freed;
++        if (freed != before)
++            throw new AssertionError("memFree(Buffer) did not restore the allocation baseline: " + counts);
++    }
++
++    private static boolean identifiesUntrackedAddress(String message) {
++        if (message == null)
++            return false;
++        String normalized = message.toLowerCase(Locale.ROOT).replaceAll("\\s+", " ");
++        return normalized.matches(".*\\b(memory|address|pointer|allocation)\\b.*")
++            && normalized.matches(".*\\b(untracked|unregistered|not (being |been )?(tracked|registered)"
++                + "|unknown (native |memory )?(address|pointer|allocation))\\b.*");
++    }
++
++    private static void releasePreservingFailure(Throwable primary, Runnable release) {
++        try {
++            release.run();
++        } catch (RuntimeException | Error cleanup) {
++            if (primary == null)
++                throw cleanup;
++            if (cleanup != primary)
++                primary.addSuppressed(cleanup);
++        }
++    }
++}

@@ -1,0 +1,16 @@
+{
+  "case_id": "case159",
+  "instance_id": "clb-pyc-159",
+  "repo": "astrofrog/fast-histogram",
+  "base_commit": "085efdad6570e25440beab781ef70e1f81605c12",
+  "fix_commit": "82f140be8f098e00e4eef35e8f6582c8b7067fba",
+  "upstream_diff_url": "https://github.com/astrofrog/fast-histogram/compare/085efdad6570e25440beab781ef70e1f81605c12...82f140be8f098e00e4eef35e8f6582c8b7067fba.diff",
+  "upstream_diff_sha256": "7f28cd6d6b71697e3f86080f62f20dd0c424e0f4ecca5c2f39ba09cae236df11",
+  "gold_files": [
+    "CHANGES.rst",
+    "fast_histogram/_histogram_core.c"
+  ],
+  "test_files": [
+    "fast_histogram/tests/test_histogram.py"
+  ]
+}

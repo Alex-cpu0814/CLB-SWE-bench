@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-037",
+  "repo": "scipy/scipy",
+  "base_commit": "bf05e8d3412e2d96ab6735b6935e2a65f2620c30",
+  "problem_statement": "scipy.ndimage.label  crash on 64-bit linux (Trac #742)\n_Original ticket http://projects.scipy.org/scipy/ticket/742 on 2008-09-23 by trac user usovalx, assigned to unknown._\n\nIt appears that ndimage.label is bugged for 64-bit linux builds. So far I was able to trigger the bug by using reasonably large 3-d datasets. Sample code:\n# \n\nfrom numpy import *\nimport scipy.ndimage as nd\n\nshape=(3, 1000, 1000)\na = random.rand(product(shape)).reshape(shape)\nm = a > .7\n# nd.label(m, nd.generate_binary_structure(3,3))\n\nThis code works fine on 32-bit machines, but crashes with \"segmentation fault  python\" on 64-bit fedora & debian. Both 0.6.0 and (current) trunk versions crash.\n\n"
+}

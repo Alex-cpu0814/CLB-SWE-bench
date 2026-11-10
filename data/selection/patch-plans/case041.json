@@ -1,0 +1,15 @@
+{
+  "case_id": "case041",
+  "instance_id": "clb-pyc-041",
+  "repo": "scipy/scipy",
+  "base_commit": "e13278e712ac33c6110b5d48a8da0acfa7768b71",
+  "fix_commit": "e2091e9e4be2dffed8c6535547e8519dc002fa74",
+  "upstream_diff_url": "https://github.com/scipy/scipy/compare/e13278e712ac33c6110b5d48a8da0acfa7768b71...e2091e9e4be2dffed8c6535547e8519dc002fa74.diff",
+  "upstream_diff_sha256": "6947ff21df58d6d96ca2f670a79add8ad8fa3e86b433c511d0444e5e016dcc03",
+  "gold_files": [
+    "scipy/interpolate/src/_fitpackmodule.c"
+  ],
+  "test_files": [
+    "scipy/interpolate/tests/test_fitpack.py"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-042",
+  "repo": "scipy/scipy",
+  "base_commit": "8c7973148c5dea4a28e0e082f8c1f182313b72c1",
+  "problem_statement": "scipy.signal.sepfir2d reads random memory when given even sized hrow or hcol\n`scipy.signal.sepfir2d` reads random memory when given even sized `hrow` or `hcol`. Deep down in the source code for `sepfir2` there is a comment than only odd-lengths are acceptable:\r\nhttps://github.com/scipy/scipy/blob/d06791710acae119e099829087f8e1aedc4e1bd7/scipy/signal/S_bspline_util.c#L173\r\nhttps://github.com/scipy/scipy/blob/d06791710acae119e099829087f8e1aedc4e1bd7/scipy/signal/D_bspline_util.c#L177\r\nhttps://github.com/scipy/scipy/blob/d06791710acae119e099829087f8e1aedc4e1bd7/scipy/signal/C_bspline_util.c#L176\r\nhttps://github.com/scipy/scipy/blob/d06791710acae119e099829087f8e1aedc4e1bd7/scipy/signal/Z_bspline_util.c#L173\r\nHowever, this is not documented or enforced in `sepfir2d`.\n"
+}

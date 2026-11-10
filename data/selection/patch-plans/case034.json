@@ -1,0 +1,16 @@
+{
+  "case_id": "case034",
+  "instance_id": "clb-pyc-034",
+  "repo": "scipy/scipy",
+  "base_commit": "9529e47630be8f2345fd3d54302f248ce309d8cd",
+  "fix_commit": "0aee4a24bedb154d07a3b5ba016a385b1ac2910c",
+  "upstream_diff_url": "https://github.com/scipy/scipy/compare/9529e47630be8f2345fd3d54302f248ce309d8cd...0aee4a24bedb154d07a3b5ba016a385b1ac2910c.diff",
+  "upstream_diff_sha256": "460168a67e86c3924910b1db110bdd228a5255a1e748433165d99d2619506f61",
+  "gold_files": [
+    "scipy/integrate/_odepackmodule.c",
+    "scipy/integrate/odepack.py"
+  ],
+  "test_files": [
+    "scipy/integrate/tests/test_integrate.py"
+  ]
+}

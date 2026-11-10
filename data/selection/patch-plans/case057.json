@@ -1,0 +1,35 @@
+{
+  "case_id": "case057",
+  "instance_id": "clb-pyc-057",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "f0679aff4d43dbd595b98501dc7a8420550bf4e8",
+  "fix_commit": "5f39e8e60ae0662b850484b2ad7a1eaa83677dd3",
+  "upstream_diff_source": {
+    "type": "git",
+    "repo_url": "https://github.com/python-pillow/Pillow.git",
+    "args": [
+      "diff",
+      "--binary",
+      "--abbrev=7",
+      "--no-ext-diff",
+      "--no-textconv",
+      "--no-color",
+      "f0679aff4d43dbd595b98501dc7a8420550bf4e8",
+      "5f39e8e60ae0662b850484b2ad7a1eaa83677dd3",
+      "--"
+    ],
+    "git_version": "git version 2.45.1.windows.1"
+  },
+  "upstream_diff_sha256": "67bb27125522019330b7e5dbfb3fae54d8045bad9517dbce3eb3dd37fa79c930",
+  "gold_files": [
+    "src/PIL/PsdImagePlugin.py",
+    "src/PIL/_binary.py"
+  ],
+  "test_files": [
+    "Tests/test_file_psd.py",
+    "Tests/images/negative_layer_count.psd"
+  ],
+  "binary_test_assets": [
+    "Tests/images/negative_layer_count.psd"
+  ]
+}

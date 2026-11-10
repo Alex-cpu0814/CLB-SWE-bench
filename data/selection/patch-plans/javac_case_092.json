@@ -1,0 +1,16 @@
+{
+  "case_id": "javac_case_092",
+  "instance_id": "clb-javac-092",
+  "repo": "ninia/jep",
+  "base_commit": "d14567567ac1281e978790b9170c981113de282f",
+  "fix_commit": "bd14a110911af80e7299767f43c570e2fca4d459",
+  "upstream_diff_url": "https://github.com/ninia/jep/compare/d14567567ac1281e978790b9170c981113de282f...bd14a110911af80e7299767f43c570e2fca4d459.diff",
+  "upstream_diff_sha256": "c89c426311fcf4b1924d79ee2f5ba871f0cc654e492ed1fdb428efc795626953",
+  "gold_files": [
+    "src/jep/pyembed.c"
+  ],
+  "test_files": [
+    "src/jep/test/TestCompiledScript.java",
+    "tests/test_run_script.py"
+  ]
+}

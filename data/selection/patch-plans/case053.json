@@ -1,0 +1,36 @@
+{
+  "case_id": "case053",
+  "instance_id": "clb-pyc-053",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "09605ff48e582fda6870a2c4c519650321f3f8de",
+  "fix_commit": "6f73691564908f70967cf76b8f4f88e390f57fe9",
+  "upstream_diff_source": {
+    "type": "git",
+    "repo_url": "https://github.com/python-pillow/Pillow.git",
+    "args": [
+      "diff",
+      "--binary",
+      "--abbrev=7",
+      "--no-ext-diff",
+      "--no-textconv",
+      "--no-color",
+      "09605ff48e582fda6870a2c4c519650321f3f8de",
+      "6f73691564908f70967cf76b8f4f88e390f57fe9",
+      "--"
+    ],
+    "git_version": "git version 2.45.1.windows.1"
+  },
+  "upstream_diff_sha256": "55f16d0cdbaadd5f8087047c638d3f19d63e16b0ca84469df2bd893dc105c0c5",
+  "gold_files": [
+    "src/libImaging/Draw.c",
+    "src/libImaging/Paste.c"
+  ],
+  "test_files": [
+    "Tests/test_imagedraw.py",
+    "Tests/test_imagefont.py",
+    "Tests/images/imagedraw_rectangle_I.png"
+  ],
+  "binary_test_assets": [
+    "Tests/images/imagedraw_rectangle_I.png"
+  ]
+}

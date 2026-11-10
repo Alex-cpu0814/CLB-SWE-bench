@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-097",
+  "repo": "ninia/jep",
+  "base_commit": "e4f13ea277ce4809688dde766cc9fd173ec6f63d",
+  "problem_statement": "JVM crash when closing a jep instance associated to a terminated thread\nI have a cache of jep instances which are bound to the container thread that created them.\nIf the originating thread is disposed by the web container and at a later time I try to close the corresponding jep instance I experience the following JVM crash:\n\n```\n # A fatal error has been detected by the Java Runtime Environment:\n #\n #  SIGSEGV (0xb) at pc=0x00007fba779f1285, pid=25044, tid=140441049380608\n #\n # JRE version: Java(TM) SE Runtime Environment (7.0_80-b15) (build 1.7.0_80-b15)\n # Java VM: Java HotSpot(TM) 64-Bit Server VM (24.80-b11 mixed mode linux-amd64 compressed   oops)\n # Problematic frame:\n # C  [libjep.so+0x13285]  pyembed_thread_close+0xb5\n```\n\n"
+}

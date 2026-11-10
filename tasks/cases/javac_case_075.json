@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-075",
+  "repo": "LWJGL/lwjgl3",
+  "base_commit": "f40cd981a1ff81e3da603059a062728ee33ddf02",
+  "problem_statement": "DebugAllocator should not raise an error when using null pointers with memFree\nWhen using `org.lwjgl.util.DebugAllocator`, calling `memFree` with a `null` value results in:\n\n> java.lang.IllegalStateException: The memory address specified is not being tracked\n\nHowever, the JavaDoc of `memFree` specifically says\n\n> If `ptr` is a `NULL` pointer, the function does nothing.\n\nSo the DebugAllocator shouldn't raise an error when passing `null`.\n\n"
+}

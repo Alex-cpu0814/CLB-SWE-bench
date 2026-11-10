@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-057",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "f0679aff4d43dbd595b98501dc7a8420550bf4e8",
+  "problem_statement": "Pillow fails/hangs on PSD hidden background layer\nDepending on file content, Pillow:\r\n\r\n- fails with \"cannot identify image file\";\r\n- fails with \"Truncated File Read\";\r\n- just hangs inside the `PsdImagePlugin._layerinfo` function because it thinks there are 65534 layers.\r\n\r\nSee attachment: [pillow-psd-fail.zip](https://github.com/python-pillow/Pillow/files/6815914/pillow-psd-fail.zip)\r\n\r\nGIMP works fine with these files.\n"
+}

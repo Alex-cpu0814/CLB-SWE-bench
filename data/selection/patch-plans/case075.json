@@ -1,0 +1,21 @@
+{
+  "case_id": "case075",
+  "instance_id": "clb-pyc-075",
+  "repo": "pygame/pygame",
+  "base_commit": "0589ca062fa624f4bf2a9ebea7aedb2a08b37780",
+  "fix_commit": "f3ac656da14e0a40335c54a6b453c2d15184d4a2",
+  "upstream_diff_url": "https://github.com/pygame/pygame/compare/0589ca062fa624f4bf2a9ebea7aedb2a08b37780...f3ac656da14e0a40335c54a6b453c2d15184d4a2.diff",
+  "upstream_diff_sha256": "439afec7246171b4cba043781f9cb02b17bdfc1cd4fb43ef4855bc2515d80c1c",
+  "gold_files": [
+    "src_c/_pygame.h",
+    "src_c/constants.c",
+    "src_c/event.c",
+    "src_c/rwobject.c",
+    "src_c/time.c",
+    "src_py/locals.py"
+  ],
+  "test_files": [
+    "test/event_test.py",
+    "test/time_test.py"
+  ]
+}

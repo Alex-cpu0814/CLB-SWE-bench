@@ -1,0 +1,18 @@
+{
+  "case_id": "case002",
+  "instance_id": "clb-pyc-002",
+  "repo": "scipy/scipy",
+  "base_commit": "ff177d92b79167eb5de593c9de41d3ceb97ab189",
+  "fix_commit": "60dc9730d5652f0632cd43caef437f01a734e374",
+  "upstream_diff_url": "https://github.com/scipy/scipy/compare/ff177d92b79167eb5de593c9de41d3ceb97ab189...60dc9730d5652f0632cd43caef437f01a734e374.diff",
+  "upstream_diff_sha256": "02d21c75ebd88beda192c068c71d3488d2b0b2fe004b8b1e7fcd65d03414de5d",
+  "gold_files": [
+    "scipy/ndimage/interpolation.py",
+    "scipy/ndimage/src/nd_image.c",
+    "scipy/ndimage/src/ni_interpolation.c",
+    "scipy/ndimage/src/ni_interpolation.h"
+  ],
+  "test_files": [
+    "scipy/ndimage/tests/test_interpolation.py"
+  ]
+}

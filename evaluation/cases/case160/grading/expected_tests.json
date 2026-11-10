@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-160",
+  "FAIL_TO_PASS": [
+    "fast_histogram/tests/test_histogram.py::test_nd_arrays"
+  ],
+  "PASS_TO_PASS": [
+    "fast_histogram/tests/test_histogram.py::test_1d_compare_with_numpy",
+    "fast_histogram/tests/test_histogram.py::test_2d_compare_with_numpy"
+  ]
+}

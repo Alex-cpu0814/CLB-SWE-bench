@@ -1,0 +1,2 @@
+# Preserve release bytes, including the files pinned by the task and evaluator indexes.
+* -text

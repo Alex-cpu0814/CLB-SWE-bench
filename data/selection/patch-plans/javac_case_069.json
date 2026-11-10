@@ -1,0 +1,20 @@
+{
+  "case_id": "javac_case_069",
+  "instance_id": "clb-javac-069",
+  "repo": "LWJGL/lwjgl3",
+  "base_commit": "427e278dc2402aca025cacd58a80eb4eaa8c4832",
+  "fix_commit": "94f8bd69e176be3e48b4376281fed778e76ab8df",
+  "upstream_diff_url": "https://github.com/LWJGL/lwjgl3/compare/427e278dc2402aca025cacd58a80eb4eaa8c4832...94f8bd69e176be3e48b4376281fed778e76ab8df.diff",
+  "upstream_diff_sha256": "321fa65aa14adcb41fe8ae9a86fe658e5e699f63bf5884e92064ac6e468153a4",
+  "gold_files": [
+    "modules/lwjgl/core/src/main/java/org/lwjgl/system/MemoryTextDecoding.java",
+    "modules/lwjgl/core/src/main/java9/org/lwjgl/system/MemoryTextDecoding.java"
+  ],
+  "test_files": [
+    "modules/lwjgl/core/src/test/java/org/lwjgl/system/MemoryUtilTest.java"
+  ],
+  "excluded_files": {
+    ".idea/runConfigurations/TESTS.xml": "这是 IntelliJ 的测试启动配置。交付评测通过脚本构建 LWJGL Core 并运行 TestNG。",
+    "doc/notes/3.2.1.md": "发布说明记录非零缓冲区位置的解码修复。实现和回归测试分别保留在 Java 源文件和 MemoryUtilTest 中。"
+  }
+}

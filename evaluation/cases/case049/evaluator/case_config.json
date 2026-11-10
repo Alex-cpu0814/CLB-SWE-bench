@@ -1,0 +1,31 @@
+{
+  "template_version": "1.0",
+  "case_number": "049",
+  "instance_id": "clb-pyc-049",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/CheetahTemplate3/cheetah3.git",
+  "base_commit": "c86628cad04edc5167f9a9c8999abc62c6558e7b",
+  "fix_commit": "31574d601ed6b675eb2fe8dc82659864bd3ace14",
+  "image": "yutu0814/pyc-case-049-cheetah:benchmark-v1",
+  "python_version": "3.8",
+  "numpy_version": "1.19.5",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

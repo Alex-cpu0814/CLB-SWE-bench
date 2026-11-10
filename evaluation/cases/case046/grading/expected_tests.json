@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-046",
+  "FAIL_TO_PASS": [
+    "python/tests/test_highlevel.py::TestTree::test_newick_large_times",
+    "python/tests/test_lowlevel.py::TestTree::test_newick_interface"
+  ],
+  "PASS_TO_PASS": [
+    "python/tests/test_highlevel.py::TestTree::test_newick",
+    "python/tests/test_lowlevel.py::TestTree::test_newick_precision"
+  ]
+}

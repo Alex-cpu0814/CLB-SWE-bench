@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-014",
+  "repo": "numpy/numpy",
+  "base_commit": "495d352bf325f44d78001f059d625123e49f027e",
+  "problem_statement": "viewing an array with a fieldless structured dtype does not update the dtype:\nAs discovered in #14310 , viewing an array with a fieldless structured dtype does not update the dtype/itemsize:\r\n\r\n```python\r\n>>> a = np.zeros(2, dtype={'names':[], 'formats':[], 'offsets':[], 'itemsize':8})\r\n>>> b = a.view(np.dtype([]))\r\n>>> b\r\narray([], shape=(2, 0),\r\n      dtype={'names':[], 'formats':[], 'offsets':[], 'itemsize':8})\r\n>>> b.dtype == np.dtype([])\r\nFalse\r\n```\r\n\r\n\n"
+}

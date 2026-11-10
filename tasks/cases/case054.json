@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-054",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "c683f048eb117c572b8b4eee47a324aca165fea1",
+  "problem_statement": "Fatal Python error for negative radius in ImageFilter.BoxBlur()\nHi,\r\n\r\nPython crashes without an exception when a negative radius is passed into ImageFilter.BoxBlur().\r\nThis is the error message using spyder.\r\n\r\n```\r\nFatal Python error: Aborted\r\n\r\nMain thread:\r\nCurrent thread 0x00007fbab679b740 (most recent call first):\r\n  File \"/home/mgouka/miniconda3/envs/bx_gui/lib/python3.9/site-packages/PIL/ImageFilter.py\", line 189 in filter\r\n  File \"/home/mgouka/miniconda3/envs/bx_gui/lib/python3.9/site-packages/PIL/Image.py\", line 1305 in filter\r\n  File \"/tmp/ipykernel_28079/2108891280.py\", line 1 in <module>\r\n\r\n\r\nRestarting kernel...\r\n```\r\n\r\nAnd using python in the standard linux terminal it says:\r\n\r\n```\r\nSegmentation fault (core dumped)\r\n```\r\n\r\nThe code below produces the problem.\r\n\r\n```python\r\nimport numpy as np\r\nfrom PIL import Image, ImageFilter\r\n\r\nimg = Image.fromarray(np.ones([100, 100, 3], dtype='uint8'))\r\nimg = img.filter(ImageFilter.BoxBlur(-2))\r\n```\r\n\n"
+}

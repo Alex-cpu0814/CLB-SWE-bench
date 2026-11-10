@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-100",
+  "repo": "ninia/jep",
+  "base_commit": "bbf96b5cbb83fe9e4edef71d410d29460084d5fc",
+  "problem_statement": "JEP should map common Java exceptions to the corresponding Python built-in exceptions and preserve correct import-hook behavior."
+}

@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-156",
+  "repo": "ghaering/pysqlite",
+  "base_commit": "d7c44a6b62ccf27ae2a006d32dc25cd49ca45320",
+  "problem_statement": "Implement limits\n_From [philippe...@gmail.com](https://code.google.com/u/102219890224326646040/) on March 18, 2011 02:38:14_\n\nSee http://code.google.com/r/philippemay-limits/ Gerhard, if you agree, would be great to merge.\n\n_Original issue: http://code.google.com/p/pysqlite/issues/detail?id=33_\n\n"
+}

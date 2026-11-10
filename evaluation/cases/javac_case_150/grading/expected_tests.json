@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-javac-150",
+  "FAIL_TO_PASS": [
+    "org.newsclub.net.unix.domain.AbstractNamespaceTest.testBind",
+    "org.newsclub.net.unix.domain.AbstractNamespaceTest.testBindTrailingZeroes"
+  ],
+  "PASS_TO_PASS": [
+    "org.newsclub.net.unix.AFUNIXSocketAddressTest.testAbstractNamespace"
+  ]
+}

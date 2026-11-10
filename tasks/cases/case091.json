@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-091",
+  "repo": "pygame/pygame",
+  "base_commit": "e26f569b1f3e28d935327b7dfc4cb10e722a9d09",
+  "problem_statement": "For a string with trailing spaces, freetype ignores the last space in boundary calculations\nOriginally reported by: **Lenard Lindstrom (Bitbucket: [llindstrom](https://bitbucket.org/llindstrom), GitHub: [llindstrom](https://github.com/llindstrom))**\n\n----------------------------------------\n\nFor non-rotated horizontal text, a string of one space, \" \", will produce a zero width rectangle or surface. A string of two spaces produces a rectangle or surface of only one space in\nwidth.\n\nFix: include the advance of a terminating space of a string in the calculation of the text boundary. Normally only the bitmap width of the last character in a string is used when determining the text boundary. This avoids boundary padding, empty rows or columns. But a space is nothing but padding; its bitmap has width and height of zero. So make an exception for the trailing space and use its advance to extend the boundary.\n\nAn test for the bug will be included in the unit tests.\n\n----------------------------------------\n- Bitbucket: https://bitbucket.org/pygame/pygame/issue/243\n\n"
+}

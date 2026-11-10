@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-031",
+  "FAIL_TO_PASS": [
+    "test_multiarray.TestChoose.test_broadcast1",
+    "test_multiarray.TestChoose.test_broadcast2"
+  ],
+  "PASS_TO_PASS": [
+    "test_multiarray.TestChoose.test_basic"
+  ]
+}

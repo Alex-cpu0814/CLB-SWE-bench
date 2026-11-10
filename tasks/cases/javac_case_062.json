@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-062",
+  "repo": "LWJGL/lwjgl3",
+  "base_commit": "2c8811383487cd827f375abdc534a5d40a174edc",
+  "problem_statement": "clang_getCString returns garbage in lwjgl-llvm module\n### Environment\r\n\r\n* LWJGL version: `3.2.2` \r\n* LWJGL build #: `10`\r\n* Java version: `OpenJDK 64-Bit Server VM v11.0.4+11-post-Debian-1bpo91 by Debian `\r\n* Platform: `Linux x86_64`\r\n* Module: `llvm`\r\n\r\n### Description\r\nThe static method clang_getCString in ClangIndex in the llvm module returns garbage characters. I think that may because native clang_getCString expects a CXString struct passed as value, but lwjgl passes a Pointer/long address?? I'm not sure about that and I'm new to lwjgl.\r\n\r\nI have attached a minimum test case illustrating the problem.\r\n[CXStringTest.java.txt](https://github.com/LWJGL/lwjgl3/files/3532091/CXStringTest.java.txt)\r\n\r\nNote that the test case also shows you can properly get the String by getting the address of the first member of the CXString struct:\r\n\r\n```java\r\nCXString cxstr = CXString.callocStack(stack);\r\n//...\r\n// VVVV--- This works\r\nString cstr = memUTF8Safe(memGetAddress(cxstr.address()));\r\n```\r\n\r\n\n"
+}

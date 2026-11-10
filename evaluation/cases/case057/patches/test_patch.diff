@@ -1,0 +1,40 @@
+diff --git a/Tests/images/negative_layer_count.psd b/Tests/images/negative_layer_count.psd
+new file mode 100644
+index 0000000000000000000000000000000000000000..b111c2d5675ab2eec3bf2df52d2af603e006d2a3
+GIT binary patch
+literal 5492
+zcmeHKO=uHA7=4?hq{hTl%%O;f98ym$h*rt5u0koK5Yh;(dT_Iwq@meO*iDdtN5N~U
+z2Y(<~_29*`UOjjf1i>E=Z{E~{q6ej}Z)R;1O4EZ72<y%=GjG1X`R02wgk;tH5)^nX
+z!pV?*9AQrsK9p4#7Q<iUDiJT*n&mV#yKLzl2u<X))Ewr>D6Z>y!BC_&{8_Filxe9~
+zwrA<-nTDXqRZ=WNo1)is(}|n_Osi!V=GFA_%Eff_Bce#+0H%=8bf<YXpU-&#_8Nb@
+z_RjQbM#S37Vjo$;C_6fjlcvp_-n3i9SBTGCZ8ZhHO`OtKHC9S_OgwEfLE^VUUh?oK
+zfvXaS2$8ajg>yVxia1^E!=*l~ui7SUW@(c#OpEbD%N{laz9z6)Z!<U91Z(lKbzzBf
+zhW!}kv4BP7kwyt^)KEtYGn_3-92BTm2lyYA{&{+p=v9MGkMn52geLtVIG_z%ueMI*
+z)JZ8);wmuq!F9h)0nwYl*1GHdy6?JM4}kD{;F;C)Z)^hD@073iWSM(F@;dP3c~4fl
+z1w6e0OuplN)8szlPKGKK;OiqGu>u@<3B)dWb)!z`@$d~$WUX>9fID}A<5kAKJmB2p
+zbl9oezBYgB2ORv({?p~S)5s3rjoe+?5I2t_X;(JH&9)l0>53&&+V+U4n!Z-G8*P#-
+zZ0c>RM%^TP3@U4`V+~c<WS~v<3~8g+ZR$nFyPLOvM7%!k%r+<s={P4x4r4j3Q)bM*
+z3?_t_d1~mO%>6yx?wu7L#}{80{`h$3e8C4o{@|m_Cm1j?T3iN<j20ik8yPh|0!9Kx
+khWD#AdbRzxjQsOEGCZz>$p3Q%x^D0V6&OMVeDZJo54vN9CIA2c
+
+literal 0
+HcmV?d00001
+
+diff --git a/Tests/test_file_psd.py b/Tests/test_file_psd.py
+index bf2a5fe..f50fe13 100644
+--- a/Tests/test_file_psd.py
++++ b/Tests/test_file_psd.py
+@@ -57,9 +57,10 @@ def test_n_frames():
+         assert im.n_frames == 1
+         assert not im.is_animated
+ 
+-    with Image.open(test_file) as im:
+-        assert im.n_frames == 2
+-        assert im.is_animated
++    for path in [test_file, "Tests/images/negative_layer_count.psd"]:
++        with Image.open(path) as im:
++            assert im.n_frames == 2
++            assert im.is_animated
+ 
+ 
+ def test_eoferror():

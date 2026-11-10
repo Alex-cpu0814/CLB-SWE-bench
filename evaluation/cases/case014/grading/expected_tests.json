@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-014",
+  "FAIL_TO_PASS": [
+    "numpy/core/tests/test_dtype.py::TestRecord::test_fieldless_views"
+  ],
+  "PASS_TO_PASS": [
+    "numpy/core/tests/test_dtype.py::TestRecord::test_partial_dict",
+    "numpy/core/tests/test_dtype.py::TestSubarray::test_single_subarray"
+  ]
+}

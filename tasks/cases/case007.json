@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-007",
+  "repo": "numpy/numpy",
+  "base_commit": "fc2518ba6b11fc52b0ff477b9e83576be90562d8",
+  "problem_statement": "NumPy's array-allocation failure path raises _ArrayMemoryError and returns immediately, bypassing the common failure cleanup and leaking dtype references on every failed allocation. Route this path through the shared cleanup while preserving the formatted allocation error."
+}

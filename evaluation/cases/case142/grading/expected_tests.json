@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-142",
+  "FAIL_TO_PASS": [
+    "tests/test_surface.py::test_image_surface_get_data_refcount"
+  ],
+  "PASS_TO_PASS": [
+    "tests/test_surface.py::test_surface_get_content",
+    "tests/test_surface.py::test_surface_get_format",
+    "tests/test_surface.py::test_image_surface_png_obj_roundtrip"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "case056",
+  "instance_id": "clb-pyc-056",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "6798c87caf25cedf0cef19245e7db1656aed8602",
+  "fix_commit": "2e5ce839babe540865445316e7abf1cecef97264",
+  "upstream_diff_url": "https://github.com/python-pillow/Pillow/compare/6798c87caf25cedf0cef19245e7db1656aed8602...2e5ce839babe540865445316e7abf1cecef97264.diff",
+  "upstream_diff_sha256": "197f9de0a9aba9adb6aaded991abe3179fcdd3a34bdfe02058d172d7f6a239b8",
+  "gold_files": [
+    "src/PIL/Image.py"
+  ],
+  "test_files": [
+    "Tests/test_image.py"
+  ]
+}

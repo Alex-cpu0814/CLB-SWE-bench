@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-049",
+  "FAIL_TO_PASS": [
+    "Cheetah/Tests/SyntaxAndOutput.py::GetVar::test6"
+  ],
+  "PASS_TO_PASS": [
+    "Cheetah/Tests/SyntaxAndOutput.py::GetVar::test1",
+    "Cheetah/Tests/SyntaxAndOutput.py::GetVar::test2"
+  ]
+}

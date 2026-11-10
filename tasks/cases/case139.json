@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-139",
+  "repo": "pygobject/pycairo",
+  "base_commit": "b780969870a9dd8b42b88c8317679e125b5e2aae",
+  "problem_statement": "device crasher\nThis crashes, I guess the surface needs to explicitly keep the device alive:\r\n\r\n```\r\nf = io.BytesIO()\r\ndev = cairo.ScriptDevice(f)\r\nsurface = cairo.ScriptSurface(dev, cairo.Content.COLOR_ALPHA, 42, 10)\r\nsurface.get_device()\r\n```\r\n\r\nthe docs are not clear..\n"
+}

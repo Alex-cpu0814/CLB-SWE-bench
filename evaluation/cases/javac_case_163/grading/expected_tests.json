@@ -1,0 +1,43 @@
+{
+  "instance_id": "clb-javac-163",
+  "FAIL_TO_PASS": [
+    "org.newsclub.net.unix.Issue81CompatibilityTest.testAutomaticFallbackOldGlibc"
+  ],
+  "PASS_TO_PASS": [
+    "org.newsclub.net.unix.Issue81CompatibilityTest.testModernGlibcRoundTrip",
+    "org.newsclub.net.unix.AFUNIXSocketAddressTest.testPort",
+    "org.newsclub.net.unix.AcceptTimeoutTest.testCatchTimeout",
+    "org.newsclub.net.unix.AcceptTimeoutTest.testTimeoutAfterDelay",
+    "org.newsclub.net.unix.BufferOverflowTest.readOutOfBounds",
+    "org.newsclub.net.unix.BufferOverflowTest.readUpTo",
+    "org.newsclub.net.unix.BufferOverflowTest.writeOverflow",
+    "org.newsclub.net.unix.CancelAcceptTest.issue6test1",
+    "org.newsclub.net.unix.EndOfFileJavaTest.bidirectionalSanity",
+    "org.newsclub.net.unix.EndOfFileJavaTest.clientReadEof",
+    "org.newsclub.net.unix.EndOfFileJavaTest.clientWriteToSocketClosedByClient",
+    "org.newsclub.net.unix.EndOfFileJavaTest.clientWriteToSocketClosedByServer",
+    "org.newsclub.net.unix.EndOfFileJavaTest.serverReadEof",
+    "org.newsclub.net.unix.EndOfFileJavaTest.serverWriteToSocketClosedByClient",
+    "org.newsclub.net.unix.EndOfFileJavaTest.serverWriteToSocketClosedByServer",
+    "org.newsclub.net.unix.EndOfFileTest.bidirectionalSanity",
+    "org.newsclub.net.unix.EndOfFileTest.clientReadEof",
+    "org.newsclub.net.unix.EndOfFileTest.clientWriteToSocketClosedByClient",
+    "org.newsclub.net.unix.EndOfFileTest.clientWriteToSocketClosedByServer",
+    "org.newsclub.net.unix.EndOfFileTest.serverReadEof",
+    "org.newsclub.net.unix.EndOfFileTest.serverWriteToSocketClosedByClient",
+    "org.newsclub.net.unix.EndOfFileTest.serverWriteToSocketClosedByServer",
+    "org.newsclub.net.unix.FileDescriptorsTest.testAncillaryReceiveBufferTooSmall",
+    "org.newsclub.net.unix.FileDescriptorsTest.testBadFileDescriptor",
+    "org.newsclub.net.unix.FileDescriptorsTest.testFileInputStream",
+    "org.newsclub.net.unix.FileDescriptorsTest.testFileInputStreamPartiallyConsumed",
+    "org.newsclub.net.unix.FileDescriptorsTest.testNoAncillaryReceiveBuffer",
+    "org.newsclub.net.unix.FileDescriptorsTest.testSendRecvFileDescriptors",
+    "org.newsclub.net.unix.PeerCredentialsTest.testSameProcess",
+    "org.newsclub.net.unix.ServerSocketCloseTest.testUnblockAcceptsWithSoTimeout",
+    "org.newsclub.net.unix.ServerSocketCloseTest.testUnblockAcceptsWithoutSoTimeout",
+    "org.newsclub.net.unix.SoTimeoutTest.issue14Fail",
+    "org.newsclub.net.unix.SoTimeoutTest.issue14Pass",
+    "org.newsclub.net.unix.TcpNoDelayTest.testDefaultImpl",
+    "org.newsclub.net.unix.TcpNoDelayTest.testStrictImpl"
+  ]
+}

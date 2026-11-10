@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-023",
+  "FAIL_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::TestWritebackIfCopy::test_insert_noncontiguous"
+  ],
+  "PASS_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::TestWritebackIfCopy::test_put_noncontiguous",
+    "numpy/core/tests/test_multiarray.py::TestWritebackIfCopy::test_putmask_noncontiguous"
+  ]
+}

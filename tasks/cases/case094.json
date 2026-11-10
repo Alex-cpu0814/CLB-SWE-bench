@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-094",
+  "repo": "pygame/pygame",
+  "base_commit": "2d7786bc2453561a696281299104f95814e676b3",
+  "problem_statement": "Method Surface.fill can segfault is passed an out-of-bounds boundary rectange\nOriginally reported by: **Lenard Lindstrom (Bitbucket: [llindstrom](https://bitbucket.org/llindstrom), GitHub: [llindstrom](https://github.com/llindstrom))**\n\n----------------------------------------\n\nThe //Surface.fill// method can segfault when doing a\n//BLEND_RGB_ADD// fill if the optional boundary rectangle goes\noutside of the surface.\n\nThis addresses Pygame mailing list messages:\n\nhttp://www.mail-archive.com/pygame-users@seul.org/msg09485.html\n\nand\n\nhttp://www.mail-archive.com/pygame-users@seul.org/msg09485.html\n\nThe cause is that the custom fill methods in surface_blit.c  do no\nboundary checks.\n\n----------------------------------------\n- Bitbucket: https://bitbucket.org/pygame/pygame/issue/93\n\n"
+}

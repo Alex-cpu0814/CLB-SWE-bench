@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-139",
+  "FAIL_TO_PASS": [
+    "tests/test_surface.py::test_script_device_device_ref"
+  ],
+  "PASS_TO_PASS": [
+    "tests/test_device.py::test_get_device",
+    "tests/test_surface.py::test_script_surface",
+    "tests/test_surface.py::test_script_surface_create_for_target"
+  ]
+}

@@ -1,0 +1,1238 @@
+{
+  "manifest_id": "benchmark72-v1",
+  "schema_version": 1,
+  "record_count": 72,
+  "cohorts": {
+    "python50": 50,
+    "java_author11": 11,
+    "java_upstream11": 11
+  },
+  "cases": [
+    {
+      "instance_id": "clb-pyc-002",
+      "case": "case002",
+      "cohort": "python50",
+      "base_commit": "ff177d92b79167eb5de593c9de41d3ceb97ab189",
+      "image": {
+        "image_id": "sha256:a06dba0866df6cc6a1b517fb2516808a1afb412e1ced4adb6fec3518c33cc617",
+        "pull_reference": "yutu0814/pyc-case-002-scipy@sha256:a06dba0866df6cc6a1b517fb2516808a1afb412e1ced4adb6fec3518c33cc617"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case002.json",
+        "sha256": "b8b4a96a29cea3bdccfb94a36e84bc0ff6b750fc8859fcef61da3d23908311cf"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-007",
+      "case": "case007",
+      "cohort": "python50",
+      "base_commit": "fc2518ba6b11fc52b0ff477b9e83576be90562d8",
+      "image": {
+        "image_id": "sha256:ddbe5866e7eec2a3e12f4ebf75adf5c83c154c8ac15f049f3039395c37a8c617",
+        "pull_reference": "yutu0814/pyc-case-007-numpy@sha256:ddbe5866e7eec2a3e12f4ebf75adf5c83c154c8ac15f049f3039395c37a8c617"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case007.json",
+        "sha256": "0b79e802d6ab0efe38b860a3c5a92cd35ce683df0e7c17344e4e5805f1ede089"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-010",
+      "case": "case010",
+      "cohort": "python50",
+      "base_commit": "5e8ad11b75245caf2d158eacf369b011ef262795",
+      "image": {
+        "image_id": "sha256:9c6264f39867c2376935e2c989a26c328eadb1b0f813d66291a224c84971e790",
+        "pull_reference": "yutu0814/pyc-case-010-numpy@sha256:9c6264f39867c2376935e2c989a26c328eadb1b0f813d66291a224c84971e790"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case010.json",
+        "sha256": "06bc69a6c5b885ff37b14feb39767bcbcfaede1f94f38df22216eb71b14ba21f"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-011",
+      "case": "case011",
+      "cohort": "python50",
+      "base_commit": "2acfd9851b6a5246e5e5e3faa97c9e728e88f8a9",
+      "image": {
+        "image_id": "sha256:08f623a56a982260b08f7c3f5bfedf171de71ab39d2022e893e403887fd93873",
+        "pull_reference": "yutu0814/pyc-case-011-numpy@sha256:08f623a56a982260b08f7c3f5bfedf171de71ab39d2022e893e403887fd93873"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case011.json",
+        "sha256": "99d31e4061738bb350a0ac985a1be0b434ea4cc41c8e81151574be1c1def5b97"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-013",
+      "case": "case013",
+      "cohort": "python50",
+      "base_commit": "663b161074580a340201da1765e3618c086ff8dc",
+      "image": {
+        "image_id": "sha256:19d9e4c60528969fa655ade3622e48b0c85c508ccd6249e801d6781bef11f508",
+        "pull_reference": "yutu0814/pyc-case-013-numpy@sha256:19d9e4c60528969fa655ade3622e48b0c85c508ccd6249e801d6781bef11f508"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case013.json",
+        "sha256": "fa50577130d6957659183a691b2b86b1ba80b1d54b8b14e0bdc01d9524bfaf77"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-014",
+      "case": "case014",
+      "cohort": "python50",
+      "base_commit": "495d352bf325f44d78001f059d625123e49f027e",
+      "image": {
+        "image_id": "sha256:8ec3a832740cfffca716ebf9a7a1b9b324d57ca877843e324a74f53f49942c4d",
+        "pull_reference": "yutu0814/pyc-case-014-numpy@sha256:8ec3a832740cfffca716ebf9a7a1b9b324d57ca877843e324a74f53f49942c4d"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case014.json",
+        "sha256": "aea7f169b75b22981de552d0f050337d61f724227efd3a726ab55ae284a38208"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-015",
+      "case": "case015",
+      "cohort": "python50",
+      "base_commit": "965ea2ff417bcb285beca5c36cd02a8790a3d8f6",
+      "image": {
+        "image_id": "sha256:f2da0afcaca3b41ce053ae0355187005b364e3490eda7dbeecac6561e03d5967",
+        "pull_reference": "yutu0814/pyc-case-015-numpy@sha256:f2da0afcaca3b41ce053ae0355187005b364e3490eda7dbeecac6561e03d5967"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case015.json",
+        "sha256": "748a6bbc7f7ef6661fd40c661c0df792e0dbf758912027c306d5056d6c418faa"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-022",
+      "case": "case022",
+      "cohort": "python50",
+      "base_commit": "99953e494aa3be5ae8385d8461b9e4dfbeec43ec",
+      "image": {
+        "image_id": "sha256:7e54bbcd8594c941e1ee9e41ea15905787d0bca6fb8085b4523d5069737d6de8",
+        "pull_reference": "yutu0814/pyc-case-022-numpy@sha256:7e54bbcd8594c941e1ee9e41ea15905787d0bca6fb8085b4523d5069737d6de8"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case022.json",
+        "sha256": "975490542d4c938dfc5b86184291f621d783c5b27701ce200c36d3cc6ff18bd5"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-023",
+      "case": "case023",
+      "cohort": "python50",
+      "base_commit": "70b773e4015b4fbb61bc1f7bdffc9cc789d58e94",
+      "image": {
+        "image_id": "sha256:8b841335373b60b3e3aa4c1cb856876881e173ce982971adaf302df454690fdf",
+        "pull_reference": "yutu0814/pyc-case-023-numpy@sha256:8b841335373b60b3e3aa4c1cb856876881e173ce982971adaf302df454690fdf"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case023.json",
+        "sha256": "32b5cb98ad336d8ff7189875f66a4ddf423df37de9f6882d6eeac1a14cc79f75"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-027",
+      "case": "case027",
+      "cohort": "python50",
+      "base_commit": "0fd5f2506bf2f41b023392c945312e5a1a3eb819",
+      "image": {
+        "image_id": "sha256:71d2efe092c6ee64b8a0a6ef40ee58ca656c90a6a43fbd8fd3aa2f35833dfc02",
+        "pull_reference": "yutu0814/pyc-case-027-numpy@sha256:71d2efe092c6ee64b8a0a6ef40ee58ca656c90a6a43fbd8fd3aa2f35833dfc02"
+      },
+      "generation_python": "python3.8-dbg",
+      "task": {
+        "path": "cases/case027.json",
+        "sha256": "e6223a21fed8cc1e38d75678ae4d86692156fc1c655367f69627ead18961e0d7"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-031",
+      "case": "case031",
+      "cohort": "python50",
+      "base_commit": "b65b21c397381351965bf3f590054d2bccdd03d2",
+      "image": {
+        "image_id": "sha256:d485b6f5f151ad2c42c3c32e32f97d01a66e10ed307a21112efd85cb523ef363",
+        "pull_reference": "yutu0814/pyc-case-031-numpy@sha256:d485b6f5f151ad2c42c3c32e32f97d01a66e10ed307a21112efd85cb523ef363"
+      },
+      "generation_python": "python2.7",
+      "task": {
+        "path": "cases/case031.json",
+        "sha256": "7373c2ebb562d5a9672f1ef7fb8b30b137977db9d0d32670b2a1506a7a1724d2"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-034",
+      "case": "case034",
+      "cohort": "python50",
+      "base_commit": "9529e47630be8f2345fd3d54302f248ce309d8cd",
+      "image": {
+        "image_id": "sha256:5d4300ef80a0fcbfd8e290284f0e291b61cd1fa1a585f7c8bdb059fd1eb4ad6d",
+        "pull_reference": "yutu0814/pyc-case-034-scipy@sha256:5d4300ef80a0fcbfd8e290284f0e291b61cd1fa1a585f7c8bdb059fd1eb4ad6d"
+      },
+      "generation_python": "python3.8",
+      "task": {
+        "path": "cases/case034.json",
+        "sha256": "1bd88864e0def77cf3e285bc39b52d4a5c977eddcb6b2719a29ea733810d5f20"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-037",
+      "case": "case037",
+      "cohort": "python50",
+      "base_commit": "bf05e8d3412e2d96ab6735b6935e2a65f2620c30",
+      "image": {
+        "image_id": "sha256:04dff5e59cea830266f4137be5ca38e2333c9668c2880e6f6f542c7188cd8328",
+        "pull_reference": "yutu0814/pyc-case-037-scipy@sha256:04dff5e59cea830266f4137be5ca38e2333c9668c2880e6f6f542c7188cd8328"
+      },
+      "generation_python": "python3.8",
+      "task": {
+        "path": "cases/case037.json",
+        "sha256": "269c088a75f76a8eb28d544e0807ec7b0c6a8c3005fe7b69b8584e2c783bd85f"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-041",
+      "case": "case041",
+      "cohort": "python50",
+      "base_commit": "e13278e712ac33c6110b5d48a8da0acfa7768b71",
+      "image": {
+        "image_id": "sha256:162ec26dfa62fdd3ffa1a0dc4976961257e6796f803eb39e11be871f1dc4faf9",
+        "pull_reference": "yutu0814/pyc-case-041-scipy@sha256:162ec26dfa62fdd3ffa1a0dc4976961257e6796f803eb39e11be871f1dc4faf9"
+      },
+      "generation_python": "python3.8",
+      "task": {
+        "path": "cases/case041.json",
+        "sha256": "c025e4e3bb9fec89be48fa3b3ffefa200fdf9272d764048c019addf289ec64f3"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-042",
+      "case": "case042",
+      "cohort": "python50",
+      "base_commit": "8c7973148c5dea4a28e0e082f8c1f182313b72c1",
+      "image": {
+        "image_id": "sha256:73a308a6d0431d6f5d682647daf0828549209bc26bf7e79d2bff7e205d7d2bcb",
+        "pull_reference": "yutu0814/pyc-case-042-scipy@sha256:73a308a6d0431d6f5d682647daf0828549209bc26bf7e79d2bff7e205d7d2bcb"
+      },
+      "generation_python": "python3.8",
+      "task": {
+        "path": "cases/case042.json",
+        "sha256": "4743aa677458d619915dcd264b62754fe6a7e2085ccd4425f19d16c25f5a65ce"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-044",
+      "case": "case044",
+      "cohort": "python50",
+      "base_commit": "fc6b387bc0c51b5b252712584580b4f0975498fb",
+      "image": {
+        "image_id": "sha256:46e9a7fa9636a89717b530dbde3a6da3e2c67050a18b70847b78b4316e051831",
+        "pull_reference": "yutu0814/pyc-case-044-scipy@sha256:46e9a7fa9636a89717b530dbde3a6da3e2c67050a18b70847b78b4316e051831"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case044.json",
+        "sha256": "b1abcea94a344a928d86d68a2b377b51a85233e9bf0f18cab28ba3739ce5ee13"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-046",
+      "case": "case046",
+      "cohort": "python50",
+      "base_commit": "eb8b4aebe42f39f7e536a603e8cd25d9cf104e22",
+      "image": {
+        "image_id": "sha256:94b0040be34ac50a0b340ee284e51a414a4d1efa8696791ae661d0cbeea80743",
+        "pull_reference": "yutu0814/pyc-case-046-tskit@sha256:94b0040be34ac50a0b340ee284e51a414a4d1efa8696791ae661d0cbeea80743"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case046.json",
+        "sha256": "1a5ef92674d936ca27a78e570b357facfc29375294dcab6ff8615e768665064b"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-048",
+      "case": "case048",
+      "cohort": "python50",
+      "base_commit": "018986cb0260881827c6ef33cd2d804f54e39c85",
+      "image": {
+        "image_id": "sha256:064bfb4045a30796b74a723138efe20e24f2be4e0aa19f4ef6a3a644cce2ce85",
+        "pull_reference": "yutu0814/pyc-case-048-scipy@sha256:064bfb4045a30796b74a723138efe20e24f2be4e0aa19f4ef6a3a644cce2ce85"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case048.json",
+        "sha256": "b513c5054838366700454bc603465f09b96d7e86b6f09f4527d7f417cbef15d5"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-049",
+      "case": "case049",
+      "cohort": "python50",
+      "base_commit": "c86628cad04edc5167f9a9c8999abc62c6558e7b",
+      "image": {
+        "image_id": "sha256:9b8ca8cf610a15b88d144cab71608125a57d9fa61fd9d41664684b023d991629",
+        "pull_reference": "yutu0814/pyc-case-049-cheetah@sha256:9b8ca8cf610a15b88d144cab71608125a57d9fa61fd9d41664684b023d991629"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case049.json",
+        "sha256": "562c58471542af7d33ec4e9d13c0aa000e662e08ef51d5117afcc29e66a604c6"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-053",
+      "case": "case053",
+      "cohort": "python50",
+      "base_commit": "09605ff48e582fda6870a2c4c519650321f3f8de",
+      "image": {
+        "image_id": "sha256:fa3a641ce23062b01e43021ba76fa77574047cb21422ef0daa18c642dd7c7ccc",
+        "pull_reference": "yutu0814/pyc-case-053-pillow@sha256:fa3a641ce23062b01e43021ba76fa77574047cb21422ef0daa18c642dd7c7ccc"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case053.json",
+        "sha256": "e296ca0fbfa37342a2c61da72159a3cfede5e1ab4be3715d5d58b873f12f5604"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-054",
+      "case": "case054",
+      "cohort": "python50",
+      "base_commit": "c683f048eb117c572b8b4eee47a324aca165fea1",
+      "image": {
+        "image_id": "sha256:418f1ca7c0fe0f3525592d3635a6e06f4e7b45060ad3b0a492f177230eba26fe",
+        "pull_reference": "yutu0814/pyc-case-054-pillow@sha256:418f1ca7c0fe0f3525592d3635a6e06f4e7b45060ad3b0a492f177230eba26fe"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case054.json",
+        "sha256": "92a222a79eaee500ea5c762f9639a694141d86bfd41417595819045a903c6e91"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-056",
+      "case": "case056",
+      "cohort": "python50",
+      "base_commit": "6798c87caf25cedf0cef19245e7db1656aed8602",
+      "image": {
+        "image_id": "sha256:abeb4e9ddc951a5c0e9d63f1d5d0c23a8c0bcb668606cfab3e67adde60b76970",
+        "pull_reference": "yutu0814/pyc-case-056-pillow@sha256:abeb4e9ddc951a5c0e9d63f1d5d0c23a8c0bcb668606cfab3e67adde60b76970"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case056.json",
+        "sha256": "695259fbe0af115ffb507e2a1410a29b0141fa975ed1c0297ea11a7cbd73ae76"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-057",
+      "case": "case057",
+      "cohort": "python50",
+      "base_commit": "f0679aff4d43dbd595b98501dc7a8420550bf4e8",
+      "image": {
+        "image_id": "sha256:9ab77c7426fba99462ea9c55a3a1139fbc455ab39d47d17023fe49a897d7b96a",
+        "pull_reference": "yutu0814/pyc-case-057-pillow@sha256:9ab77c7426fba99462ea9c55a3a1139fbc455ab39d47d17023fe49a897d7b96a"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case057.json",
+        "sha256": "cbad89acb34e0f61042cefb4061fb072df71a34038f2f167e46f9c0445c5462f"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-058",
+      "case": "case058",
+      "cohort": "python50",
+      "base_commit": "b21508798ab548ed90eb4d6bf01db14b880c9c91",
+      "image": {
+        "image_id": "sha256:3fbe631ca2fb660e8850b0f3dedfdab10187317ad1520063edca003dbce331d5",
+        "pull_reference": "yutu0814/pyc-case-058-pillow@sha256:3fbe631ca2fb660e8850b0f3dedfdab10187317ad1520063edca003dbce331d5"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case058.json",
+        "sha256": "3966cd4f2253821860564d34128595a3154ccaafbbc4acae7392796ffd879e66"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-060",
+      "case": "case060",
+      "cohort": "python50",
+      "base_commit": "d0612030a0ba7aed533e1f9115bbf4bd1019f48e",
+      "image": {
+        "image_id": "sha256:e5558c76835739376be27654c041f0fc5743476226db4150d772cfa124ff1be8",
+        "pull_reference": "yutu0814/pyc-case-060-pillow@sha256:e5558c76835739376be27654c041f0fc5743476226db4150d772cfa124ff1be8"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case060.json",
+        "sha256": "dec4d5c6c1a7bb83cb95e74def77ba0ebf886ac12e211d68aac10476e8cc3b9d"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-066",
+      "case": "case066",
+      "cohort": "python50",
+      "base_commit": "3fb62360e61949a2405db0771ad89f1c9a2b25e4",
+      "image": {
+        "image_id": "sha256:7b21635299e99621802eba50557e2f4c87117546a29657660d02b8fcd5aecc6e",
+        "pull_reference": "yutu0814/pyc-case-066-pillow@sha256:7b21635299e99621802eba50557e2f4c87117546a29657660d02b8fcd5aecc6e"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case066.json",
+        "sha256": "83c2a49472d3feb1c31aa308d71aec1e40d34d7610decb276120e6bdf033d7e5"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-068",
+      "case": "case068",
+      "cohort": "python50",
+      "base_commit": "dc1664500be0135d83182d480af341d39b5c78d7",
+      "image": {
+        "image_id": "sha256:38a579d4478242d8f8c82a87cbfec6b295062262989eb5404bb13f7535fed222",
+        "pull_reference": "yutu0814/pyc-case-068-pillow@sha256:38a579d4478242d8f8c82a87cbfec6b295062262989eb5404bb13f7535fed222"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case068.json",
+        "sha256": "37c13d2d0d4624d6ba3e41f034b04621a56f7bca3aa624b12372f62dfc6152a6"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-070",
+      "case": "case070",
+      "cohort": "python50",
+      "base_commit": "9c589d1cb5dc81552aa8ee72694cb830bed099c6",
+      "image": {
+        "image_id": "sha256:90abe0b0aa3f2bd61d589f13a17566da1044a9f66cab7ce180803cb5887f9bcb",
+        "pull_reference": "yutu0814/pyc-case-070-ultrajson@sha256:90abe0b0aa3f2bd61d589f13a17566da1044a9f66cab7ce180803cb5887f9bcb"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case070.json",
+        "sha256": "d11e9ecc04f7e1b04895aadf4803630d75ec7270e6e133eca5160e71f9e027c1"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-071",
+      "case": "case071",
+      "cohort": "python50",
+      "base_commit": "f26f9679f1b9d7fa2d0488e1e7b1256d9391a85f",
+      "image": {
+        "image_id": "sha256:cccd9f8154691264a74f0304fc6ef42e3176983d9c404de0da999c76a38cec66",
+        "pull_reference": "yutu0814/pyc-case-071-ultrajson@sha256:cccd9f8154691264a74f0304fc6ef42e3176983d9c404de0da999c76a38cec66"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case071.json",
+        "sha256": "b9aa4a72d7d25d5009d0cc93ab6d0f0c29f8a5ae72dd79c6e7f6c8086f6ed1f0"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-075",
+      "case": "case075",
+      "cohort": "python50",
+      "base_commit": "0589ca062fa624f4bf2a9ebea7aedb2a08b37780",
+      "image": {
+        "image_id": "sha256:09531e41aa8f9ff6c8dfe158e64846c0c11ff89f568409e474c6be948578392b",
+        "pull_reference": "yutu0814/pyc-case-075-pygame@sha256:09531e41aa8f9ff6c8dfe158e64846c0c11ff89f568409e474c6be948578392b"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case075.json",
+        "sha256": "10e2e7b0c40d8d810c8d6664d2520d9e794509327fd756d85a1e59e1e28cc181"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-077",
+      "case": "case077",
+      "cohort": "python50",
+      "base_commit": "c09d677a6c1c2e814683576035f13c6a07d64f67",
+      "image": {
+        "image_id": "sha256:9033751a383ee84641f989c2efc2da75bec96025e77dda11dd9736a992a9a912",
+        "pull_reference": "yutu0814/pyc-case-077-pygame@sha256:9033751a383ee84641f989c2efc2da75bec96025e77dda11dd9736a992a9a912"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case077.json",
+        "sha256": "2d4fd5445128f8258e0f8b5048b8ba587ffdf7a80cbfb0bba8abbfec9f93cb4a"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-081",
+      "case": "case081",
+      "cohort": "python50",
+      "base_commit": "71c90cdb76cd8b12a0969f5d6314315bd0223c28",
+      "image": {
+        "image_id": "sha256:4e5d69e396505fea954f28acb59dc90ef522bafab05dd484c0299e628f938720",
+        "pull_reference": "yutu0814/pyc-case-081-pygame@sha256:4e5d69e396505fea954f28acb59dc90ef522bafab05dd484c0299e628f938720"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case081.json",
+        "sha256": "fd8d8273010c0ea22a99a16c0d4360e76295a790ef65b6688671a420a02e0b9d"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-082",
+      "case": "case082",
+      "cohort": "python50",
+      "base_commit": "8a63c06f2e082b8c7e3c0fce035a0a7e4ca55d85",
+      "image": {
+        "image_id": "sha256:9b466d593d9252da3ccb18d5270b5e8b1dcc456daa31e67273e94d2d48c9256a",
+        "pull_reference": "yutu0814/pyc-case-082-pygame@sha256:9b466d593d9252da3ccb18d5270b5e8b1dcc456daa31e67273e94d2d48c9256a"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case082.json",
+        "sha256": "ac7fcb60306584488260cfaa2339d63e1e8d66b62076869d92fce334a55cf680"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-086",
+      "case": "case086",
+      "cohort": "python50",
+      "base_commit": "5f1d4528b46d7f3c368db6e1c395ffb0ae83623d",
+      "image": {
+        "image_id": "sha256:11e605344ed4675be7b010289e782843d09aa9efc3fae6d819d905c65ab7a0f3",
+        "pull_reference": "yutu0814/pyc-case-086-pygame@sha256:11e605344ed4675be7b010289e782843d09aa9efc3fae6d819d905c65ab7a0f3"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case086.json",
+        "sha256": "5b2a94b041034e9b16b4ea709e9d4eb97d1f559b21636b6e1c97bb73b33fc33b"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-088",
+      "case": "case088",
+      "cohort": "python50",
+      "base_commit": "cd173f0ebf77e2b652de1a20a5f3eccf78e8cf12",
+      "image": {
+        "image_id": "sha256:f3743031c6dbfbb51c85a00c5494a2e837a6715609e300b96305cfb04d928d49",
+        "pull_reference": "yutu0814/pyc-case-088-pygame@sha256:f3743031c6dbfbb51c85a00c5494a2e837a6715609e300b96305cfb04d928d49"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case088.json",
+        "sha256": "3ff371cabac3e170cbdacf0971051811448e2def6294f3b20ef64d5c67b44b8b"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-090",
+      "case": "case090",
+      "cohort": "python50",
+      "base_commit": "6e5ca4a046fde6c21b0386281e25a83b3c8f9ba3",
+      "image": {
+        "image_id": "sha256:150ec56758ae844eb1b5e23a435ebd2c0bd9b72b55416b8a5cfa417ed7bb1df4",
+        "pull_reference": "yutu0814/pyc-case-090-pygame@sha256:150ec56758ae844eb1b5e23a435ebd2c0bd9b72b55416b8a5cfa417ed7bb1df4"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case090.json",
+        "sha256": "7f2841cff409c5f4db901f45169c30c8517bad709b619a515fb4a1a727a8e584"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-091",
+      "case": "case091",
+      "cohort": "python50",
+      "base_commit": "e26f569b1f3e28d935327b7dfc4cb10e722a9d09",
+      "image": {
+        "image_id": "sha256:f416079adbe2fdc2542d0842b9d09f7f0b4fab0032a8de19fd08abd9b93b2777",
+        "pull_reference": "yutu0814/pyc-case-091-pygame@sha256:f416079adbe2fdc2542d0842b9d09f7f0b4fab0032a8de19fd08abd9b93b2777"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case091.json",
+        "sha256": "3a8bd853f1b6fdea31ef4d8c3df220c7c6e836ffbdb28c9b316f250a3976ca64"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-094",
+      "case": "case094",
+      "cohort": "python50",
+      "base_commit": "2d7786bc2453561a696281299104f95814e676b3",
+      "image": {
+        "image_id": "sha256:6f72fe9350d7b0d377698ec01aa208bde1889947464acad69e141599c1692d9c",
+        "pull_reference": "yutu0814/pyc-case-094-pygame@sha256:6f72fe9350d7b0d377698ec01aa208bde1889947464acad69e141599c1692d9c"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case094.json",
+        "sha256": "5adfe7a9ad5010eecf561812e608cee2ac59aa9085dda86c92670e7bc76f8a52"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-137",
+      "case": "case137",
+      "cohort": "python50",
+      "base_commit": "9ebff889d4c68927ab1c152b6ae7c8327283b6ed",
+      "image": {
+        "image_id": "sha256:b4603765359d41448fa3d87f060d41236f069e73bc953b52ab072d8783418944",
+        "pull_reference": "yutu0814/pyc-case-137-pycairo@sha256:b4603765359d41448fa3d87f060d41236f069e73bc953b52ab072d8783418944"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case137.json",
+        "sha256": "4e4c4e4448b26be844322793160ed8801e773ef6236ec995895b9919b1880b5e"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-138",
+      "case": "case138",
+      "cohort": "python50",
+      "base_commit": "afee8cfba448e8c6c100afc6015d31c6aa37e172",
+      "image": {
+        "image_id": "sha256:070d14e959d62f2f50cecf0d12900951f15be77f94e57ad208c3fecd43426b9f",
+        "pull_reference": "yutu0814/pyc-case-138-pycairo@sha256:070d14e959d62f2f50cecf0d12900951f15be77f94e57ad208c3fecd43426b9f"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case138.json",
+        "sha256": "e670944f07033f16c983654352fac357cdb91803e0c2effbf2e73f7754231dda"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-139",
+      "case": "case139",
+      "cohort": "python50",
+      "base_commit": "b780969870a9dd8b42b88c8317679e125b5e2aae",
+      "image": {
+        "image_id": "sha256:3ca1ea28317ca091b21d56022d7a8a3e5a08a2950640a83e4449595bd032c86a",
+        "pull_reference": "yutu0814/pyc-case-139-pycairo@sha256:3ca1ea28317ca091b21d56022d7a8a3e5a08a2950640a83e4449595bd032c86a"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case139.json",
+        "sha256": "b954ac52e6dcfe006169e990bb0f92b571825617eb480a37e095ffe370e2e930"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-141",
+      "case": "case141",
+      "cohort": "python50",
+      "base_commit": "eeea4de31f9c8f4496f5695ee0258040b401f0b4",
+      "image": {
+        "image_id": "sha256:058270e42edd92e8231b22ec7536f033a17bf3bb0e9a674a6fe4793b6c6488ae",
+        "pull_reference": "yutu0814/pyc-case-141-pycairo@sha256:058270e42edd92e8231b22ec7536f033a17bf3bb0e9a674a6fe4793b6c6488ae"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case141.json",
+        "sha256": "adfbe69187eddea04a7444458e97ed2def68332854f8a62165992e02557e5f6d"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-142",
+      "case": "case142",
+      "cohort": "python50",
+      "base_commit": "cd6b840aeab1515343a71a997b0a2ce48fce6d82",
+      "image": {
+        "image_id": "sha256:020d2f34e4341dd12b010801affd93f55ec641d516486848b26389ba8e785c4a",
+        "pull_reference": "yutu0814/pyc-case-142-pycairo@sha256:020d2f34e4341dd12b010801affd93f55ec641d516486848b26389ba8e785c4a"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case142.json",
+        "sha256": "f9ed41cdf003e190a2241dc13eb2f5d5924f7b6c327879454327763056d5b8b5"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-156",
+      "case": "case156",
+      "cohort": "python50",
+      "base_commit": "d7c44a6b62ccf27ae2a006d32dc25cd49ca45320",
+      "image": {
+        "image_id": "sha256:b50c96b41175954a45f6372c0271846b3ebe4c3c74422ad91b0d025f38b82ac0",
+        "pull_reference": "yutu0814/pyc-case-156-pysqlite@sha256:b50c96b41175954a45f6372c0271846b3ebe4c3c74422ad91b0d025f38b82ac0"
+      },
+      "generation_python": "python2.7",
+      "task": {
+        "path": "cases/case156.json",
+        "sha256": "4ab5799c36f5aa9db58f6827990b9d936b2bd10b4ca49ea1bb3930d01be44f93"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-159",
+      "case": "case159",
+      "cohort": "python50",
+      "base_commit": "085efdad6570e25440beab781ef70e1f81605c12",
+      "image": {
+        "image_id": "sha256:6c5fb4016d7c9713831eb383ae90b667367d51538afd93fd0bdfd6edefa11313",
+        "pull_reference": "yutu0814/pyc-case-159-fast-histogram@sha256:6c5fb4016d7c9713831eb383ae90b667367d51538afd93fd0bdfd6edefa11313"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case159.json",
+        "sha256": "50ae5d283196d61b6e3a19e0a8744c3a790288859731cabe546f0109bad15b5b"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-160",
+      "case": "case160",
+      "cohort": "python50",
+      "base_commit": "76b6f57a27f31cdefc23444f91611a00c9b4332d",
+      "image": {
+        "image_id": "sha256:137667158630a877c17512394db970de833e35f35720c82c792bda08c712a10e",
+        "pull_reference": "yutu0814/pyc-case-160-fast-histogram@sha256:137667158630a877c17512394db970de833e35f35720c82c792bda08c712a10e"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case160.json",
+        "sha256": "9096736e7a4da3b3fdc384c7b9db09bbc4c4a84d5b8d27288132996dc7703b82"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-174",
+      "case": "case174",
+      "cohort": "python50",
+      "base_commit": "9458171a2eb9bea9036632a408da7b269ea07bbb",
+      "image": {
+        "image_id": "sha256:370afac41f58090a6e2e5b252836e1f5aedc8a31127910c403ce5782eb0c89a1",
+        "pull_reference": "yutu0814/pyc-case-174-spglib@sha256:370afac41f58090a6e2e5b252836e1f5aedc8a31127910c403ce5782eb0c89a1"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case174.json",
+        "sha256": "4a20a2a2130d100b1ec697798f18f2b8611c2cc9203e96bba79e581ab2c67eb7"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-175",
+      "case": "case175",
+      "cohort": "python50",
+      "base_commit": "4afa84322f83b368dada7e3c6f64c3a17114aaa0",
+      "image": {
+        "image_id": "sha256:06d09d8c8172c328860448ed7055be235f954a2331396cb29766080771363983",
+        "pull_reference": "yutu0814/pyc-case-175-spglib@sha256:06d09d8c8172c328860448ed7055be235f954a2331396cb29766080771363983"
+      },
+      "generation_python": "python",
+      "task": {
+        "path": "cases/case175.json",
+        "sha256": "728440af5f1451f3e3a560c58fdbf968cc917ca9dc25d6d645071f343c9570ab"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-176",
+      "case": "case176",
+      "cohort": "python50",
+      "base_commit": "20cdbb714300bdb2502d9ac44740c85c64cce691",
+      "image": {
+        "image_id": "sha256:b71d6af3399f5af04eeda403e5f39f855e644d8e8574e9b7279a0d3e71dcd221",
+        "pull_reference": "yutu0814/pyc-case-176-jpy@sha256:b71d6af3399f5af04eeda403e5f39f855e644d8e8574e9b7279a0d3e71dcd221"
+      },
+      "generation_python": "python2.7",
+      "task": {
+        "path": "cases/case176.json",
+        "sha256": "5c23ccd04fc6b6c73f128f04ac19655e0866b6e3cc180fbe145f15e8aa90c04b"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-pyc-177",
+      "case": "case177",
+      "cohort": "python50",
+      "base_commit": "7e58cea7c2551d0b590eff3959341ee823ec43c1",
+      "image": {
+        "image_id": "sha256:ab2807d63d39277830ff04f241fbbfd256dfcac53b6445f4cfa0b1b0dd61e737",
+        "pull_reference": "yutu0814/pyc-case-177-jpy@sha256:ab2807d63d39277830ff04f241fbbfd256dfcac53b6445f4cfa0b1b0dd61e737"
+      },
+      "generation_python": "python2.7",
+      "task": {
+        "path": "cases/case177.json",
+        "sha256": "58759714d8825373499df1e88ff56ce2b0027b9dde48f9b17457ba56c71d5129"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-056",
+      "case": "javac_case_056",
+      "cohort": "java_author11",
+      "base_commit": "307ebed6ef6ba420b2165ddb2ec21dd9a37479df",
+      "image": {
+        "image_id": "sha256:866ae42ecde1bbcaa0581fabe2380bdea159ed944f565066b7abe1c2922a7669",
+        "pull_reference": "yutu0814/javac-case-056-lwjgl3@sha256:866ae42ecde1bbcaa0581fabe2380bdea159ed944f565066b7abe1c2922a7669"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_056.json",
+        "sha256": "95e0ac3e2aeba734e4676f708af14bbec4b76a94488af22fc0cd14ad185d5320"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-062",
+      "case": "javac_case_062",
+      "cohort": "java_author11",
+      "base_commit": "2c8811383487cd827f375abdc534a5d40a174edc",
+      "image": {
+        "image_id": "sha256:a6b182c03068ba6e408878304674f3a8ae922f42b6399c3f1b82fd34166a40a5",
+        "pull_reference": "yutu0814/javac-case-062-lwjgl3@sha256:a6b182c03068ba6e408878304674f3a8ae922f42b6399c3f1b82fd34166a40a5"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_062.json",
+        "sha256": "5f757a53e2f8e3e1ce1343cb3b1eb65f6546dd3182eb03ad8fa52d3a03b015d8"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-068",
+      "case": "javac_case_068",
+      "cohort": "java_author11",
+      "base_commit": "2c007161cff7ba12023ae48dd28a7856c0c6da3d",
+      "image": {
+        "image_id": "sha256:30a5258e746b1190c9b5d6c6aacbbaa04bdd0f11f4aff0b5605a3eeb8445dfaa",
+        "pull_reference": "yutu0814/javac-case-068-lwjgl3@sha256:30a5258e746b1190c9b5d6c6aacbbaa04bdd0f11f4aff0b5605a3eeb8445dfaa"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_068.json",
+        "sha256": "50edc7a2bc51976540db4dfc6e00f1f770fd3b81f2b34553f967f957c4041b3c"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-074",
+      "case": "javac_case_074",
+      "cohort": "java_author11",
+      "base_commit": "1fa5a394949cad836a104d8e5093f734d26ff8e1",
+      "image": {
+        "image_id": "sha256:bf12eb7755f877cb56804e10e4a1336856d076f7fe76c92935124febce443226",
+        "pull_reference": "yutu0814/javac-case-074-lwjgl3@sha256:bf12eb7755f877cb56804e10e4a1336856d076f7fe76c92935124febce443226"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_074.json",
+        "sha256": "f5dfa58abe140e72ac99e61c5344cb3f0c4eab5b686b6eca88371068d4a19c2e"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-075",
+      "case": "javac_case_075",
+      "cohort": "java_author11",
+      "base_commit": "f40cd981a1ff81e3da603059a062728ee33ddf02",
+      "image": {
+        "image_id": "sha256:4c7f04fc70f21a42683dff8794b39b0fdcc2d4e67e6d9d8a58362c89fe72a36f",
+        "pull_reference": "yutu0814/javac-case-075-lwjgl3@sha256:4c7f04fc70f21a42683dff8794b39b0fdcc2d4e67e6d9d8a58362c89fe72a36f",
+        "historical_image_id": "sha256:57f4a87865ffa18071bfc3ecb26619c4a7ee79309d58c745d8a786a514c3d56e"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_075.json",
+        "sha256": "7e57ff646553fd5d52e072ba6f1b41f3a05532a1878c8eb98e3938d24b64f95d"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-093",
+      "case": "javac_case_093",
+      "cohort": "java_author11",
+      "base_commit": "9eeb14c4c8b2d0e49feece90a6e330826b49c7dd",
+      "image": {
+        "image_id": "sha256:acc01f758d28a94ab99d3e35eeaee06bd65f9a119daf4b2522e469c6994e3942",
+        "pull_reference": "yutu0814/javac-case-093-jep@sha256:acc01f758d28a94ab99d3e35eeaee06bd65f9a119daf4b2522e469c6994e3942"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_093.json",
+        "sha256": "3ccbf9fa53734fe511af8ee74ffc9f5fd7e8d87f41d63190dddd1eaa8bb86036"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-094",
+      "case": "javac_case_094",
+      "cohort": "java_author11",
+      "base_commit": "bc2edaf0242736c2a2940104eebc6aed5a3ad9e6",
+      "image": {
+        "image_id": "sha256:afb82e4d2a5d2d58231b723073e32e41abfcdb48272923fbe8bb207908efd859",
+        "pull_reference": "yutu0814/javac-case-094-jep@sha256:afb82e4d2a5d2d58231b723073e32e41abfcdb48272923fbe8bb207908efd859"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_094.json",
+        "sha256": "f99acc1148b8d0bcc9dd7a1aaaa15b865f490a4e01197927f0065418b8132823"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-097",
+      "case": "javac_case_097",
+      "cohort": "java_author11",
+      "base_commit": "e4f13ea277ce4809688dde766cc9fd173ec6f63d",
+      "image": {
+        "image_id": "sha256:8377bd71afd8d7673a7effb4473bbf204e57a1cad7c41fcc54caa11d3c7c1657",
+        "pull_reference": "yutu0814/javac-case-097-jep@sha256:8377bd71afd8d7673a7effb4473bbf204e57a1cad7c41fcc54caa11d3c7c1657"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_097.json",
+        "sha256": "85eadcdae60d86dade451b071f5add6ee1dfff2ef9e4620d76610e5a042c3000"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-099",
+      "case": "javac_case_099",
+      "cohort": "java_author11",
+      "base_commit": "b1ab138dd6d492c7547e24d0b117aeafb112613d",
+      "image": {
+        "image_id": "sha256:502cb2beb42e3c90413016c2d2ab33dc53fec30912f04ef8eadd47caeae629ee",
+        "pull_reference": "yutu0814/javac-case-099-jep@sha256:502cb2beb42e3c90413016c2d2ab33dc53fec30912f04ef8eadd47caeae629ee"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_099.json",
+        "sha256": "4e1de29c36f73025a2bec14a58562ef7d9cbbf7084f7f3df4fff4fecb227d858"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-163",
+      "case": "javac_case_163",
+      "cohort": "java_author11",
+      "base_commit": "90716d6008c5c9cfa8a061f3d23531acaea29777",
+      "image": {
+        "image_id": "sha256:c8b7c236569b9eb461c66197356b0b109088ce31fd0f0057f5441a3afb99e497",
+        "pull_reference": "yutu0814/javac-case-163-junixsocket@sha256:c8b7c236569b9eb461c66197356b0b109088ce31fd0f0057f5441a3afb99e497"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_163.json",
+        "sha256": "2d1a3497dcc97c29ae4b52be1e170afaf4ad7b7f6ef3b016f62cc4b01562dc4a"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-170",
+      "case": "javac_case_170",
+      "cohort": "java_author11",
+      "base_commit": "71a134bce58a22fb17a7a14f00799196c0c71a60",
+      "image": {
+        "image_id": "sha256:1a70b55b3d05b7f18257b238ba0ab246f055b03023eb9483d1cafc58703fbde3",
+        "pull_reference": "yutu0814/javac-case-170-junixsocket@sha256:1a70b55b3d05b7f18257b238ba0ab246f055b03023eb9483d1cafc58703fbde3"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_170.json",
+        "sha256": "80125c137a5fb7778058ecb17224034dccd6a1b1c491f7c3f9b1d9a1f01389cb"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-069",
+      "case": "javac_case_069",
+      "cohort": "java_upstream11",
+      "base_commit": "427e278dc2402aca025cacd58a80eb4eaa8c4832",
+      "image": {
+        "image_id": "sha256:28841dd5e2c53ab5b4e5d54a6426005f3011e90ec2fd1fb70db3a5e897eecbda",
+        "pull_reference": "yutu0814/javac-case-069-lwjgl3@sha256:28841dd5e2c53ab5b4e5d54a6426005f3011e90ec2fd1fb70db3a5e897eecbda",
+        "historical_image_id": "sha256:8f2c37403299227261579735576bc5a395b8bffe826f44a9ba15f1a8fa3fa41f"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_069.json",
+        "sha256": "bbae1b445638b837b30521dcf612d06d84b1748c72f9b0d7acf39503b28d481a"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-092",
+      "case": "javac_case_092",
+      "cohort": "java_upstream11",
+      "base_commit": "d14567567ac1281e978790b9170c981113de282f",
+      "image": {
+        "image_id": "sha256:da9c9293093a89f2cfd0e2d584077080c640f0c002cef0589c64e28ac6b550d4",
+        "pull_reference": "yutu0814/javac-case-092-jep@sha256:da9c9293093a89f2cfd0e2d584077080c640f0c002cef0589c64e28ac6b550d4"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_092.json",
+        "sha256": "5b064c3bb03a64fc46b0d83215d1701905c93e5aa327cf5e8b33faf29b47e3ad"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-100",
+      "case": "javac_case_100",
+      "cohort": "java_upstream11",
+      "base_commit": "bbf96b5cbb83fe9e4edef71d410d29460084d5fc",
+      "image": {
+        "image_id": "sha256:be480bb4f1310e82d3b624cc62a6901dc084b6db19bd16ae44a50d19400e22bb",
+        "pull_reference": "yutu0814/javac-case-100-jep@sha256:be480bb4f1310e82d3b624cc62a6901dc084b6db19bd16ae44a50d19400e22bb"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_100.json",
+        "sha256": "20d87fe2d5d668fb51b1668d5fbab99b6c434b1a70b2d58c0d743a6e10c79f3b"
+      },
+      "statement_version": "retained_pending_source_review",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-112",
+      "case": "javac_case_112",
+      "cohort": "java_upstream11",
+      "base_commit": "4f5ec07c315872bdee0885be085ebf57cede2db9",
+      "image": {
+        "image_id": "sha256:33a22445240b5d6abba03d5c41a277d721fc8940f51aa3e7b7138daeb2f87305",
+        "pull_reference": "yutu0814/javac-case-112-openjpeg@sha256:33a22445240b5d6abba03d5c41a277d721fc8940f51aa3e7b7138daeb2f87305"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_112.json",
+        "sha256": "8999e6a3b54f37173f007e72325cfa828c9d47333383d63b4abb2921e2d7680e"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-150",
+      "case": "javac_case_150",
+      "cohort": "java_upstream11",
+      "base_commit": "7578a2470871e12dd72716925f60d857ad7eb409",
+      "image": {
+        "image_id": "sha256:1e6da170e3dc03c5245f2c4ce3a47c2b4e200615df73876ed17a2ffa015d5a35",
+        "pull_reference": "yutu0814/javac-case-150-junixsocket@sha256:1e6da170e3dc03c5245f2c4ce3a47c2b4e200615df73876ed17a2ffa015d5a35"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_150.json",
+        "sha256": "b862a8292a9370c812fe50ddfdf4eb72ae1c81e6eb4e4da8b2a40cb1085de57d"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-152",
+      "case": "javac_case_152",
+      "cohort": "java_upstream11",
+      "base_commit": "4f7667c4655712fc7371c0dbab0de5bf785e5d3d",
+      "image": {
+        "image_id": "sha256:5962f393b2102bb2455cfd24dfcd510cfa97a1ec605644d59164651f63c4a390",
+        "pull_reference": "yutu0814/clb.eval.x86_64.kohlschutter_1776_junixsocket-97@sha256:5962f393b2102bb2455cfd24dfcd510cfa97a1ec605644d59164651f63c4a390"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_152.json",
+        "sha256": "c868d26793ab278b5a5a8906d0517a7700860c6ffcf1e17b557b6b693ea2aed5"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-160",
+      "case": "javac_case_160",
+      "cohort": "java_upstream11",
+      "base_commit": "ba3d20f60e7fbf1a49ae1f4bac09111299d104ee",
+      "image": {
+        "image_id": "sha256:15fcd1b85e32e2b60df81e65888a891648cf05421aece7b8fbaa0e829be75e24",
+        "pull_reference": "yutu0814/javac-case-160-junixsocket@sha256:15fcd1b85e32e2b60df81e65888a891648cf05421aece7b8fbaa0e829be75e24"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_160.json",
+        "sha256": "51683ecd45d7fb6af395d21a2c1f2636f02c88d447410833bbc3dadc96dfdc24"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-161",
+      "case": "javac_case_161",
+      "cohort": "java_upstream11",
+      "base_commit": "1df1513c64079a5100cdc2a372558e1f77849c0f",
+      "image": {
+        "image_id": "sha256:969c2650967701f77c0d620466db2df05b0f5f8b6706167dbf117545f54a2ad3",
+        "pull_reference": "yutu0814/javac-case-161-junixsocket@sha256:969c2650967701f77c0d620466db2df05b0f5f8b6706167dbf117545f54a2ad3"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_161.json",
+        "sha256": "aef25d1453bd53dc7dcf6fda0f31bafae57904e479cff598293d75388061f412"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-175",
+      "case": "javac_case_175",
+      "cohort": "java_upstream11",
+      "base_commit": "2a159927761424440f7dbd7674992e4b5273a459",
+      "image": {
+        "image_id": "sha256:d5eaaed040c90536d22f0ef5548ad00d2ec61b59e698d725014695479df8a20d",
+        "pull_reference": "yutu0814/javac-case-175-junixsocket@sha256:d5eaaed040c90536d22f0ef5548ad00d2ec61b59e698d725014695479df8a20d"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_175.json",
+        "sha256": "7aac44a7365a0d695f540092a8ef86da638c3f472eaa0889db074faca44471a5"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-194",
+      "case": "javac_case_194",
+      "cohort": "java_upstream11",
+      "base_commit": "a73d6e87149698e49026e3bf8055efc6bbe71d90",
+      "image": {
+        "image_id": "sha256:d12be7067ce51c31c085739c3a3fc4c69d273b8751059234700870a2ce9e5606",
+        "pull_reference": "yutu0814/javac-case-194-mdsplus@sha256:d12be7067ce51c31c085739c3a3fc4c69d273b8751059234700870a2ce9e5606"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_194.json",
+        "sha256": "3351527d1bada8821ecaed307df557cf40324bbcaa09831f6227c31c38c007c7"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    },
+    {
+      "instance_id": "clb-javac-200",
+      "case": "javac_case_200",
+      "cohort": "java_upstream11",
+      "base_commit": "f6c82e695f5b6964daeec2c4e0bc449a89be892a",
+      "image": {
+        "image_id": "sha256:77c71ce09d01e830e0b98f3607636f0ffb03abc24ad51498190f6e7e0fb961dd",
+        "pull_reference": "yutu0814/javac-case-200-mdsplus@sha256:77c71ce09d01e830e0b98f3607636f0ffb03abc24ad51498190f6e7e0fb961dd"
+      },
+      "generation_python": "discover_image_default",
+      "task": {
+        "path": "cases/javac_case_200.json",
+        "sha256": "c3abd2dcaa852e522b72e78504bdf89d5fa570603f3c535039393bdd47a1fced"
+      },
+      "statement_version": "source_issue_restored_20261103",
+      "issue_historical_version_verified": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-011",
+  "FAIL_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::TestMethods::test_searchsorted"
+  ],
+  "PASS_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::TestMethods::test_searchsorted_unicode",
+    "numpy/core/tests/test_multiarray.py::TestMethods::test_searchsorted_with_sorter"
+  ]
+}

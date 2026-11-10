@@ -1,0 +1,15 @@
+{
+  "case_id": "case049",
+  "instance_id": "clb-pyc-049",
+  "repo": "CheetahTemplate3/cheetah3",
+  "base_commit": "c86628cad04edc5167f9a9c8999abc62c6558e7b",
+  "fix_commit": "31574d601ed6b675eb2fe8dc82659864bd3ace14",
+  "upstream_diff_url": "https://github.com/CheetahTemplate3/cheetah3/compare/c86628cad04edc5167f9a9c8999abc62c6558e7b...31574d601ed6b675eb2fe8dc82659864bd3ace14.diff",
+  "upstream_diff_sha256": "40babde039b5bcfacdd93d78034db83ba51210c42b94d776e6a9dccce67ff155",
+  "gold_files": [
+    "Cheetah/c/_namemapper.c"
+  ],
+  "test_files": [
+    "Cheetah/Tests/SyntaxAndOutput.py"
+  ]
+}

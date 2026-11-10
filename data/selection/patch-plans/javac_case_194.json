@@ -1,0 +1,18 @@
+{
+  "case_id": "javac_case_194",
+  "instance_id": "clb-javac-194",
+  "repo": "MDSplus/mdsplus",
+  "base_commit": "a73d6e87149698e49026e3bf8055efc6bbe71d90",
+  "fix_commit": "687b2621aa4dcebc3cc5ee9cd780f38fefd8af87",
+  "upstream_diff_url": "https://github.com/MDSplus/mdsplus/compare/a73d6e87149698e49026e3bf8055efc6bbe71d90...687b2621aa4dcebc3cc5ee9cd780f38fefd8af87.diff",
+  "upstream_diff_sha256": "5e4b3a4f8d11551c02874243cca5d2b2fed6a5b4486ece0f49624ae05b7fb017",
+  "gold_files": [
+    "treeshr/TreeFindNode.c",
+    "treeshr/TreeFindNodeWild.l",
+    "treeshr/lex.yytreepath.c"
+  ],
+  "test_files": [
+    "tditest/testing/test-treeshr.ans",
+    "tditest/testing/test-treeshr.tdi"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "instance_id": "clb-javac-152",
+  "FAIL_TO_PASS": [
+    "org.newsclub.net.unix.FileDescriptorCastRegressionTest.testForkedVMRedirectStdin"
+  ],
+  "PASS_TO_PASS": [
+    "org.newsclub.net.unix.FileDescriptorCastRegressionTest.testStdoutFileDescriptorCast"
+  ]
+}

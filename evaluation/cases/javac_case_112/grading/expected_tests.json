@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-javac-112",
+  "FAIL_TO_PASS": [
+    "openjpeg.issue571.lossless_roundtrip"
+  ],
+  "PASS_TO_PASS": [
+    "openjpeg.issue571.encode_issue571",
+    "openjpeg.issue571.decode_issue571"
+  ]
+}

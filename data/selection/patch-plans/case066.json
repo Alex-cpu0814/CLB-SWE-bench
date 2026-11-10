@@ -1,0 +1,18 @@
+{
+  "case_id": "case066",
+  "instance_id": "clb-pyc-066",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "3fb62360e61949a2405db0771ad89f1c9a2b25e4",
+  "fix_commit": "e71757aa6f64f698a16acaece9bc5557302a1fe8",
+  "upstream_diff_url": "https://github.com/python-pillow/Pillow/compare/3fb62360e61949a2405db0771ad89f1c9a2b25e4...e71757aa6f64f698a16acaece9bc5557302a1fe8.diff",
+  "upstream_diff_sha256": "71b5842e84e0a54e0f35dcf359be8527b6e2e233ffede7fce25842ed3611d268",
+  "gold_files": [
+    "_imaging.c",
+    "_imagingft.c"
+  ],
+  "test_files": [
+    "Tests/helper.py",
+    "Tests/test_file_png.py",
+    "Tests/test_font_leaks.py"
+  ]
+}

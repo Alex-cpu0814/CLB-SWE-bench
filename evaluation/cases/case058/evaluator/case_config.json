@@ -1,0 +1,31 @@
+{
+  "template_version": "1.0",
+  "case_number": "058",
+  "instance_id": "clb-pyc-058",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/python-pillow/Pillow.git",
+  "base_commit": "b21508798ab548ed90eb4d6bf01db14b880c9c91",
+  "fix_commit": "d3a3b6dddba4af1153aa6c01be6d3be5f43636ca",
+  "image": "yutu0814/pyc-case-058-pillow:benchmark-v1",
+  "python_version": "3.8",
+  "numpy_version": "not required",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

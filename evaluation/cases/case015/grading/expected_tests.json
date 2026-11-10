@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-015",
+  "FAIL_TO_PASS": [
+    "numpy/core/tests/test_regression.py::TestRegression::test_lexsort_zerolen_custom_strides",
+    "numpy/core/tests/test_regression.py::TestRegression::test_lexsort_zerolen_custom_strides_2d"
+  ],
+  "PASS_TO_PASS": [
+    "numpy/core/tests/test_regression.py::TestRegression::test_lexsort",
+    "numpy/core/tests/test_regression.py::TestRegression::test_lexsort_invalid_sequence"
+  ]
+}

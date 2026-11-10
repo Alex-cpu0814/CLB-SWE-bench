@@ -1,0 +1,16 @@
+{
+  "case_id": "javac_case_175",
+  "instance_id": "clb-javac-175",
+  "repo": "kohlschutter/junixsocket",
+  "base_commit": "2a159927761424440f7dbd7674992e4b5273a459",
+  "fix_commit": "3994501308902ffb5d2eb7bce44971e3438b2a91",
+  "upstream_diff_url": "https://github.com/kohlschutter/junixsocket/compare/2a159927761424440f7dbd7674992e4b5273a459...3994501308902ffb5d2eb7bce44971e3438b2a91.diff",
+  "upstream_diff_sha256": "53d15dadc3b3bb76a63437b834b8a9d0b3dce1aab7d5eb5a70569f5241154fb2",
+  "gold_files": [
+    "junixsocket-common/src/main/java/org/newsclub/net/unix/AFCore.java",
+    "junixsocket-jetty/pom.xml"
+  ],
+  "test_files": [
+    "junixsocket-jetty/src/test/java/org/eclipse/jetty/unixdomain/server/UnixDomainTest.java"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "case142",
+  "instance_id": "clb-pyc-142",
+  "repo": "pygobject/pycairo",
+  "base_commit": "cd6b840aeab1515343a71a997b0a2ce48fce6d82",
+  "fix_commit": "07ee64b3fb51a16ded90822a0fb00cb8b180b839",
+  "upstream_diff_url": "https://github.com/pygobject/pycairo/compare/cd6b840aeab1515343a71a997b0a2ce48fce6d82...07ee64b3fb51a16ded90822a0fb00cb8b180b839.diff",
+  "upstream_diff_sha256": "f11b52d699f5f20e0450ceab681688c98f83f766728916f38756110f386915d0",
+  "gold_files": [
+    "cairo/bufferproxy.c",
+    "cairo/cairomodule.c",
+    "cairo/private.h",
+    "cairo/surface.c",
+    "setup.py"
+  ],
+  "test_files": [
+    "tests/test_surface.py"
+  ]
+}

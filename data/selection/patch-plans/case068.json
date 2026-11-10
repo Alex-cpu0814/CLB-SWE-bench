@@ -1,0 +1,18 @@
+{
+  "case_id": "case068",
+  "instance_id": "clb-pyc-068",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "dc1664500be0135d83182d480af341d39b5c78d7",
+  "fix_commit": "6e2075e25d49fa0ffaec5892b64e3dd4cd39a9fd",
+  "upstream_diff_url": "https://github.com/python-pillow/Pillow/compare/dc1664500be0135d83182d480af341d39b5c78d7...6e2075e25d49fa0ffaec5892b64e3dd4cd39a9fd.diff",
+  "upstream_diff_sha256": "b326970631b213a17e1c5a62751df97adeb32c1e2dd7d304c3dbf6a2f6bc21e5",
+  "gold_files": [
+    "CHANGES.rst",
+    "PIL/Image.py"
+  ],
+  "test_files": [
+    "Tests/test_image_convert.py",
+    "Tests/test_image_quantize.py",
+    "Tests/tester.py"
+  ]
+}

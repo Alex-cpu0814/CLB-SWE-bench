@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-javac-056",
+  "FAIL_TO_PASS": [
+    "org.lwjgl.vulkan.VkFramebufferCreateInfoTest::testNullAttachmentsPreserveAttachmentCount",
+    "org.lwjgl.vulkan.VkFramebufferCreateInfoTest::testNullAttachmentsPassGeneratedValidation"
+  ],
+  "PASS_TO_PASS": [
+    "org.lwjgl.vulkan.VulkanTest::testParse"
+  ]
+}

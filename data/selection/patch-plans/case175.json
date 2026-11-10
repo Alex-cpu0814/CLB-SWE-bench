@@ -1,0 +1,17 @@
+{
+  "case_id": "case175",
+  "instance_id": "clb-pyc-175",
+  "repo": "spglib/spglib",
+  "base_commit": "4afa84322f83b368dada7e3c6f64c3a17114aaa0",
+  "fix_commit": "c571f29d57d51ed5d8efa1eb78e42e7f48082897",
+  "upstream_diff_url": "https://github.com/spglib/spglib/compare/4afa84322f83b368dada7e3c6f64c3a17114aaa0...c571f29d57d51ed5d8efa1eb78e42e7f48082897.diff",
+  "upstream_diff_sha256": "79c556a701d202112a5110a9835fca236b2d29cbed4d03caced8f9170d9f356a",
+  "gold_files": [
+    "src/magnetic_spacegroup.c",
+    "src/spin.c",
+    "test/README.md"
+  ],
+  "test_files": [
+    "test/test_magnetic_symmetry.cpp"
+  ]
+}

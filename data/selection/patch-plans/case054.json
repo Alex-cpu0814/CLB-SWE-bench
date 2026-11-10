@@ -1,0 +1,16 @@
+{
+  "case_id": "case054",
+  "instance_id": "clb-pyc-054",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "c683f048eb117c572b8b4eee47a324aca165fea1",
+  "fix_commit": "eb89e3a2b1833eb12124fb5f1f26f78342286143",
+  "upstream_diff_url": "https://github.com/python-pillow/Pillow/compare/c683f048eb117c572b8b4eee47a324aca165fea1...eb89e3a2b1833eb12124fb5f1f26f78342286143.diff",
+  "upstream_diff_sha256": "d3eede03d8bc76563f5c3f1f1672f2744b22ad1ec4a086cac065c3cb60e12ebc",
+  "gold_files": [
+    "src/PIL/ImageFilter.py",
+    "src/libImaging/BoxBlur.c"
+  ],
+  "test_files": [
+    "Tests/test_image_filter.py"
+  ]
+}

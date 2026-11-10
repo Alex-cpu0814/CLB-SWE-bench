@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-058",
+  "FAIL_TO_PASS": [
+    "Tests/test_file_jpeg.py::TestFileJpeg::test_adobe_transform"
+  ],
+  "PASS_TO_PASS": [
+    "Tests/test_file_jpeg.py::TestFileJpeg::test_sanity",
+    "Tests/test_file_jpeg.py::TestFileJpeg::test_cmyk"
+  ]
+}

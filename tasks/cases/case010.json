@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-010",
+  "repo": "numpy/numpy",
+  "base_commit": "5e8ad11b75245caf2d158eacf369b011ef262795",
+  "problem_statement": "Several ndarray methods return a newly converted Python/NumPy scalar when a caller supplies a zero-dimensional out array. They must return the exact out object by identity, consistently with higher-dimensional outputs."
+}

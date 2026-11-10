@@ -1,0 +1,19 @@
+{
+  "case_id": "javac_case_200",
+  "instance_id": "clb-javac-200",
+  "repo": "MDSplus/mdsplus",
+  "base_commit": "f6c82e695f5b6964daeec2c4e0bc449a89be892a",
+  "fix_commit": "707f1656dc68c3c863f4d46d4b5a8ce663f0cdad",
+  "upstream_diff_url": "https://github.com/MDSplus/mdsplus/compare/f6c82e695f5b6964daeec2c4e0bc449a89be892a...707f1656dc68c3c863f4d46d4b5a8ce663f0cdad.diff",
+  "upstream_diff_sha256": "1e32eff1b3a132d0e05b75e2e06f74257fa88a8041f9f5769d110b0c30482a43",
+  "gold_files": [
+    "tcl/tcl_directory.c",
+    "treeshr/TreeGetNci.c",
+    "treeshr/TreePutRecord.c",
+    "treeshr/TreeSegments.c",
+    "treeshr/treeshrp.h"
+  ],
+  "test_files": [
+    "tditest/testing/test-treeshr.ans"
+  ]
+}

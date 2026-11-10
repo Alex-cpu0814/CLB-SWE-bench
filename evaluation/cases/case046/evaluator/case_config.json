@@ -1,0 +1,31 @@
+{
+  "template_version": "1.0",
+  "case_number": "046",
+  "instance_id": "clb-pyc-046",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/tskit-dev/tskit.git",
+  "base_commit": "eb8b4aebe42f39f7e536a603e8cd25d9cf104e22",
+  "fix_commit": "568a9a953d549ae9a48f0f6d98435249841b7b5e",
+  "image": "yutu0814/pyc-case-046-tskit:benchmark-v1",
+  "python_version": "3.8",
+  "numpy_version": "1.19.5",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

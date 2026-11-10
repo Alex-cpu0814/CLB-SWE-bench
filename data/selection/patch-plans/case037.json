@@ -1,0 +1,15 @@
+{
+  "case_id": "case037",
+  "instance_id": "clb-pyc-037",
+  "repo": "scipy/scipy",
+  "base_commit": "bf05e8d3412e2d96ab6735b6935e2a65f2620c30",
+  "fix_commit": "2a2d8be5f52481938c817eb7150fe7152958853d",
+  "upstream_diff_url": "https://github.com/scipy/scipy/compare/bf05e8d3412e2d96ab6735b6935e2a65f2620c30...2a2d8be5f52481938c817eb7150fe7152958853d.diff",
+  "upstream_diff_sha256": "3cd1e55588ea06544e80f354108bb17c10fe4f67988f67b5326f6f424dbb7341",
+  "gold_files": [
+    "scipy/ndimage/src/ni_measure.c"
+  ],
+  "test_files": [
+    "scipy/ndimage/tests/test_regression.py"
+  ]
+}

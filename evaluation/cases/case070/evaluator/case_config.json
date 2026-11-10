@@ -1,0 +1,31 @@
+{
+  "template_version": "1.0",
+  "case_number": "070",
+  "instance_id": "clb-pyc-070",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/ultrajson/ultrajson.git",
+  "base_commit": "9c589d1cb5dc81552aa8ee72694cb830bed099c6",
+  "fix_commit": "335ac83c1308b928bb316eb302114d76543868cf",
+  "image": "yutu0814/pyc-case-070-ultrajson:benchmark-v1",
+  "python_version": "3.8",
+  "numpy_version": "not required",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

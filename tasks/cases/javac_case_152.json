@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-152",
+  "repo": "kohlschutter/junixsocket",
+  "base_commit": "4f7667c4655712fc7371c0dbab0de5bf785e5d3d",
+  "problem_statement": "0 treated as invalid socket\nHi!  I was trying to use `AFUNIXServerSocket.newInstance(FileDescriptor.in)`, with Apache's fcgid module invoking the process with FD 0 as a bound `AF_UNIX` socket, but it throws `SocketException` with \"Not a valid socket\".  This seems to be down to `socket.c` regarding FD 0 as invalid.\r\nI don't think there's any reason why 0 can't be a socket, is there (other than it usually being occupied by stdin)?  And FastCGI actually depends on it.\r\nCheers!\n"
+}

@@ -1,0 +1,35 @@
+{
+  "template_version": "1.0",
+  "case_number": "048",
+  "instance_id": "clb-pyc-048",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/scipy/scipy.git",
+  "base_commit": "018986cb0260881827c6ef33cd2d804f54e39c85",
+  "fix_commit": "ed220ccdf4bab8fd25293afec26a8cb321f12921",
+  "image": "yutu0814/pyc-case-048-scipy:benchmark-v1",
+  "python_version": "3.8",
+  "numpy_version": "1.19.5",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    },
+    {
+      "source": "evaluator/pytest_case048_isolated.py",
+      "target": "/benchmark/pytest_case048_isolated.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

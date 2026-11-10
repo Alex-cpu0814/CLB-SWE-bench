@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-094",
+  "FAIL_TO_PASS": [
+    "test/surface_test.py::SurfaceBlendTest::test_blit_blend_big_rect"
+  ],
+  "PASS_TO_PASS": [
+    "test/surface_test.py::SurfaceTypeTest::test_copy",
+    "test/surface_test.py::SurfaceTypeTest::test_get_bytesize",
+    "test/surface_test.py::SurfaceTypeTest::test_get_rect"
+  ]
+}

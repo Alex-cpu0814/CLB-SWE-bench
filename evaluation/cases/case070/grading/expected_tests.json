@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-070",
+  "FAIL_TO_PASS": [
+    "tests/test_ujson.py::test_encode_indent"
+  ],
+  "PASS_TO_PASS": [
+    "tests/test_ujson.py::test_encode_dict_conversion",
+    "tests/test_ujson.py::test_encode_list_conversion",
+    "tests/test_ujson.py::test_decode_from_unicode"
+  ]
+}

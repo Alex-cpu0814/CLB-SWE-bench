@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-066",
+  "FAIL_TO_PASS": [
+    "Tests/test_font_leaks.py::TestDefaultFontLeak::test_leak"
+  ],
+  "PASS_TO_PASS": [
+    "Tests/test_imagefont.py::TestImageFont::test_default_font",
+    "Tests/test_file_png.py::TestFilePng::test_sanity",
+    "Tests/test_font_leaks.py::TestTTypeFontLeak::test_leak"
+  ]
+}

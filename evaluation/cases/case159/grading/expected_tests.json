@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-159",
+  "FAIL_TO_PASS": [
+    "fast_histogram/tests/test_histogram.py::test_mixed_strides"
+  ],
+  "PASS_TO_PASS": [
+    "fast_histogram/tests/test_histogram.py::test_nd_arrays",
+    "fast_histogram/tests/test_histogram.py::test_list",
+    "fast_histogram/tests/test_histogram.py::test_non_contiguous"
+  ]
+}

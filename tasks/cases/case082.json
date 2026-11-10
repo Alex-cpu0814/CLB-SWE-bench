@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-082",
+  "repo": "pygame/pygame",
+  "base_commit": "8a63c06f2e082b8c7e3c0fce035a0a7e4ca55d85",
+  "problem_statement": "event.get(type) should return posted matching events without a TypeError; peek() on an empty queue should be false. Existing get and populated peek behavior should remain correct."
+}

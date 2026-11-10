@@ -1,0 +1,20 @@
+{
+  "case_id": "case014",
+  "instance_id": "clb-pyc-014",
+  "repo": "numpy/numpy",
+  "base_commit": "495d352bf325f44d78001f059d625123e49f027e",
+  "fix_commit": "f786041db9697f58b087e18198561db8b28235c4",
+  "upstream_diff_url": "https://github.com/numpy/numpy/compare/495d352bf325f44d78001f059d625123e49f027e...f786041db9697f58b087e18198561db8b28235c4.diff",
+  "upstream_diff_sha256": "f5950e5c61296f76f6d1ad0e2d9abcfe2eb9acadc94fe6ca5c7acc8dd6f3dcac",
+  "gold_files": [
+    "doc/release/upcoming_changes/14393.c_api.rst",
+    "doc/source/reference/c-api/array.rst",
+    "numpy/core/include/numpy/ndarraytypes.h",
+    "numpy/core/src/multiarray/arrayobject.c",
+    "numpy/core/src/multiarray/ctors.c",
+    "numpy/core/src/multiarray/methods.c"
+  ],
+  "test_files": [
+    "numpy/core/tests/test_dtype.py"
+  ]
+}

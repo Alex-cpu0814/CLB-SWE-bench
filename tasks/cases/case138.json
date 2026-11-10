@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-138",
+  "repo": "pygobject/pycairo",
+  "base_commit": "afee8cfba448e8c6c100afc6015d31c6aa37e172",
+  "problem_statement": "Add RasterSourcePattern\nWe can track the lifetime of the callbacks set there through set_user_data.\r\nWe can ignore the callback data imo. It's not per callback which rules out passing *args through  and python closures should work fine.\n"
+}

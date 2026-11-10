@@ -1,0 +1,28 @@
+diff --git a/tests/test_surface.py b/tests/test_surface.py
+index 8aec540..00253c5 100644
+--- a/tests/test_surface.py
++++ b/tests/test_surface.py
+@@ -2,6 +2,7 @@
+ 
+ import io
+ import os
++import sys
+ import array
+ import tempfile
+ import struct
+@@ -10,6 +11,15 @@ import cairo
+ import pytest
+ 
+ 
++def test_image_surface_get_data_refcount():
++    surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 10, 10)
++    assert sys.getrefcount(surface) == 2
++    d = surface.get_data()
++    assert sys.getrefcount(surface) == 3
++    del d
++    assert sys.getrefcount(surface) == 2
++
++
+ def test_surface_get_content():
+     surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 10, 10)
+     assert surface.get_content() == cairo.Content.COLOR_ALPHA

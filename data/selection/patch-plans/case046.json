@@ -1,0 +1,18 @@
+{
+  "case_id": "case046",
+  "instance_id": "clb-pyc-046",
+  "repo": "tskit-dev/tskit",
+  "base_commit": "eb8b4aebe42f39f7e536a603e8cd25d9cf104e22",
+  "fix_commit": "568a9a953d549ae9a48f0f6d98435249841b7b5e",
+  "upstream_diff_url": "https://github.com/tskit-dev/tskit/compare/eb8b4aebe42f39f7e536a603e8cd25d9cf104e22...568a9a953d549ae9a48f0f6d98435249841b7b5e.diff",
+  "upstream_diff_sha256": "c5caca7dd2f5dd3020713fcd5cdefb84d63323ce4443650b9b44dcbbc592586d",
+  "gold_files": [
+    "python/CHANGELOG.rst",
+    "python/_tskitmodule.c",
+    "python/tskit/trees.py"
+  ],
+  "test_files": [
+    "python/tests/test_highlevel.py",
+    "python/tests/test_lowlevel.py"
+  ]
+}

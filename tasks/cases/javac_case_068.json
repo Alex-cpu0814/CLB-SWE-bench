@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-068",
+  "repo": "LWJGL/lwjgl3",
+  "base_commit": "2c007161cff7ba12023ae48dd28a7856c0c6da3d",
+  "problem_statement": "NPE when calling VRCompositor.WaitGetPoses without \"gamePoseArray\"\n\r\n### Environment\r\n\r\n* LWJGL version: `3.2.0` \r\n* LWJGL build #: `X`\r\n* Java version: `java.version`\r\n* Platform: `Windows`\r\n* Module: `openvr`\r\n\r\n### Description\r\nCalling VRCompositor.waitGetPoses without a gamePoseArray yields an NPE due to accessing the object before passing it on to the native code:\r\n`pGamePoseArray.address()`\r\n\r\nIt looks like the same would occur with getLastPoses.\r\n\r\nAccording to documentation:\r\n\r\n> Scene applications should call this function to get poses to render with (and **optionally poses predicted an additional frame out to use for gameplay**).\r\n\r\nA work around would be to call the native code directly.\n"
+}

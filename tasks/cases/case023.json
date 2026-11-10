@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-023",
+  "repo": "numpy/numpy",
+  "base_commit": "70b773e4015b4fbb61bc1f7bdffc9cc789d58e94",
+  "problem_statement": "np.place warning: WRITEBACKIFCOPY detected in array_dealloc\nHello there,\r\n\r\nI'm having a problem with getting a runtime warning:\r\n\r\n/.../.virtualenv/python_3_env/lib/python3.6/site-packages/numpy/lib/function_base.py:1725: RuntimeWarning: WRITEBACKIFCOPY detected in array_dealloc.  Required call to PyArray_ResolveWritebackIfCopy or PyArray_DiscardWritebackIfCopy is missing.\r\n\r\nActually, I'm curious about what this warning actually means?\r\nThe origin of the warning is from a numpy.place, wich is placed in a generator:\r\n\r\n```\r\ndef mygen():\r\n    ...\r\n    yield np.place(arr, bool_mask, vals)\r\n```\r\n\r\nIf I remove the np.place operation, there is no warning.\r\nThe weird thing is, that I only get this warning, after I call the generator for the second time, e.g.\r\n\r\n```\r\na = mygen() # no warning\r\na = mygen() # warning\r\na = mygen() # no warnings more from here on\r\n...\r\n\r\n```\r\n\r\nI'm using Python 3.6.2 and numpy 1.16.0.\r\n\r\n\r\n\r\n\r\n\n"
+}

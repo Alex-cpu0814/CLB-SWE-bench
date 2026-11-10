@@ -1,0 +1,18 @@
+{
+  "case_id": "case042",
+  "instance_id": "clb-pyc-042",
+  "repo": "scipy/scipy",
+  "base_commit": "8c7973148c5dea4a28e0e082f8c1f182313b72c1",
+  "fix_commit": "3f4396e7c8e21ea0c432c1747b221e64c162b6f5",
+  "upstream_diff_url": "https://github.com/scipy/scipy/compare/8c7973148c5dea4a28e0e082f8c1f182313b72c1...3f4396e7c8e21ea0c432c1747b221e64c162b6f5.diff",
+  "upstream_diff_sha256": "bc74beec9776c05e6b863f6e0729b048df08035ca4185e586bcdcba6ccbc9e96",
+  "gold_files": [
+    "scipy/signal/splinemodule.c"
+  ],
+  "test_files": [
+    "scipy/signal/tests/test_bsplines.py"
+  ],
+  "excluded_files": {
+    "doc/source/tutorial/signal.rst": "SciPy 信号教程把高斯窗示例长度从 50 改为 51。本题回归测试针对 sepfir2d 的偶数长度滤波器参数校验。"
+  }
+}

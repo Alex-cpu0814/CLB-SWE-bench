@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-176",
+  "repo": "bcdev/jpy",
+  "base_commit": "20cdbb714300bdb2502d9ac44740c85c64cce691",
+  "problem_statement": "Python interpreter crash when executing del statement on Java arrays\nPython crashes when executing the Python **del** statement on objects that represent Java arrays.\n\nSee #51\n\n"
+}

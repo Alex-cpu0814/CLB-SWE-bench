@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-160",
+  "repo": "astrofrog/fast-histogram",
+  "base_commit": "76b6f57a27f31cdefc23444f91611a00c9b4332d",
+  "problem_statement": "Incorrect work for 3d np.array\nI'm going to use your package because it is exactly what I need (I just need to add normalization). I found out that `histogram1d()` works incorrectly with 3d np.arrays. \r\nHere is an example of my test:\r\n```\r\nfrom future import division\r\nfrom fast_histogram import histogram1d\r\nimport numpy as np\r\nimport matplotlib.pyplot as plt\r\n\r\ndef pdf_from_array_np(array, bins, range):\r\npdf, _ = np.histogram(array, bins=bins, range=range, normed=1)\r\nreturn pdf\r\n\r\ndef pdf_from_array(array, bins, range):\r\npdf = histogram1d(array, bins=bins, range=range)\r\nnorm = np.sum(pdf)/bins\r\nreturn pdf/norm\r\n\r\narr = np.random.uniform(-0.5, 0.5, 64**3)\r\narr = arr.reshape((64, 64, 64))\r\nx = np.linspace(-0.5, 0.5, 100)\r\npdf_np = pdf_from_array_np(arr, 100, [-0.5, 0.5])\r\nplt.plot(x, pdf_np, label='np')\r\npdf_fast = pdf_from_array(arr, 100, [-0.5, 0.5])\r\nplt.plot(x, pdf_fast, label='fast')\r\nplt.legend()\r\nplt.show()\r\nprint(np.sum((pdf_fast-pdf_np)**2))\r\n```\r\n![figure_1](https://user-images.githubusercontent.com/26126781/42704521-5d10feae-868d-11e8-899c-afab42ccc8cf.png)\r\n\r\n\r\n \n"
+}

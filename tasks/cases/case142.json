@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-142",
+  "repo": "pygobject/pycairo",
+  "base_commit": "cd6b840aeab1515343a71a997b0a2ce48fce6d82",
+  "problem_statement": "Memory leak in ImageSurface.get_data\nWhen creating an ImageSurface in a loop and calling `get_data()` on it, memory leaks.\r\nIt's about 5KB in resident memory, shown by the mem function, and about 1MB of virtual memory, observable in htop, which is about the size of the surface.\r\n\r\nCalling `get_data` in the loop on the same SurfaceImage does not allocate more memory.\r\n\r\n```python\r\n#!/usr/bin/env python3\r\n\r\nimport cairo\r\nimport resource\r\n\r\ndef mem():\r\n    print(\"Memory usage: {:.0f}M\".format(\r\n        resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1024))\r\n\r\nmem()\r\n\r\nfor i in range(10000):\r\n    s = cairo.ImageSurface(cairo.FORMAT_ARGB32, 500, 500)\r\n    s.get_data()\r\n\r\nmem()\r\n#input()\r\n```\r\n\r\nI'm using Python 3.6.1 and the latest commit from master as well as 1.13.2+5+gcd6b840-1 (from the ArchLinux repos).\n"
+}

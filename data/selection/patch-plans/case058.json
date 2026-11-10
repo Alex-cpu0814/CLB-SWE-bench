@@ -1,0 +1,34 @@
+{
+  "case_id": "case058",
+  "instance_id": "clb-pyc-058",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "b21508798ab548ed90eb4d6bf01db14b880c9c91",
+  "fix_commit": "d3a3b6dddba4af1153aa6c01be6d3be5f43636ca",
+  "upstream_diff_source": {
+    "type": "git",
+    "repo_url": "https://github.com/python-pillow/Pillow.git",
+    "args": [
+      "diff",
+      "--binary",
+      "--abbrev=7",
+      "--no-ext-diff",
+      "--no-textconv",
+      "--no-color",
+      "b21508798ab548ed90eb4d6bf01db14b880c9c91",
+      "d3a3b6dddba4af1153aa6c01be6d3be5f43636ca",
+      "--"
+    ],
+    "git_version": "git version 2.45.1.windows.1"
+  },
+  "upstream_diff_sha256": "1dad861c4eee8f4b15f1e91c919552f72dd8b2deeaa75a50cde44b79a1de72c5",
+  "gold_files": [
+    "src/PIL/JpegImagePlugin.py"
+  ],
+  "test_files": [
+    "Tests/test_file_jpeg.py",
+    "Tests/images/truncated_app14.jpg"
+  ],
+  "binary_test_assets": [
+    "Tests/images/truncated_app14.jpg"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-137",
+  "FAIL_TO_PASS": [
+    "tests/test_surface.py::test_surface_set_device_scale"
+  ],
+  "PASS_TO_PASS": [
+    "tests/test_surface.py::test_surface_get_device_scale",
+    "tests/test_surface.py::test_surface_get_content",
+    "tests/test_surface.py::test_surface_get_format"
+  ]
+}

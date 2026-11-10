@@ -1,0 +1,15 @@
+{
+  "case_id": "javac_case_160",
+  "instance_id": "clb-javac-160",
+  "repo": "kohlschutter/junixsocket",
+  "base_commit": "ba3d20f60e7fbf1a49ae1f4bac09111299d104ee",
+  "fix_commit": "34af0c1be2539ea4a1390af711ff933463b834f9",
+  "upstream_diff_url": "https://github.com/kohlschutter/junixsocket/compare/ba3d20f60e7fbf1a49ae1f4bac09111299d104ee...34af0c1be2539ea4a1390af711ff933463b834f9.diff",
+  "upstream_diff_sha256": "a2fdb8d7bcc5a2520a5342414ca4dba4b2e8a81660d47fe54f716b76c367a6b5",
+  "gold_files": [
+    "junixsocket-native/src/main/c/send.c"
+  ],
+  "test_files": [
+    "junixsocket-common/src/test/java/org/newsclub/net/unix/SoTimeoutTest.java"
+  ]
+}

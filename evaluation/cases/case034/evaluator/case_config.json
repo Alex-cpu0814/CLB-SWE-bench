@@ -1,0 +1,19 @@
+{
+  "template_version": "1.0",
+  "case_number": "034",
+  "instance_id": "clb-pyc-034",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/scipy/scipy.git",
+  "base_commit": "9529e47630be8f2345fd3d54302f248ce309d8cd",
+  "fix_commit": "0aee4a24bedb154d07a3b5ba016a385b1ac2910c",
+  "image": "yutu0814/pyc-case-034-scipy:benchmark-v1",
+  "python_version": "3.8",
+  "numpy_version": "1.17.5",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    }
+  ]
+}

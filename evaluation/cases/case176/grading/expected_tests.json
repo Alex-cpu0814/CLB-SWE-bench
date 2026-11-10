@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-176",
+  "FAIL_TO_PASS": [
+    "src/test/python/jpy_array_test.py::TestJavaArrays::test_array_item_del"
+  ],
+  "PASS_TO_PASS": [
+    "src/test/python/jpy_array_test.py::TestJavaArrays::test_array_int",
+    "src/test/python/jpy_array_test.py::TestJavaArrays::test_array_object",
+    "src/test/python/jpy_array_test.py::TestJavaArrays::test_buffer_int"
+  ]
+}

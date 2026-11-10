@@ -1,0 +1,65 @@
+diff --git a/src/jep/test/TestVersionUnsafe.java b/src/jep/test/TestVersionUnsafe.java
+new file mode 100644
+index 0000000..0000000
+--- /dev/null
++++ b/src/jep/test/TestVersionUnsafe.java
+@@ -0,0 +1,14 @@
++package jep.test;
++
++import jep.Jep;
++
++/** Starts and closes the native interpreter through the standard JEP path. */
++public class TestVersionUnsafe {
++
++    public static void main(String[] args) throws Exception {
++        Jep jep = new Jep(false);
++        jep.close();
++    }
++
++}
++
+diff --git a/tests/test_version_unsafe.py b/tests/test_version_unsafe.py
+new file mode 100644
+index 0000000..0000000
+--- /dev/null
++++ b/tests/test_version_unsafe.py
+@@ -0,0 +1,39 @@
++from __future__ import print_function
++
++import glob
++import os
++import unittest
++
++from tests.jep_pipe import build_java_process_cmd
++from tests.jep_pipe import jep_pipe
++
++
++class TestVersionUnsafe(unittest.TestCase):
++
++    def test_version_unsafe(self):
++        build_libs = [
++            path for path in glob.glob(os.path.join('build', 'lib*'))
++            if os.path.isdir(os.path.join(path, 'jep'))
++        ]
++        self.assertEqual(len(build_libs), 1, build_libs)
++
++        old_pythonpath = os.environ.get('PYTHONPATH')
++        os.environ['PYTHONPATH'] = (
++            os.path.abspath(build_libs[0]) + os.pathsep
++            + (old_pythonpath or '')
++        )
++        try:
++            jep_pipe(build_java_process_cmd('jep.test.TestVersionUnsafe'))
++        except AssertionError as error:
++            output = str(error)
++            if ('free(): invalid next size' in output
++                    or 'corrupted size vs. prev_size' in output
++                    or 'sysmalloc: Assertion' in output):
++                self.fail('Base revision reproduced the Issue 79 allocator failure:\n%s'
++                          % output)
++            raise
++        finally:
++            if old_pythonpath is None:
++                os.environ.pop('PYTHONPATH', None)
++            else:
++                os.environ['PYTHONPATH'] = old_pythonpath

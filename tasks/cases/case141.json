@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-141",
+  "repo": "pygobject/pycairo",
+  "base_commit": "eeea4de31f9c8f4496f5695ee0258040b401f0b4",
+  "problem_statement": "Matrix multiply operator typecheck missing \nhttps://bugs.freedesktop.org/show_bug.cgi?id=89162\n"
+}

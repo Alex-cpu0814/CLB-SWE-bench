@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-027",
+  "repo": "numpy/numpy",
+  "base_commit": "0fd5f2506bf2f41b023392c945312e5a1a3eb819",
+  "problem_statement": "np.unravel_index() does not accept empty inputs\nI would expect a tuple of empty outputs back. I get the following:\n\n```\n>>> np.unravel_index([], (10, 12))\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nTypeError: Iterator operand 0 dtype could not be cast from dtype('float64') to dtype('int64') according to the rule 'same_kind'\n```\n\nThis does not seem to be a regression, as I can see this with numpy v1.9.2, but it does seem silly.\n\n"
+}

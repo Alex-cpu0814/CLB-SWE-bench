@@ -1,0 +1,20 @@
+{
+  "case_id": "javac_case_150",
+  "instance_id": "clb-javac-150",
+  "repo": "kohlschutter/junixsocket",
+  "base_commit": "7578a2470871e12dd72716925f60d857ad7eb409",
+  "fix_commit": "f8f280c8b27c47b17d627eb0efd2e33317d4b46d",
+  "upstream_diff_url": "https://github.com/kohlschutter/junixsocket/compare/7578a2470871e12dd72716925f60d857ad7eb409...f8f280c8b27c47b17d627eb0efd2e33317d4b46d.diff",
+  "upstream_diff_sha256": "e20b2673c89923f1deeb70735e6c1f7a6cbc2e6eefd7c0cc8477b91e1d256064",
+  "gold_files": [
+    "junixsocket-common/src/main/java/org/newsclub/net/unix/AFInetAddress.java",
+    "junixsocket-native/crossclang/bin/clang",
+    "junixsocket-native/junixsocket-native.xcodeproj/project.pbxproj",
+    "junixsocket-native/src/main/c/address.c"
+  ],
+  "test_files": [
+    "junixsocket-common/src/test/java/org/newsclub/net/unix/AFUNIXSocketAddressTest.java",
+    "junixsocket-common/src/test/java/org/newsclub/net/unix/SelftestProvider.java",
+    "junixsocket-common/src/test/java/org/newsclub/net/unix/domain/AbstractNamespaceTest.java"
+  ]
+}

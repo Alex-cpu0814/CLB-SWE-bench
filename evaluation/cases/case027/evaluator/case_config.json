@@ -1,0 +1,19 @@
+{
+  "template_version": "1.0",
+  "case_number": "027",
+  "instance_id": "clb-pyc-027",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/numpy/numpy.git",
+  "base_commit": "0fd5f2506bf2f41b023392c945312e5a1a3eb819",
+  "fix_commit": "842970f1aaa710b31ebd27427035b58b265e55a8",
+  "image": "yutu0814/pyc-case-027-numpy:benchmark-v1",
+  "python_version": "3.8-dbg",
+  "numpy_version": "source-1.17.0.dev0",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    }
+  ]
+}

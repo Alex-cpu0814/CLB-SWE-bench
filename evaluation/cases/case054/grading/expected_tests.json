@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-054",
+  "FAIL_TO_PASS": [
+    "Tests/test_image_filter.py::test_invalid_box_blur_filter"
+  ],
+  "PASS_TO_PASS": [
+    "Tests/test_box_blur.py::test_radius_0",
+    "Tests/test_box_blur.py::test_radius_1"
+  ]
+}

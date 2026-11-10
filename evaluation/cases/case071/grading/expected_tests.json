@@ -1,0 +1,15 @@
+{
+  "instance_id": "clb-pyc-071",
+  "FAIL_TO_PASS": [
+    "tests/test_ujson.py::test_encode_indent[{}]",
+    "tests/test_ujson.py::test_encode_indent[[]]",
+    "tests/test_ujson.py::test_encode_indent[{\\n    \"a\": {}\\n}]",
+    "tests/test_ujson.py::test_encode_indent[[\\n    []\\n]]"
+  ],
+  "PASS_TO_PASS": [
+    "tests/test_ujson.py::test_encode_dict_conversion",
+    "tests/test_ujson.py::test_encode_list_conversion",
+    "tests/test_ujson.py::test_decode_from_unicode",
+    "tests/test_ujson.py::test_encode_indent[{\\n    \"obj\": 31337\\n}]"
+  ]
+}

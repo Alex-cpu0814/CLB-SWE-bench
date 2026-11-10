@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-094",
+  "repo": "ninia/jep",
+  "base_commit": "bc2edaf0242736c2a2940104eebc6aed5a3ad9e6",
+  "problem_statement": "Dictionary with None values turns the whole dict to None\nHi folks,\nRecently we encountered some buggy behavior of our program, which turned out to be a Jep issue. Whenever we try to retrieve a dictionary containing None values from jep (from python space to Java space), what we get is a null (instead of a dictionary with Null values, as one would expect). \n\nI created a small program to reproduce this, as follows:\n\n```\npublic class JEPTest {\n    public static void main(final String[] args) {\n        try {\n            final Jep jep = new Jep(false);\n            jep.eval(\"x = {'abc': 111, 'bcd': '222', 'cde': None}\");\n            jep.eval(\"def gx():\\n\\treturn x\");\n            final Object x = jep.getValue(\"x\");\n            final Object xs = jep.invoke(\"gx\");\n            System.out.println(x);  // print null\n            System.out.println(xs);  // print null\n            jep.close();\n        }catch (final JepException e) {\n            // TODO Auto-generated catch block\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nin the case of both println I got a null.\nI'm using Jep 3.4.1, python 2.7.10 and jdk1.8.\n\nPlease kindly advise:) Thank you so much!\n\nZhikai\n\n"
+}

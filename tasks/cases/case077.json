@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-077",
+  "repo": "pygame/pygame",
+  "base_commit": "c09d677a6c1c2e814683576035f13c6a07d64f67",
+  "problem_statement": "pygame.draw.rect() with width > 1 has weird corners\n**Environment:**\r\n\r\n- **Operating system** (e.g. Windows, Linux(Debian), Linux(Ubuntu), Mac): Linux (Ubuntu)\r\n- **Python version** (e.g. 3.7.9, 3.8.5) : 3.9.7\r\n- **SDL version** (e.g. SDL 2.0.12): 2.0.16\r\n- **PyGame version** (e.g. 2.0.0.dev10, 1.9.6): 2.1.0\r\n**Current behavior:**\r\n\r\n![rect](https://user-images.githubusercontent.com/617224/143325878-37b13319-d33e-4c83-9af9-407ddc6d5f59.png)\r\n\r\nOn the left is the output of \r\n\r\n```python\r\npygame.draw.rect(screen, (255, 255, 0), Rect((20, 20), (100, 100)), width=9)\r\n```\r\n\r\nThe right is what I expect. I implemented this by drawing 4 filled rects.\n"
+}

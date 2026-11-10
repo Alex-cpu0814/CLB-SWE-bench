@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-034",
+  "repo": "scipy/scipy",
+  "base_commit": "9529e47630be8f2345fd3d54302f248ce309d8cd",
+  "problem_statement": "BUG: odeint crashes via lsoda instead of giving an error for zero timestep\nReproducable problem, [reported in SO](https://stackoverflow.com/questions/47776535/no-error-message-scipy-odeint-spyder-kernel-died-restarting)\r\n\r\n```\r\nfrom scipy.integrate import odeint\r\nimport numpy as np\r\nt = np.linspace(0,0,10)\r\ndef func(x):\r\n    return x**2\r\nsol = odeint(func, [1.], t)\r\n```\r\nResults with \r\n```\r\n lsoda--  repeated calls with istate = 1 and tout = t (=r1)\r\n      in above message,  r1 =  0.0000000000000D+00\r\n lsoda--  run aborted.. apparent infinite loop\r\n```\r\nand crashes Python.\r\n\r\n\r\n----\r\nWindows 10, Python 3.6.2, NumPy1.15.0.dev0+d233e1f, SciPy 1.1.0.dev0+4019b40\r\n\n"
+}

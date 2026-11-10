@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-082",
+  "FAIL_TO_PASS": [
+    "test/event_test.py::EventModuleTest::test_get_type",
+    "test/event_test.py::EventModuleTest::test_peek_empty"
+  ],
+  "PASS_TO_PASS": [
+    "test/event_test.py::EventModuleTest::test_get",
+    "test/event_test.py::EventModuleTest::test_peek"
+  ]
+}

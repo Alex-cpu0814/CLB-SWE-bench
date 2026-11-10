@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-013",
+  "FAIL_TO_PASS": [
+    "numpy/lib/tests/test_index_tricks.py::TestRavelUnravelIndex::test_empty_array_ravel[clip]",
+    "numpy/lib/tests/test_index_tricks.py::TestRavelUnravelIndex::test_empty_array_ravel[wrap]"
+  ],
+  "PASS_TO_PASS": [
+    "numpy/lib/tests/test_index_tricks.py::TestRavelUnravelIndex::test_big_indices",
+    "numpy/lib/tests/test_index_tricks.py::TestRavelUnravelIndex::test_dtypes"
+  ]
+}

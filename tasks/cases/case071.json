@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-071",
+  "repo": "ultrajson/ultrajson",
+  "base_commit": "f26f9679f1b9d7fa2d0488e1e7b1256d9391a85f",
+  "problem_statement": "Indented empty array/object serialization differs from stdlib\nIn most cases with `escape_forward_slashes=False` `ujson` matches the stdlib `json`, but with empty objects it doesn't.\r\n\r\n* OS: ArchLinux\r\n* Python: 3.8.5\r\n* UltraJSON: 3.2.0\r\n\r\n```python\r\nIn [4]: ujson.dumps({}, indent=1)\r\nOut[4]: '{\\n\\n}'\r\n\r\nIn [5]: ujson.dumps([], indent=1)\r\nOut[5]: '[\\n\\n]'\r\n\r\nIn [8]: json.dumps({}, indent=1)\r\nOut[8]: '{}'\r\n\r\nIn [9]: json.dumps([], indent=1)\r\nOut[9]: '[]'\r\n```\r\n\r\nIt would be nice if `ujson` could match stdlib in this case too.\n"
+}

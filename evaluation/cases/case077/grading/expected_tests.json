@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-077",
+  "FAIL_TO_PASS": [
+    "test/draw_test.py::DrawRectTest::test_rect__draw_line_width"
+  ],
+  "PASS_TO_PASS": [
+    "test/draw_test.py::DrawRectTest::test_rect__fill",
+    "test/draw_test.py::DrawRectTest::test_rect__one_pixel_lines",
+    "test/draw_test.py::DrawRectTest::test_rect__args_without_width"
+  ]
+}

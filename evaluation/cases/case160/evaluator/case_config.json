@@ -1,0 +1,31 @@
+{
+  "template_version": "1.0",
+  "case_number": "160",
+  "instance_id": "clb-pyc-160",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/astrofrog/fast-histogram.git",
+  "base_commit": "76b6f57a27f31cdefc23444f91611a00c9b4332d",
+  "fix_commit": "e384cdf1fec4ee65a594ca4e91478eb3c98b2d18",
+  "image": "yutu0814/pyc-case-160-fast-histogram:benchmark-v1",
+  "python_version": "3.6",
+  "numpy_version": "1.14.5",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

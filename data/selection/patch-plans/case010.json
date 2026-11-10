@@ -1,0 +1,15 @@
+{
+  "case_id": "case010",
+  "instance_id": "clb-pyc-010",
+  "repo": "numpy/numpy",
+  "base_commit": "5e8ad11b75245caf2d158eacf369b011ef262795",
+  "fix_commit": "8cb86fd7b454b40c7b822146d5e26c55fdc183ec",
+  "upstream_diff_url": "https://github.com/numpy/numpy/compare/5e8ad11b75245caf2d158eacf369b011ef262795...8cb86fd7b454b40c7b822146d5e26c55fdc183ec.diff",
+  "upstream_diff_sha256": "9a4ec5be5547340f20337b472a468a999786f51d70d37d2fc6b9f54cd7167a4f",
+  "gold_files": [
+    "numpy/core/src/multiarray/methods.c"
+  ],
+  "test_files": [
+    "numpy/core/tests/test_multiarray.py"
+  ]
+}

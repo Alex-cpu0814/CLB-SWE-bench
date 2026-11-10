@@ -1,0 +1,15 @@
+{
+  "case_id": "case094",
+  "instance_id": "clb-pyc-094",
+  "repo": "pygame/pygame",
+  "base_commit": "2d7786bc2453561a696281299104f95814e676b3",
+  "fix_commit": "c7ec15285c23ce54f466c9a3482b4d087eb8b0ff",
+  "upstream_diff_url": "https://github.com/pygame/pygame/compare/2d7786bc2453561a696281299104f95814e676b3...c7ec15285c23ce54f466c9a3482b4d087eb8b0ff.diff",
+  "upstream_diff_sha256": "b480c09ea01db6a9f13c6115a743d7bb6ac3dd10495163843b2ecccae0398d1c",
+  "gold_files": [
+    "src/surface.c"
+  ],
+  "test_files": [
+    "test/surface_test.py"
+  ]
+}

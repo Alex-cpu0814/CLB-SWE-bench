@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-177",
+  "FAIL_TO_PASS": [
+    "src/test/python/jpy_overload_test.py::TestStaticMethodOverloads::test_staticMethodIsFoundOverNonStatic"
+  ],
+  "PASS_TO_PASS": [
+    "src/test/python/jpy_overload_test.py::TestMethodOverloads::test_2ArgOverloadsWithVaryingTypes",
+    "src/test/python/jpy_overload_test.py::TestMethodOverloads::test_nArgOverloads",
+    "src/test/python/jpy_overload_test.py::TestMethodOverloads::test_nArgOverloadsAreFoundInBaseClass"
+  ]
+}

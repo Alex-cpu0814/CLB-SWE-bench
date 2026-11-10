@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-068",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "dc1664500be0135d83182d480af341d39b5c78d7",
+  "problem_statement": "The PNG loader crashes trying to save palette images with tRNS color type 3 (indexed color) value after convert to RGB\n![defaktologo_bad](https://f.cloud.github.com/assets/4199178/2030235/e2a6f2ea-88f3-11e3-9d40-b86f41857491.png)\n\nValueError: too many values to unpack\n\n![valueerror](https://f.cloud.github.com/assets/4199178/2030315/05d21a00-88f5-11e3-932c-6ab1a5d0ea62.png)\n\n4.2.1.1. tRNS Transparency (PNG Specification)\nhttp://www.libpng.org/pub/png/spec/1.2/PNG-Chunks.html#C.tRNS\n\n"
+}

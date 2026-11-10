@@ -1,0 +1,3522 @@
+{
+  "manifest_id": "benchmark72-v1",
+  "schema_version": 1,
+  "record_count": 72,
+  "cohorts": {
+    "python50": 50,
+    "java_author11": 11,
+    "java_upstream11": 11
+  },
+  "cases": [
+    {
+      "instance_id": "clb-pyc-002",
+      "case": "case002",
+      "cohort": "python50",
+      "base_commit": "ff177d92b79167eb5de593c9de41d3ceb97ab189",
+      "image": {
+        "image_id": "sha256:a06dba0866df6cc6a1b517fb2516808a1afb412e1ced4adb6fec3518c33cc617",
+        "pull_reference": "yutu0814/pyc-case-002-scipy@sha256:a06dba0866df6cc6a1b517fb2516808a1afb412e1ced4adb6fec3518c33cc617"
+      },
+      "files": [
+        {
+          "path": "cases/case002/evaluator/case_adapter.sh",
+          "sha256": "6a30e914782138de5797eef6993840b9741eb1c04c5a7ce18dba63fc9c95a66b"
+        },
+        {
+          "path": "cases/case002/evaluator/case_config.json",
+          "sha256": "8f12572702a9aa94c99a5b279fef014ddf9f775e826b504f88a5bdf67910fe35"
+        },
+        {
+          "path": "cases/case002/evaluator/evaluate_model_patch.py",
+          "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+        },
+        {
+          "path": "cases/case002/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case002/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case002/patches/test_patch.diff",
+          "sha256": "120faf536dfb89ee06f65d89078b4db0529e072bbb13d4be7b82b0d8354ca5aa"
+        },
+        {
+          "path": "cases/case002/grading/expected_tests.json",
+          "sha256": "d73c223fd3183c07bf48dd04e49040c81dffd768c2e26ed14925de27345022f5"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case002/evaluator/evaluate_model_patch.py",
+        "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-007",
+      "case": "case007",
+      "cohort": "python50",
+      "base_commit": "fc2518ba6b11fc52b0ff477b9e83576be90562d8",
+      "image": {
+        "image_id": "sha256:ddbe5866e7eec2a3e12f4ebf75adf5c83c154c8ac15f049f3039395c37a8c617",
+        "pull_reference": "yutu0814/pyc-case-007-numpy@sha256:ddbe5866e7eec2a3e12f4ebf75adf5c83c154c8ac15f049f3039395c37a8c617"
+      },
+      "files": [
+        {
+          "path": "cases/case007/evaluator/case_adapter.sh",
+          "sha256": "7f7ab8afda6d7d819e405a1713ba9a6cbc1db0777afe24fdf998111c6446f6dc"
+        },
+        {
+          "path": "cases/case007/evaluator/case_config.json",
+          "sha256": "53e939edfd89650e8c0d12b90d5f8ba8734a14d4b8b1b9a7ecec45982321fb56"
+        },
+        {
+          "path": "cases/case007/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case007/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case007/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case007/patches/test_patch.diff",
+          "sha256": "448ff7cbd3a8c0e91d663dfecf0244b8f87a0efccd88612496f84c54d43968d9"
+        },
+        {
+          "path": "cases/case007/grading/expected_tests.json",
+          "sha256": "609e9a8ec41c1dbb9beac558660f04ef4f4ae869b23caf5bb970e6dc1c0dfd27"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case007/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-010",
+      "case": "case010",
+      "cohort": "python50",
+      "base_commit": "5e8ad11b75245caf2d158eacf369b011ef262795",
+      "image": {
+        "image_id": "sha256:9c6264f39867c2376935e2c989a26c328eadb1b0f813d66291a224c84971e790",
+        "pull_reference": "yutu0814/pyc-case-010-numpy@sha256:9c6264f39867c2376935e2c989a26c328eadb1b0f813d66291a224c84971e790"
+      },
+      "files": [
+        {
+          "path": "cases/case010/evaluator/case_adapter.sh",
+          "sha256": "56a2dbebae89a43459f50d2f5a1ebc7454b58bd0b470b1defe5dca833a1b3db0"
+        },
+        {
+          "path": "cases/case010/evaluator/case_config.json",
+          "sha256": "811e81a246648f8bd0d6c2a5aede995ce114bb10b9795c69b4b4ce2442a70bbb"
+        },
+        {
+          "path": "cases/case010/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case010/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case010/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case010/patches/test_patch.diff",
+          "sha256": "76e58d7c5d062e8c7ae668a36bcfea8fe47f29e2066e22d1c3f3fdefbd929ebd"
+        },
+        {
+          "path": "cases/case010/grading/expected_tests.json",
+          "sha256": "d45a9f88bdd96f99b0ff99fb943d0d16029e8bb806b3495b2288ffa3127279f4"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case010/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-011",
+      "case": "case011",
+      "cohort": "python50",
+      "base_commit": "2acfd9851b6a5246e5e5e3faa97c9e728e88f8a9",
+      "image": {
+        "image_id": "sha256:08f623a56a982260b08f7c3f5bfedf171de71ab39d2022e893e403887fd93873",
+        "pull_reference": "yutu0814/pyc-case-011-numpy@sha256:08f623a56a982260b08f7c3f5bfedf171de71ab39d2022e893e403887fd93873"
+      },
+      "files": [
+        {
+          "path": "cases/case011/evaluator/case_adapter.sh",
+          "sha256": "354f5c0dbf5b0f151a4f0bd38690c9a35fd931d7c85407668114906170370d06"
+        },
+        {
+          "path": "cases/case011/evaluator/case_config.json",
+          "sha256": "cfbd44f5c1c4a0deb8c219454fa507e2e992381ef65d3d2b7476077d9b47b3f7"
+        },
+        {
+          "path": "cases/case011/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case011/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case011/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case011/patches/test_patch.diff",
+          "sha256": "699ca9f24471706a01c0ea5414960eef95404256be091bdfaf3847156199edfb"
+        },
+        {
+          "path": "cases/case011/grading/expected_tests.json",
+          "sha256": "ec356bf1a9edf5448bf6bee084caa065809c50cd71f15bdfc7f8adbe14984755"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case011/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-013",
+      "case": "case013",
+      "cohort": "python50",
+      "base_commit": "663b161074580a340201da1765e3618c086ff8dc",
+      "image": {
+        "image_id": "sha256:19d9e4c60528969fa655ade3622e48b0c85c508ccd6249e801d6781bef11f508",
+        "pull_reference": "yutu0814/pyc-case-013-numpy@sha256:19d9e4c60528969fa655ade3622e48b0c85c508ccd6249e801d6781bef11f508"
+      },
+      "files": [
+        {
+          "path": "cases/case013/evaluator/case_adapter.sh",
+          "sha256": "9210a2a45c521c02035d5899c1ab237ca6f022dc5da8d553288b865bc591eef0"
+        },
+        {
+          "path": "cases/case013/evaluator/case_config.json",
+          "sha256": "f71db2a82797c5d3e631a1129d254239d3564dc4902b104d8d48de01df8cc2aa"
+        },
+        {
+          "path": "cases/case013/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case013/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case013/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case013/patches/test_patch.diff",
+          "sha256": "5fac4f22c051254e6cc31e240480d8eb28d0695d06933c62a42ec78b7de596f7"
+        },
+        {
+          "path": "cases/case013/grading/expected_tests.json",
+          "sha256": "6f23f6b00f721e01a1c5cdfd574959da1cdec0f64f25c74afc8b0989cc2bd34b"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case013/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-014",
+      "case": "case014",
+      "cohort": "python50",
+      "base_commit": "495d352bf325f44d78001f059d625123e49f027e",
+      "image": {
+        "image_id": "sha256:8ec3a832740cfffca716ebf9a7a1b9b324d57ca877843e324a74f53f49942c4d",
+        "pull_reference": "yutu0814/pyc-case-014-numpy@sha256:8ec3a832740cfffca716ebf9a7a1b9b324d57ca877843e324a74f53f49942c4d"
+      },
+      "files": [
+        {
+          "path": "cases/case014/evaluator/case_adapter.sh",
+          "sha256": "1c5fa24526b8bfb61fff4b069d0a4a954ec10229124caef629c40f8d4fec1787"
+        },
+        {
+          "path": "cases/case014/evaluator/case_config.json",
+          "sha256": "f784a28acdedda6b5789b38239427720a339ee23e0dd9bfc4c22a7f38cabd27a"
+        },
+        {
+          "path": "cases/case014/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case014/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case014/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case014/patches/test_patch.diff",
+          "sha256": "346a2f4a1bedee11b78cb0028682552c6fc44e4238d04205eab5687d7b75e083"
+        },
+        {
+          "path": "cases/case014/grading/expected_tests.json",
+          "sha256": "fcb531b02f746704a9fcd044e52d8005c3b63408d7b6843e3ed998030eb23597"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case014/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-015",
+      "case": "case015",
+      "cohort": "python50",
+      "base_commit": "965ea2ff417bcb285beca5c36cd02a8790a3d8f6",
+      "image": {
+        "image_id": "sha256:f2da0afcaca3b41ce053ae0355187005b364e3490eda7dbeecac6561e03d5967",
+        "pull_reference": "yutu0814/pyc-case-015-numpy@sha256:f2da0afcaca3b41ce053ae0355187005b364e3490eda7dbeecac6561e03d5967"
+      },
+      "files": [
+        {
+          "path": "cases/case015/evaluator/case_adapter.sh",
+          "sha256": "4542248cb78e0224c67f569c084e90fabfe6d517bd2f8c930a9b88a72c0b64d0"
+        },
+        {
+          "path": "cases/case015/evaluator/case_config.json",
+          "sha256": "158bd4d092af19354d9b9ae8210a7f5cbca59f9c9a12e81a4ed354860b0e2027"
+        },
+        {
+          "path": "cases/case015/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case015/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case015/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case015/patches/test_patch.diff",
+          "sha256": "dc44c57b597f15df0f3a8261b9a05f33dc451b51d14c7b64bcfbf54405f31b55"
+        },
+        {
+          "path": "cases/case015/grading/expected_tests.json",
+          "sha256": "e7c3d15989c4cb6f3d2a080cb85bda4347598f315c76015b3ea935088f3e05b6"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case015/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-022",
+      "case": "case022",
+      "cohort": "python50",
+      "base_commit": "99953e494aa3be5ae8385d8461b9e4dfbeec43ec",
+      "image": {
+        "image_id": "sha256:7e54bbcd8594c941e1ee9e41ea15905787d0bca6fb8085b4523d5069737d6de8",
+        "pull_reference": "yutu0814/pyc-case-022-numpy@sha256:7e54bbcd8594c941e1ee9e41ea15905787d0bca6fb8085b4523d5069737d6de8"
+      },
+      "files": [
+        {
+          "path": "cases/case022/evaluator/case_adapter.sh",
+          "sha256": "95c86209c189476a4f9cdd6104617976a84e58ed17b89a2deeaa93e361679723"
+        },
+        {
+          "path": "cases/case022/evaluator/case_config.json",
+          "sha256": "6deead80de28ba5eab329d73d29283ae5db454fbbc7ef6c36a41b96a5a09cef9"
+        },
+        {
+          "path": "cases/case022/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case022/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case022/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case022/patches/test_patch.diff",
+          "sha256": "0a6e920b628b4934a437fbd7096658ca9578a3264c3c5db9e3330d3d9a7883e7"
+        },
+        {
+          "path": "cases/case022/grading/expected_tests.json",
+          "sha256": "4376926e7025947cb054179e6544c87b6c059acc939f24caf991f06302973593"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case022/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-023",
+      "case": "case023",
+      "cohort": "python50",
+      "base_commit": "70b773e4015b4fbb61bc1f7bdffc9cc789d58e94",
+      "image": {
+        "image_id": "sha256:8b841335373b60b3e3aa4c1cb856876881e173ce982971adaf302df454690fdf",
+        "pull_reference": "yutu0814/pyc-case-023-numpy@sha256:8b841335373b60b3e3aa4c1cb856876881e173ce982971adaf302df454690fdf"
+      },
+      "files": [
+        {
+          "path": "cases/case023/evaluator/case_adapter.sh",
+          "sha256": "cf2d12ff3ec491cae9dc7b49014bac741d84f6881b913ea83ae2620dd6b539b8"
+        },
+        {
+          "path": "cases/case023/evaluator/case_config.json",
+          "sha256": "5f3d4885fff0f5aa3c86069249e537fe14e3e7666bf33cc8212e60ba8f48a4c3"
+        },
+        {
+          "path": "cases/case023/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case023/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case023/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case023/patches/test_patch.diff",
+          "sha256": "f65c8d1544b622c621936d0025edcf06604b447b1334e1a6a9c9676f3e52d57d"
+        },
+        {
+          "path": "cases/case023/grading/expected_tests.json",
+          "sha256": "976d8961d35a4e711cd229d2a60d3c321d180862de17e25987aec8514645c3a6"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case023/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-027",
+      "case": "case027",
+      "cohort": "python50",
+      "base_commit": "0fd5f2506bf2f41b023392c945312e5a1a3eb819",
+      "image": {
+        "image_id": "sha256:71d2efe092c6ee64b8a0a6ef40ee58ca656c90a6a43fbd8fd3aa2f35833dfc02",
+        "pull_reference": "yutu0814/pyc-case-027-numpy@sha256:71d2efe092c6ee64b8a0a6ef40ee58ca656c90a6a43fbd8fd3aa2f35833dfc02"
+      },
+      "files": [
+        {
+          "path": "cases/case027/evaluator/case_adapter.sh",
+          "sha256": "b34a1135b039eff40d115d97605b4d810b630c37f712e5928ec672339b67cc72"
+        },
+        {
+          "path": "cases/case027/evaluator/case_config.json",
+          "sha256": "01298cfd375267087a3bff5dff3cb7dc5ffc1751291d80631f5efd6e07632042"
+        },
+        {
+          "path": "cases/case027/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case027/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case027/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case027/patches/test_patch.diff",
+          "sha256": "e8dc9eb4131e97d7f2aac9183c46676f25a0a2374a9a1dbbe03c9f90f2f253d2"
+        },
+        {
+          "path": "cases/case027/grading/expected_tests.json",
+          "sha256": "310a8c84da0793b05b5e3985c9ebc66366cbce5d53136a725bdf6f5e77f76b3a"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case027/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-031",
+      "case": "case031",
+      "cohort": "python50",
+      "base_commit": "b65b21c397381351965bf3f590054d2bccdd03d2",
+      "image": {
+        "image_id": "sha256:d485b6f5f151ad2c42c3c32e32f97d01a66e10ed307a21112efd85cb523ef363",
+        "pull_reference": "yutu0814/pyc-case-031-numpy@sha256:d485b6f5f151ad2c42c3c32e32f97d01a66e10ed307a21112efd85cb523ef363"
+      },
+      "files": [
+        {
+          "path": "cases/case031/evaluator/case_adapter.sh",
+          "sha256": "128ad026e61e4c88759e5f87a67635ce927c4d390212779aa974c63c552a266b"
+        },
+        {
+          "path": "cases/case031/evaluator/case_config.json",
+          "sha256": "3df7e6051803c70b32f7fd5ed76e31840dc0d88edf0e43ac9d57e7b04a8a81de"
+        },
+        {
+          "path": "cases/case031/evaluator/evaluate_model_patch.py",
+          "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+        },
+        {
+          "path": "cases/case031/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case031/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case031/patches/test_patch.diff",
+          "sha256": "c432b50488e809e1bc5962438c098131aef7f850f0a05f99d7bcf5d5b6415b0f"
+        },
+        {
+          "path": "cases/case031/grading/expected_tests.json",
+          "sha256": "4089f11267135d96e1b3127546ca1b979890df00bd51de0fcfa43841312fba19"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case031/evaluator/evaluate_model_patch.py",
+        "sha256": "d77e2a1628d4ee699d9c5df6bdaeed1ff418c31afc7aa1d5bc3ec6fd5e9f1f0c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-034",
+      "case": "case034",
+      "cohort": "python50",
+      "base_commit": "9529e47630be8f2345fd3d54302f248ce309d8cd",
+      "image": {
+        "image_id": "sha256:5d4300ef80a0fcbfd8e290284f0e291b61cd1fa1a585f7c8bdb059fd1eb4ad6d",
+        "pull_reference": "yutu0814/pyc-case-034-scipy@sha256:5d4300ef80a0fcbfd8e290284f0e291b61cd1fa1a585f7c8bdb059fd1eb4ad6d"
+      },
+      "files": [
+        {
+          "path": "cases/case034/evaluator/case_adapter.sh",
+          "sha256": "97aca496d91815f59c2dbe7de493bb38ab36287701b0eccd3e326e421100ffaf"
+        },
+        {
+          "path": "cases/case034/evaluator/case_config.json",
+          "sha256": "49701855f7e4e5429eb0c2f4d2b33c3f4faf37c880acda3bb45098f33d18a19a"
+        },
+        {
+          "path": "cases/case034/evaluator/evaluate_model_patch.py",
+          "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+        },
+        {
+          "path": "cases/case034/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case034/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case034/patches/test_patch.diff",
+          "sha256": "c2118868d4d003df336198e9bcad82e2e091ffafbdc0b97b5452067be6d30401"
+        },
+        {
+          "path": "cases/case034/grading/expected_tests.json",
+          "sha256": "52b6263ccb0f9d88e4b844bc909e04cf9bee2b32b4607f0ec858fe8c1def0216"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case034/evaluator/evaluate_model_patch.py",
+        "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-037",
+      "case": "case037",
+      "cohort": "python50",
+      "base_commit": "bf05e8d3412e2d96ab6735b6935e2a65f2620c30",
+      "image": {
+        "image_id": "sha256:04dff5e59cea830266f4137be5ca38e2333c9668c2880e6f6f542c7188cd8328",
+        "pull_reference": "yutu0814/pyc-case-037-scipy@sha256:04dff5e59cea830266f4137be5ca38e2333c9668c2880e6f6f542c7188cd8328"
+      },
+      "files": [
+        {
+          "path": "cases/case037/evaluator/case_adapter.sh",
+          "sha256": "e26c51453efa125f0341280d2b462d0c9c42c810d6729f874550264a563dabd7"
+        },
+        {
+          "path": "cases/case037/evaluator/case_config.json",
+          "sha256": "9c7f432b0f5d043561941904ed2f25a1d55349a3a6f24f28920eda8b98406b50"
+        },
+        {
+          "path": "cases/case037/evaluator/evaluate_model_patch.py",
+          "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+        },
+        {
+          "path": "cases/case037/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case037/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case037/patches/test_patch.diff",
+          "sha256": "182f425bbe1fec1cd59b91017544c70893150240b4cd2053b78c48d0b48610f1"
+        },
+        {
+          "path": "cases/case037/grading/expected_tests.json",
+          "sha256": "a817f546565047c2d92a1e07f47546386db119ee7cca3f5a60152bec442cb530"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case037/evaluator/evaluate_model_patch.py",
+        "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-041",
+      "case": "case041",
+      "cohort": "python50",
+      "base_commit": "e13278e712ac33c6110b5d48a8da0acfa7768b71",
+      "image": {
+        "image_id": "sha256:162ec26dfa62fdd3ffa1a0dc4976961257e6796f803eb39e11be871f1dc4faf9",
+        "pull_reference": "yutu0814/pyc-case-041-scipy@sha256:162ec26dfa62fdd3ffa1a0dc4976961257e6796f803eb39e11be871f1dc4faf9"
+      },
+      "files": [
+        {
+          "path": "cases/case041/evaluator/case_adapter.sh",
+          "sha256": "7288143447d4a2125e91b92005f455076ce08d8e0bca2b69a6b1190337e7b5a8"
+        },
+        {
+          "path": "cases/case041/evaluator/case_config.json",
+          "sha256": "6cb20047ec246c37590c72e58720fef60e62ea20bb589511858817ca79f8662f"
+        },
+        {
+          "path": "cases/case041/evaluator/evaluate_model_patch.py",
+          "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+        },
+        {
+          "path": "cases/case041/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case041/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case041/patches/test_patch.diff",
+          "sha256": "b002535c60839faf8d22247a1133e57eda640070ed4451d69df3f6f7eb13958a"
+        },
+        {
+          "path": "cases/case041/grading/expected_tests.json",
+          "sha256": "0007c716a6f1863978405b6805b6c9f243bcfbc7106973b7c9dcf38bc6a322d5"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case041/evaluator/evaluate_model_patch.py",
+        "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-042",
+      "case": "case042",
+      "cohort": "python50",
+      "base_commit": "8c7973148c5dea4a28e0e082f8c1f182313b72c1",
+      "image": {
+        "image_id": "sha256:73a308a6d0431d6f5d682647daf0828549209bc26bf7e79d2bff7e205d7d2bcb",
+        "pull_reference": "yutu0814/pyc-case-042-scipy@sha256:73a308a6d0431d6f5d682647daf0828549209bc26bf7e79d2bff7e205d7d2bcb"
+      },
+      "files": [
+        {
+          "path": "cases/case042/evaluator/case_adapter.sh",
+          "sha256": "a627d27e567a0460c4b27993320dcb7ca9c33cc001f501cd2183109270cfc3c0"
+        },
+        {
+          "path": "cases/case042/evaluator/case_config.json",
+          "sha256": "1613ed9da7e66ca5993b2b0791b0e7a582739038ac69d71ce239f60a6c2026f1"
+        },
+        {
+          "path": "cases/case042/evaluator/evaluate_model_patch.py",
+          "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+        },
+        {
+          "path": "cases/case042/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case042/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case042/patches/test_patch.diff",
+          "sha256": "bac1f9a2f23def16135bace0e836b41a0d703684e703a3435e37463b02d959b6"
+        },
+        {
+          "path": "cases/case042/grading/expected_tests.json",
+          "sha256": "b237356aa6398866b4413c508076d51f16f1fa59e4a53bf6eac98238685d73dc"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case042/evaluator/evaluate_model_patch.py",
+        "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-044",
+      "case": "case044",
+      "cohort": "python50",
+      "base_commit": "fc6b387bc0c51b5b252712584580b4f0975498fb",
+      "image": {
+        "image_id": "sha256:46e9a7fa9636a89717b530dbde3a6da3e2c67050a18b70847b78b4316e051831",
+        "pull_reference": "yutu0814/pyc-case-044-scipy@sha256:46e9a7fa9636a89717b530dbde3a6da3e2c67050a18b70847b78b4316e051831"
+      },
+      "files": [
+        {
+          "path": "cases/case044/evaluator/case_adapter.sh",
+          "sha256": "f7845864bc72c0832bec06d7358f50d42cfe74ee3a918174ea5113c7385c7151"
+        },
+        {
+          "path": "cases/case044/evaluator/case_config.json",
+          "sha256": "f3ef1560e5ebe9f9f3cd1935291aac7fe6f1cdef2510a19944d7a40b71615f2f"
+        },
+        {
+          "path": "cases/case044/evaluator/evaluate_model_patch.py",
+          "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+        },
+        {
+          "path": "cases/case044/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case044/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case044/patches/test_patch.diff",
+          "sha256": "8817416af5f0be13e433164819572c0c28fd4e6c0b8ee3d7d2b1de7f025a9559"
+        },
+        {
+          "path": "cases/case044/grading/expected_tests.json",
+          "sha256": "94c2da9b68779818fa3c4b52b13b375f2a0948af1227fd4c330bebfb85277ec3"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case044/evaluator/evaluate_model_patch.py",
+        "sha256": "9e0aa411c875352157b16d03aa28a833e28bb3a0f6ea4dca0a173a535ac93c5c"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-046",
+      "case": "case046",
+      "cohort": "python50",
+      "base_commit": "eb8b4aebe42f39f7e536a603e8cd25d9cf104e22",
+      "image": {
+        "image_id": "sha256:94b0040be34ac50a0b340ee284e51a414a4d1efa8696791ae661d0cbeea80743",
+        "pull_reference": "yutu0814/pyc-case-046-tskit@sha256:94b0040be34ac50a0b340ee284e51a414a4d1efa8696791ae661d0cbeea80743"
+      },
+      "files": [
+        {
+          "path": "cases/case046/evaluator/case_adapter.sh",
+          "sha256": "bec442ea7bb809cb269daba53527575bc6633abf4a046c7fd92ab241b3c78ea7"
+        },
+        {
+          "path": "cases/case046/evaluator/case_config.json",
+          "sha256": "9ea6a8800e48920b2549350907b4f64f3e0417cb60f93acd7b6eb6a0f6a1cf08"
+        },
+        {
+          "path": "cases/case046/evaluator/evaluate_model_patch.py",
+          "sha256": "ff538b22e1ace4e362c15af2c1da5262398cd2585cfee95e4d6d411073fbed02"
+        },
+        {
+          "path": "cases/case046/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case046/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case046/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case046/patches/test_patch.diff",
+          "sha256": "e35f774d55465be41629d71f63a4953e8e5ab3b3079ca1b5b05394d34263bb52"
+        },
+        {
+          "path": "cases/case046/grading/expected_tests.json",
+          "sha256": "023c0ade7d79c415fc7486d3393905513aed80487be8ceaa7137bd585cebebd6"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case046/evaluator/evaluate_model_patch.py",
+        "sha256": "ff538b22e1ace4e362c15af2c1da5262398cd2585cfee95e4d6d411073fbed02"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-048",
+      "case": "case048",
+      "cohort": "python50",
+      "base_commit": "018986cb0260881827c6ef33cd2d804f54e39c85",
+      "image": {
+        "image_id": "sha256:064bfb4045a30796b74a723138efe20e24f2be4e0aa19f4ef6a3a644cce2ce85",
+        "pull_reference": "yutu0814/pyc-case-048-scipy@sha256:064bfb4045a30796b74a723138efe20e24f2be4e0aa19f4ef6a3a644cce2ce85"
+      },
+      "files": [
+        {
+          "path": "cases/case048/evaluator/case_adapter.sh",
+          "sha256": "b952752201ed83ad11dc23c40dd54ed2a4d0116d1ea447e439779a6ac9b79468"
+        },
+        {
+          "path": "cases/case048/evaluator/case_config.json",
+          "sha256": "e6c96996f2d68f6173177ff37642943794bb4f4a082236149062c25eefb60850"
+        },
+        {
+          "path": "cases/case048/evaluator/evaluate_model_patch.py",
+          "sha256": "1cecc42b9d8575fd57f9665adab7fc4e471d1969c86a06b2023eaadd4e79aab9"
+        },
+        {
+          "path": "cases/case048/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case048/evaluator/pytest_case048_isolated.py",
+          "sha256": "13fc753ceaa34a5875f5e736e31c15b65677073ef93a8081bba2a14fb5e0f7f4"
+        },
+        {
+          "path": "cases/case048/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case048/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case048/patches/test_patch.diff",
+          "sha256": "9c823d53f9b0fa8c02fd2e31a563878a259e204e03a1b9d37c0fdc143310d7e4"
+        },
+        {
+          "path": "cases/case048/grading/expected_tests.json",
+          "sha256": "1557c9d47744b2d1c1e4f5c3c5024f6a3ee15e6eabd04ec62f4f6683f363c3b1"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case048/evaluator/evaluate_model_patch.py",
+        "sha256": "1cecc42b9d8575fd57f9665adab7fc4e471d1969c86a06b2023eaadd4e79aab9"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-049",
+      "case": "case049",
+      "cohort": "python50",
+      "base_commit": "c86628cad04edc5167f9a9c8999abc62c6558e7b",
+      "image": {
+        "image_id": "sha256:9b8ca8cf610a15b88d144cab71608125a57d9fa61fd9d41664684b023d991629",
+        "pull_reference": "yutu0814/pyc-case-049-cheetah@sha256:9b8ca8cf610a15b88d144cab71608125a57d9fa61fd9d41664684b023d991629"
+      },
+      "files": [
+        {
+          "path": "cases/case049/evaluator/case_adapter.sh",
+          "sha256": "305bb536c46abd298a6657bfaf22095bd6707e26fa802cd564236a67cd2160e2"
+        },
+        {
+          "path": "cases/case049/evaluator/case_config.json",
+          "sha256": "17f3744bdae81bac6d30a0416590e7f0760751264a7b1b1f1c19095106a3734e"
+        },
+        {
+          "path": "cases/case049/evaluator/evaluate_model_patch.py",
+          "sha256": "ac017ffd12005bf7549afa252ba54539228417ab852d0c7ec262d4c3016ba8ea"
+        },
+        {
+          "path": "cases/case049/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case049/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case049/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case049/patches/test_patch.diff",
+          "sha256": "d80d53cf428f4a4a47a831bfd60e3c618dd3146e82dc320d3d7cf9ac3f3a6c3c"
+        },
+        {
+          "path": "cases/case049/grading/expected_tests.json",
+          "sha256": "0632a32f99d63286c84ee60bdc8eead3e76c5c43268876b09b23ed963f615a17"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case049/evaluator/evaluate_model_patch.py",
+        "sha256": "ac017ffd12005bf7549afa252ba54539228417ab852d0c7ec262d4c3016ba8ea"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-053",
+      "case": "case053",
+      "cohort": "python50",
+      "base_commit": "09605ff48e582fda6870a2c4c519650321f3f8de",
+      "image": {
+        "image_id": "sha256:fa3a641ce23062b01e43021ba76fa77574047cb21422ef0daa18c642dd7c7ccc",
+        "pull_reference": "yutu0814/pyc-case-053-pillow@sha256:fa3a641ce23062b01e43021ba76fa77574047cb21422ef0daa18c642dd7c7ccc"
+      },
+      "files": [
+        {
+          "path": "cases/case053/evaluator/case_adapter.sh",
+          "sha256": "f871948074c7e386e6effc40ea521ff811b35e293b94342433ed1ea7cba338f4"
+        },
+        {
+          "path": "cases/case053/evaluator/case_config.json",
+          "sha256": "2ddb8730b5943dc1b666b7a77a6c0d90233cabdc424cc53d028317f76846e16f"
+        },
+        {
+          "path": "cases/case053/evaluator/evaluate_model_patch.py",
+          "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+        },
+        {
+          "path": "cases/case053/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case053/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case053/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case053/patches/test_patch.diff",
+          "sha256": "23bcf3d88bce79412845f5b6119d3f7ef123c223a68c4af0ddc7d7cbb944c305"
+        },
+        {
+          "path": "cases/case053/grading/expected_tests.json",
+          "sha256": "0a5209a014ab61bdad3686e9292f5bdeb277be59b9cde346571afe9e9d5c23ac"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case053/evaluator/evaluate_model_patch.py",
+        "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-054",
+      "case": "case054",
+      "cohort": "python50",
+      "base_commit": "c683f048eb117c572b8b4eee47a324aca165fea1",
+      "image": {
+        "image_id": "sha256:418f1ca7c0fe0f3525592d3635a6e06f4e7b45060ad3b0a492f177230eba26fe",
+        "pull_reference": "yutu0814/pyc-case-054-pillow@sha256:418f1ca7c0fe0f3525592d3635a6e06f4e7b45060ad3b0a492f177230eba26fe"
+      },
+      "files": [
+        {
+          "path": "cases/case054/evaluator/case_adapter.sh",
+          "sha256": "52dac1f60c970e19b09ba5d87b5ab5e6e61ded0f327fba157c741eb2b71f7003"
+        },
+        {
+          "path": "cases/case054/evaluator/case_config.json",
+          "sha256": "9d10f83b5ff0f84a82503ee0a60da3aa30d7bc947b86383d0baa443b7d359184"
+        },
+        {
+          "path": "cases/case054/evaluator/evaluate_model_patch.py",
+          "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+        },
+        {
+          "path": "cases/case054/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case054/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case054/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case054/patches/test_patch.diff",
+          "sha256": "0150e9578c0c889d48013515a75bb8e0b94a19e3b551557e2cd3fea01507551f"
+        },
+        {
+          "path": "cases/case054/grading/expected_tests.json",
+          "sha256": "0d5325378ec8e5aedac12289369589ecbd90e5b52d446d2a757cf67552f813f0"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case054/evaluator/evaluate_model_patch.py",
+        "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-056",
+      "case": "case056",
+      "cohort": "python50",
+      "base_commit": "6798c87caf25cedf0cef19245e7db1656aed8602",
+      "image": {
+        "image_id": "sha256:abeb4e9ddc951a5c0e9d63f1d5d0c23a8c0bcb668606cfab3e67adde60b76970",
+        "pull_reference": "yutu0814/pyc-case-056-pillow@sha256:abeb4e9ddc951a5c0e9d63f1d5d0c23a8c0bcb668606cfab3e67adde60b76970"
+      },
+      "files": [
+        {
+          "path": "cases/case056/evaluator/case_adapter.sh",
+          "sha256": "e0c0b9029c0436aea910c95bcc26896a8559f975f9832bab5c4e756fa86a8d41"
+        },
+        {
+          "path": "cases/case056/evaluator/case_config.json",
+          "sha256": "bcb3c56db4266ec126971417d0b2ed2efb135a86d2b618d58d4d59a8e1787d36"
+        },
+        {
+          "path": "cases/case056/evaluator/evaluate_model_patch.py",
+          "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+        },
+        {
+          "path": "cases/case056/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case056/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case056/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case056/patches/test_patch.diff",
+          "sha256": "63f419716a61d43e31edfe662f63c4e9a1e63746d276ef6c373a65b302f413ca"
+        },
+        {
+          "path": "cases/case056/grading/expected_tests.json",
+          "sha256": "749e77712ebb18161bd09fb618b559dafb044a704175eb1ccb586cab07d13332"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case056/evaluator/evaluate_model_patch.py",
+        "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-057",
+      "case": "case057",
+      "cohort": "python50",
+      "base_commit": "f0679aff4d43dbd595b98501dc7a8420550bf4e8",
+      "image": {
+        "image_id": "sha256:9ab77c7426fba99462ea9c55a3a1139fbc455ab39d47d17023fe49a897d7b96a",
+        "pull_reference": "yutu0814/pyc-case-057-pillow@sha256:9ab77c7426fba99462ea9c55a3a1139fbc455ab39d47d17023fe49a897d7b96a"
+      },
+      "files": [
+        {
+          "path": "cases/case057/evaluator/case_adapter.sh",
+          "sha256": "9e9ff710638c010d0d8a391f973c1f4f34701c51dcae41d5957cad19af036fe0"
+        },
+        {
+          "path": "cases/case057/evaluator/case_config.json",
+          "sha256": "2059b47db6c9585fbcf6a109a63bf0579cad787af5299b68de82d39269caa6ca"
+        },
+        {
+          "path": "cases/case057/evaluator/evaluate_model_patch.py",
+          "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+        },
+        {
+          "path": "cases/case057/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case057/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case057/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case057/patches/test_patch.diff",
+          "sha256": "827b7cf46f68431bf46ab5f2fcd91698387e278b93532ac96d34c5640085e349"
+        },
+        {
+          "path": "cases/case057/grading/expected_tests.json",
+          "sha256": "216b1f48977190d9ac8e4e04525d53a6c34641b95b8319c1ef822b411b2eb72a"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case057/evaluator/evaluate_model_patch.py",
+        "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-058",
+      "case": "case058",
+      "cohort": "python50",
+      "base_commit": "b21508798ab548ed90eb4d6bf01db14b880c9c91",
+      "image": {
+        "image_id": "sha256:3fbe631ca2fb660e8850b0f3dedfdab10187317ad1520063edca003dbce331d5",
+        "pull_reference": "yutu0814/pyc-case-058-pillow@sha256:3fbe631ca2fb660e8850b0f3dedfdab10187317ad1520063edca003dbce331d5"
+      },
+      "files": [
+        {
+          "path": "cases/case058/evaluator/case_adapter.sh",
+          "sha256": "7bcec047a38ec7bbbac70fd9f709ff6f05186c9e731b761ba051b7d6a1227b34"
+        },
+        {
+          "path": "cases/case058/evaluator/case_config.json",
+          "sha256": "56930608f6960dd1f319b261e7e4694f1c6cabe7e0002ebee6cd0d31886d64ee"
+        },
+        {
+          "path": "cases/case058/evaluator/evaluate_model_patch.py",
+          "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+        },
+        {
+          "path": "cases/case058/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case058/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case058/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case058/patches/test_patch.diff",
+          "sha256": "f1703c72f17460031372e7b61e219c0dc4d5bbdcf55d57cc0405fa89946f73ba"
+        },
+        {
+          "path": "cases/case058/grading/expected_tests.json",
+          "sha256": "4702ee605cb8e8c5e40068cae0854a67c6e1b6a86b5055bd2186022a22416ea9"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case058/evaluator/evaluate_model_patch.py",
+        "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-060",
+      "case": "case060",
+      "cohort": "python50",
+      "base_commit": "d0612030a0ba7aed533e1f9115bbf4bd1019f48e",
+      "image": {
+        "image_id": "sha256:e5558c76835739376be27654c041f0fc5743476226db4150d772cfa124ff1be8",
+        "pull_reference": "yutu0814/pyc-case-060-pillow@sha256:e5558c76835739376be27654c041f0fc5743476226db4150d772cfa124ff1be8"
+      },
+      "files": [
+        {
+          "path": "cases/case060/evaluator/case_adapter.sh",
+          "sha256": "cf24676a16faf37f52da66c38f901255778799c58791c7389a521ed41eda78ad"
+        },
+        {
+          "path": "cases/case060/evaluator/case_config.json",
+          "sha256": "c70bdc0d6f4d5ed51785394e099ab2272ff7859675a99011db7a72d56d4c345f"
+        },
+        {
+          "path": "cases/case060/evaluator/evaluate_model_patch.py",
+          "sha256": "783dd8524cc81e2865972dd4eee2fdfeb808c282aeb03ecf363d512ff3f8b6b0"
+        },
+        {
+          "path": "cases/case060/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case060/evaluator/pytest_case060_isolated.py",
+          "sha256": "bb73e7d74dd6110c69b2390b5a95b69111b4bc77618e16e0f00387d6389f1f78"
+        },
+        {
+          "path": "cases/case060/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case060/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case060/patches/test_patch.diff",
+          "sha256": "0aa4298d4c3716efa598d8ec4507cf090a3a02a8773effba1f0b901302088bc5"
+        },
+        {
+          "path": "cases/case060/grading/expected_tests.json",
+          "sha256": "190262de6449d234a51540258e4a341c558c598b91a2c526e027a3587fe6499a"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case060/evaluator/evaluate_model_patch.py",
+        "sha256": "783dd8524cc81e2865972dd4eee2fdfeb808c282aeb03ecf363d512ff3f8b6b0"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-066",
+      "case": "case066",
+      "cohort": "python50",
+      "base_commit": "3fb62360e61949a2405db0771ad89f1c9a2b25e4",
+      "image": {
+        "image_id": "sha256:7b21635299e99621802eba50557e2f4c87117546a29657660d02b8fcd5aecc6e",
+        "pull_reference": "yutu0814/pyc-case-066-pillow@sha256:7b21635299e99621802eba50557e2f4c87117546a29657660d02b8fcd5aecc6e"
+      },
+      "files": [
+        {
+          "path": "cases/case066/evaluator/case_adapter.sh",
+          "sha256": "e4b94cdabc483359bf303c7460f8fea5bcae99c15352feb1aff5494069126aac"
+        },
+        {
+          "path": "cases/case066/evaluator/case_config.json",
+          "sha256": "88c6692fc7ace33fa96a887df6ead08ce722b9980efdc04663b026b7f6a71656"
+        },
+        {
+          "path": "cases/case066/evaluator/evaluate_model_patch.py",
+          "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+        },
+        {
+          "path": "cases/case066/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case066/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case066/evaluator/unittest_case066_isolated.py",
+          "sha256": "2c998c3cefaf31ad1ad6713cc7943e5fe94d04d77e5aff529b63be9078e0198c"
+        },
+        {
+          "path": "cases/case066/patches/test_patch.diff",
+          "sha256": "091dd583d150615d5503a483e111673ed176897c037d0549b1c27638dbd20ae5"
+        },
+        {
+          "path": "cases/case066/grading/expected_tests.json",
+          "sha256": "cb3ffdba8ebebe4c358d42a0c8d229d1364899aca5f11a249a73d1e3a209349c"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case066/evaluator/evaluate_model_patch.py",
+        "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-068",
+      "case": "case068",
+      "cohort": "python50",
+      "base_commit": "dc1664500be0135d83182d480af341d39b5c78d7",
+      "image": {
+        "image_id": "sha256:38a579d4478242d8f8c82a87cbfec6b295062262989eb5404bb13f7535fed222",
+        "pull_reference": "yutu0814/pyc-case-068-pillow@sha256:38a579d4478242d8f8c82a87cbfec6b295062262989eb5404bb13f7535fed222"
+      },
+      "files": [
+        {
+          "path": "cases/case068/evaluator/case_adapter.sh",
+          "sha256": "4fd26890e69173ad3b6a074d538dee4198df1c2780107303475c4f1ef3947f70"
+        },
+        {
+          "path": "cases/case068/evaluator/case_config.json",
+          "sha256": "e3ff7e686ebd7aedcbed30d9b1a41634eff27ae66f01da8f5474f04bcb9f0091"
+        },
+        {
+          "path": "cases/case068/evaluator/evaluate_model_patch.py",
+          "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+        },
+        {
+          "path": "cases/case068/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case068/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case068/evaluator/tester_case068_isolated.py",
+          "sha256": "be9a82f301c4779a30edb91dc3291c2504b892efb377dd179dde3cbbe9d4e6b7"
+        },
+        {
+          "path": "cases/case068/patches/test_patch.diff",
+          "sha256": "79ed476804c72391a1d1c8f042179fef3d5766f13186cd58feca3632efe34007"
+        },
+        {
+          "path": "cases/case068/grading/expected_tests.json",
+          "sha256": "919d99a0512981319b2b371630a4425ccaf676647bac68d1213c8a40f2e392fc"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case068/evaluator/evaluate_model_patch.py",
+        "sha256": "66058b68d062e1f0f0361f6bc239b78614c667bf85606449afc5c1b1dabd48fe"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-070",
+      "case": "case070",
+      "cohort": "python50",
+      "base_commit": "9c589d1cb5dc81552aa8ee72694cb830bed099c6",
+      "image": {
+        "image_id": "sha256:90abe0b0aa3f2bd61d589f13a17566da1044a9f66cab7ce180803cb5887f9bcb",
+        "pull_reference": "yutu0814/pyc-case-070-ultrajson@sha256:90abe0b0aa3f2bd61d589f13a17566da1044a9f66cab7ce180803cb5887f9bcb"
+      },
+      "files": [
+        {
+          "path": "cases/case070/evaluator/case_adapter.sh",
+          "sha256": "30a52e307e31c068b35e020f74b275699319abc524d149a0c586147fc54fa66f"
+        },
+        {
+          "path": "cases/case070/evaluator/case_config.json",
+          "sha256": "79c514071706c3f845ca23e91a3cbbfb0ef99d194ff973a528b43f81fd905169"
+        },
+        {
+          "path": "cases/case070/evaluator/evaluate_model_patch.py",
+          "sha256": "bb8742aa739f79fafa059bb0253daf1393d90f9619da7f3fa89f492b4b79c896"
+        },
+        {
+          "path": "cases/case070/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case070/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case070/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case070/patches/test_patch.diff",
+          "sha256": "16724cd04fb5e7e24e06a3463b213de8222a8b61eb6169a52b8d22df3b5eeeb5"
+        },
+        {
+          "path": "cases/case070/grading/expected_tests.json",
+          "sha256": "235af066a8c0c10d8eeeb4ebddf9aca1d7fdddc4d111adeea7148ded10996be7"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case070/evaluator/evaluate_model_patch.py",
+        "sha256": "bb8742aa739f79fafa059bb0253daf1393d90f9619da7f3fa89f492b4b79c896"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-071",
+      "case": "case071",
+      "cohort": "python50",
+      "base_commit": "f26f9679f1b9d7fa2d0488e1e7b1256d9391a85f",
+      "image": {
+        "image_id": "sha256:cccd9f8154691264a74f0304fc6ef42e3176983d9c404de0da999c76a38cec66",
+        "pull_reference": "yutu0814/pyc-case-071-ultrajson@sha256:cccd9f8154691264a74f0304fc6ef42e3176983d9c404de0da999c76a38cec66"
+      },
+      "files": [
+        {
+          "path": "cases/case071/evaluator/case_adapter.sh",
+          "sha256": "47876b681a6f7396353aee0227f57281cbac4bb813ce7cda2a7ff427a46b61a9"
+        },
+        {
+          "path": "cases/case071/evaluator/case_config.json",
+          "sha256": "c1fe8d1e0f39e9e7e11bd2d21aad0792214d5aa0d7f7b56395fcf21f0e795c0b"
+        },
+        {
+          "path": "cases/case071/evaluator/evaluate_model_patch.py",
+          "sha256": "dad5323672dccc10917f20d3bfba5dc7acbf9034ad2e65b17fa42636556a6017"
+        },
+        {
+          "path": "cases/case071/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case071/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case071/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case071/patches/test_patch.diff",
+          "sha256": "335dea8f7a20636a2a8521afbd05c1df231badf151e1b091f63e40ff930b69fb"
+        },
+        {
+          "path": "cases/case071/grading/expected_tests.json",
+          "sha256": "a87b7db4ee8872eb4a7b4e9dd5b4b8bed7227d37f6ea299ccf42318f9b42f877"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case071/evaluator/evaluate_model_patch.py",
+        "sha256": "dad5323672dccc10917f20d3bfba5dc7acbf9034ad2e65b17fa42636556a6017"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-075",
+      "case": "case075",
+      "cohort": "python50",
+      "base_commit": "0589ca062fa624f4bf2a9ebea7aedb2a08b37780",
+      "image": {
+        "image_id": "sha256:09531e41aa8f9ff6c8dfe158e64846c0c11ff89f568409e474c6be948578392b",
+        "pull_reference": "yutu0814/pyc-case-075-pygame@sha256:09531e41aa8f9ff6c8dfe158e64846c0c11ff89f568409e474c6be948578392b"
+      },
+      "files": [
+        {
+          "path": "cases/case075/evaluator/case_adapter.sh",
+          "sha256": "1166e95532e29d3a1ee2ed60b06de1f367736ffe599f136dd8f6f4133f1f820e"
+        },
+        {
+          "path": "cases/case075/evaluator/case_config.json",
+          "sha256": "dbabeee204bb6654a2a34cba1ca786bba4259f7824cc44b96c65758dd2404fad"
+        },
+        {
+          "path": "cases/case075/evaluator/evaluate_model_patch.py",
+          "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+        },
+        {
+          "path": "cases/case075/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case075/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case075/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case075/patches/test_patch.diff",
+          "sha256": "56dfcd470b508fd81ff4f2d19938516e4bb45a97fa98ec51c3385ae9739aac82"
+        },
+        {
+          "path": "cases/case075/grading/expected_tests.json",
+          "sha256": "a4d58ac68955e29ae3791884a7eeeb455f0279969b7f88e92e266aa1b7f61f6b"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case075/evaluator/evaluate_model_patch.py",
+        "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-077",
+      "case": "case077",
+      "cohort": "python50",
+      "base_commit": "c09d677a6c1c2e814683576035f13c6a07d64f67",
+      "image": {
+        "image_id": "sha256:9033751a383ee84641f989c2efc2da75bec96025e77dda11dd9736a992a9a912",
+        "pull_reference": "yutu0814/pyc-case-077-pygame@sha256:9033751a383ee84641f989c2efc2da75bec96025e77dda11dd9736a992a9a912"
+      },
+      "files": [
+        {
+          "path": "cases/case077/evaluator/case_adapter.sh",
+          "sha256": "d955d2c7166ba38af207e1b0cb94be458cb2b55583ab345a7781196a13033c74"
+        },
+        {
+          "path": "cases/case077/evaluator/case_config.json",
+          "sha256": "5c59179d538c8d07866aa0e0e10a54324746f3c718957fd5edd1b875e5f77175"
+        },
+        {
+          "path": "cases/case077/evaluator/evaluate_model_patch.py",
+          "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+        },
+        {
+          "path": "cases/case077/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case077/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case077/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case077/patches/test_patch.diff",
+          "sha256": "8e95a8923265fe51bb5193974fd5c3eaa31ca80cd707de8b1dc96b6f51bd5adf"
+        },
+        {
+          "path": "cases/case077/grading/expected_tests.json",
+          "sha256": "9fe83fcb1b14149c42674a9c508a3d6c032ae8ee5c0a5694b2d0702276618191"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case077/evaluator/evaluate_model_patch.py",
+        "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-081",
+      "case": "case081",
+      "cohort": "python50",
+      "base_commit": "71c90cdb76cd8b12a0969f5d6314315bd0223c28",
+      "image": {
+        "image_id": "sha256:4e5d69e396505fea954f28acb59dc90ef522bafab05dd484c0299e628f938720",
+        "pull_reference": "yutu0814/pyc-case-081-pygame@sha256:4e5d69e396505fea954f28acb59dc90ef522bafab05dd484c0299e628f938720"
+      },
+      "files": [
+        {
+          "path": "cases/case081/evaluator/case_adapter.sh",
+          "sha256": "a11eed7698954d7940152a842b31f507d7b78446b50199cb2a072a8eda63272b"
+        },
+        {
+          "path": "cases/case081/evaluator/case_config.json",
+          "sha256": "0299680befed3f73d26d0126374bc418c8c69f7ab417a04983e41cfbe951748d"
+        },
+        {
+          "path": "cases/case081/evaluator/evaluate_model_patch.py",
+          "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+        },
+        {
+          "path": "cases/case081/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case081/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case081/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case081/patches/test_patch.diff",
+          "sha256": "2337033b0b3ec9c91e85bf02d1e8f2dc71f9437c2a38259c7e7846175cd8734d"
+        },
+        {
+          "path": "cases/case081/grading/expected_tests.json",
+          "sha256": "53a26eba1feb45d09807333303d1b3db751471938315d8def46b7b469a384e8f"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case081/evaluator/evaluate_model_patch.py",
+        "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-082",
+      "case": "case082",
+      "cohort": "python50",
+      "base_commit": "8a63c06f2e082b8c7e3c0fce035a0a7e4ca55d85",
+      "image": {
+        "image_id": "sha256:9b466d593d9252da3ccb18d5270b5e8b1dcc456daa31e67273e94d2d48c9256a",
+        "pull_reference": "yutu0814/pyc-case-082-pygame@sha256:9b466d593d9252da3ccb18d5270b5e8b1dcc456daa31e67273e94d2d48c9256a"
+      },
+      "files": [
+        {
+          "path": "cases/case082/evaluator/case_adapter.sh",
+          "sha256": "a1d5336eaad820c39519cda9eb8cbacbfd49f8372fe8641e67d3e2e67a511439"
+        },
+        {
+          "path": "cases/case082/evaluator/case_config.json",
+          "sha256": "9e14765ce95ada905c78ebc7861151b4026fe19323f19ba9f1d52d9325a40ac4"
+        },
+        {
+          "path": "cases/case082/evaluator/evaluate_model_patch.py",
+          "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+        },
+        {
+          "path": "cases/case082/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case082/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case082/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case082/patches/test_patch.diff",
+          "sha256": "8aee80eee576bb95e3454a8bca48f3054ee4cd213be7d1dc6dd78d3de5399507"
+        },
+        {
+          "path": "cases/case082/grading/expected_tests.json",
+          "sha256": "fece104a0a794a9fadbb253ac6075cb326a74e8f138a6179a48c2ebafa37e0a4"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case082/evaluator/evaluate_model_patch.py",
+        "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-086",
+      "case": "case086",
+      "cohort": "python50",
+      "base_commit": "5f1d4528b46d7f3c368db6e1c395ffb0ae83623d",
+      "image": {
+        "image_id": "sha256:11e605344ed4675be7b010289e782843d09aa9efc3fae6d819d905c65ab7a0f3",
+        "pull_reference": "yutu0814/pyc-case-086-pygame@sha256:11e605344ed4675be7b010289e782843d09aa9efc3fae6d819d905c65ab7a0f3"
+      },
+      "files": [
+        {
+          "path": "cases/case086/evaluator/case_adapter.sh",
+          "sha256": "a5f47b2974962ad64703351bbb55a0baee9284e0c5776f9aa2d308a9e444aab4"
+        },
+        {
+          "path": "cases/case086/evaluator/case_config.json",
+          "sha256": "e43458196608701b3f0de9ef2226910ef8be6ac8fb8ca7a292d1c98a15752704"
+        },
+        {
+          "path": "cases/case086/evaluator/evaluate_model_patch.py",
+          "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+        },
+        {
+          "path": "cases/case086/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case086/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case086/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case086/patches/test_patch.diff",
+          "sha256": "a62a3ea0f623a41a78e06a31cf347d436225da383d47d0f74ebe3819e63bb648"
+        },
+        {
+          "path": "cases/case086/grading/expected_tests.json",
+          "sha256": "94a9108e2c5da72e04f967a7acec951d5f07c1691234e9fcb8f206cf34c54ea2"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case086/evaluator/evaluate_model_patch.py",
+        "sha256": "e4e05c921849350af17845a32247acbedd124269031edbe2da8f7421c29915f5"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-088",
+      "case": "case088",
+      "cohort": "python50",
+      "base_commit": "cd173f0ebf77e2b652de1a20a5f3eccf78e8cf12",
+      "image": {
+        "image_id": "sha256:f3743031c6dbfbb51c85a00c5494a2e837a6715609e300b96305cfb04d928d49",
+        "pull_reference": "yutu0814/pyc-case-088-pygame@sha256:f3743031c6dbfbb51c85a00c5494a2e837a6715609e300b96305cfb04d928d49"
+      },
+      "files": [
+        {
+          "path": "cases/case088/evaluator/case_adapter.sh",
+          "sha256": "914826d2b32ac8859dff269ff04e8b90198a84b71846f83aa8c395ec24fb15ae"
+        },
+        {
+          "path": "cases/case088/evaluator/case_config.json",
+          "sha256": "81aa1d1ec4b62740acba227603e93dc3ae2b6257edcc4ec755e5cd3639f3d635"
+        },
+        {
+          "path": "cases/case088/evaluator/evaluate_model_patch.py",
+          "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+        },
+        {
+          "path": "cases/case088/evaluator/legacy_unittest088.py",
+          "sha256": "31ae6e9ef2645bbfdcb299ee0261052b11449e444fccd259a3973490b63fec2f"
+        },
+        {
+          "path": "cases/case088/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case088/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case088/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case088/patches/test_patch.diff",
+          "sha256": "4da57981a385f3477b4d6a2442188c3f1ade10e5888b9a5245b906f4452ad6f6"
+        },
+        {
+          "path": "cases/case088/grading/expected_tests.json",
+          "sha256": "261fb454a064e7f43a938f4d62916cb586800f36e6ddebf397c8ec10db1d531e"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case088/evaluator/evaluate_model_patch.py",
+        "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-090",
+      "case": "case090",
+      "cohort": "python50",
+      "base_commit": "6e5ca4a046fde6c21b0386281e25a83b3c8f9ba3",
+      "image": {
+        "image_id": "sha256:150ec56758ae844eb1b5e23a435ebd2c0bd9b72b55416b8a5cfa417ed7bb1df4",
+        "pull_reference": "yutu0814/pyc-case-090-pygame@sha256:150ec56758ae844eb1b5e23a435ebd2c0bd9b72b55416b8a5cfa417ed7bb1df4"
+      },
+      "files": [
+        {
+          "path": "cases/case090/evaluator/case_adapter.sh",
+          "sha256": "b0336f6882277f32d947c57d2cc926d27a99d36a062029c208ca3c3be9c5266f"
+        },
+        {
+          "path": "cases/case090/evaluator/case_config.json",
+          "sha256": "fb1e714fed83fa7c36239ae70219e53e2682e64942642dbce2051c3b4cdd510a"
+        },
+        {
+          "path": "cases/case090/evaluator/evaluate_model_patch.py",
+          "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+        },
+        {
+          "path": "cases/case090/evaluator/legacy_unittest090.py",
+          "sha256": "31ae6e9ef2645bbfdcb299ee0261052b11449e444fccd259a3973490b63fec2f"
+        },
+        {
+          "path": "cases/case090/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case090/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case090/patches/test_patch.diff",
+          "sha256": "b59eb631a715ed5b85c45f56eaef6c5b58bf3745efcfebb6b0cdb4ff89fa9d07"
+        },
+        {
+          "path": "cases/case090/grading/expected_tests.json",
+          "sha256": "f80961ab7681b4f9955b975dd93eafbc79fc33059a623dceddf52d2b50801ca4"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case090/evaluator/evaluate_model_patch.py",
+        "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-091",
+      "case": "case091",
+      "cohort": "python50",
+      "base_commit": "e26f569b1f3e28d935327b7dfc4cb10e722a9d09",
+      "image": {
+        "image_id": "sha256:f416079adbe2fdc2542d0842b9d09f7f0b4fab0032a8de19fd08abd9b93b2777",
+        "pull_reference": "yutu0814/pyc-case-091-pygame@sha256:f416079adbe2fdc2542d0842b9d09f7f0b4fab0032a8de19fd08abd9b93b2777"
+      },
+      "files": [
+        {
+          "path": "cases/case091/evaluator/case_adapter.sh",
+          "sha256": "c233fba2e4f62b9f9008f82c607dbad790e297739621bc2028f4cc5dc299ae26"
+        },
+        {
+          "path": "cases/case091/evaluator/case_config.json",
+          "sha256": "3302ee5156498f044e3ea1f45ef9760586cacf5601e52db3c4c3bb9364232c7b"
+        },
+        {
+          "path": "cases/case091/evaluator/evaluate_model_patch.py",
+          "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+        },
+        {
+          "path": "cases/case091/evaluator/legacy_unittest091.py",
+          "sha256": "31ae6e9ef2645bbfdcb299ee0261052b11449e444fccd259a3973490b63fec2f"
+        },
+        {
+          "path": "cases/case091/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case091/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case091/patches/test_patch.diff",
+          "sha256": "ef916c44aea2a3e08ccfc6131b6864c9aecd995ccb504472f3dfd564e602c6a2"
+        },
+        {
+          "path": "cases/case091/grading/expected_tests.json",
+          "sha256": "eb35dafd05c3a1794e2d5a8aa28553bbc3687d74e2a9b610b515f3b63cad5aca"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case091/evaluator/evaluate_model_patch.py",
+        "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-094",
+      "case": "case094",
+      "cohort": "python50",
+      "base_commit": "2d7786bc2453561a696281299104f95814e676b3",
+      "image": {
+        "image_id": "sha256:6f72fe9350d7b0d377698ec01aa208bde1889947464acad69e141599c1692d9c",
+        "pull_reference": "yutu0814/pyc-case-094-pygame@sha256:6f72fe9350d7b0d377698ec01aa208bde1889947464acad69e141599c1692d9c"
+      },
+      "files": [
+        {
+          "path": "cases/case094/evaluator/case_adapter.sh",
+          "sha256": "325267ab2318f69e38241f445b9aba15c5301e331c1780e22e170bd75fbb77d0"
+        },
+        {
+          "path": "cases/case094/evaluator/case_config.json",
+          "sha256": "2b8340a5063ad0a553a0b9c1559d4c35a31041e12b5d17074c66bf9bde08d87e"
+        },
+        {
+          "path": "cases/case094/evaluator/evaluate_model_patch.py",
+          "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+        },
+        {
+          "path": "cases/case094/evaluator/legacy_unittest094.py",
+          "sha256": "481bb48d2618eaf4789c0f33ede1ffd751c4453e351f755a90c8b6df1cbac59b"
+        },
+        {
+          "path": "cases/case094/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case094/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case094/patches/test_patch.diff",
+          "sha256": "8d2ef7dc5485ec947dab750e1e6276dbd80605590712d7e2eb337f2f73779846"
+        },
+        {
+          "path": "cases/case094/grading/expected_tests.json",
+          "sha256": "b7d354d9f42501b40f83baeec63d8d97591b3bc912564ab4eb5c2f68a829e248"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case094/evaluator/evaluate_model_patch.py",
+        "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-137",
+      "case": "case137",
+      "cohort": "python50",
+      "base_commit": "9ebff889d4c68927ab1c152b6ae7c8327283b6ed",
+      "image": {
+        "image_id": "sha256:b4603765359d41448fa3d87f060d41236f069e73bc953b52ab072d8783418944",
+        "pull_reference": "yutu0814/pyc-case-137-pycairo@sha256:b4603765359d41448fa3d87f060d41236f069e73bc953b52ab072d8783418944"
+      },
+      "files": [
+        {
+          "path": "cases/case137/evaluator/case_adapter.sh",
+          "sha256": "e76983b1d79a350d36179c5c60025e97d77f61115be2d38f404fd0a8faa1a971"
+        },
+        {
+          "path": "cases/case137/evaluator/case_config.json",
+          "sha256": "24875328114b9e0e58d2e960d21c2c6d1ee9bb09ac85fadef9605ac31c0c84e9"
+        },
+        {
+          "path": "cases/case137/evaluator/evaluate_model_patch.py",
+          "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+        },
+        {
+          "path": "cases/case137/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case137/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case137/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case137/patches/test_patch.diff",
+          "sha256": "0e69ab5ff5d66cdf95eaed1304366bcb817fba17e817c2fe5343ccc5d004e143"
+        },
+        {
+          "path": "cases/case137/grading/expected_tests.json",
+          "sha256": "70ceeaae1119d2df66289662b262d63f78f6001030adf08887026ccd0d9d97f4"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case137/evaluator/evaluate_model_patch.py",
+        "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-138",
+      "case": "case138",
+      "cohort": "python50",
+      "base_commit": "afee8cfba448e8c6c100afc6015d31c6aa37e172",
+      "image": {
+        "image_id": "sha256:070d14e959d62f2f50cecf0d12900951f15be77f94e57ad208c3fecd43426b9f",
+        "pull_reference": "yutu0814/pyc-case-138-pycairo@sha256:070d14e959d62f2f50cecf0d12900951f15be77f94e57ad208c3fecd43426b9f"
+      },
+      "files": [
+        {
+          "path": "cases/case138/evaluator/case_adapter.sh",
+          "sha256": "7bc92ee3a80c0cd1671a11319989550af0b2e2dc7d8325a4d28aee06c0d61c8e"
+        },
+        {
+          "path": "cases/case138/evaluator/case_config.json",
+          "sha256": "d400ada288b1f2e1f6e6fc89a4de8f6c99b0255ff1dd8496ed6a7e7b0e09450d"
+        },
+        {
+          "path": "cases/case138/evaluator/evaluate_model_patch.py",
+          "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+        },
+        {
+          "path": "cases/case138/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case138/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case138/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case138/patches/test_patch.diff",
+          "sha256": "3fe00fda527fcd3afe04025319be52f1732648a1d9ed964311cb8e124785aefb"
+        },
+        {
+          "path": "cases/case138/grading/expected_tests.json",
+          "sha256": "c6b2e30a4b647418b75b8c0353a4f8e5103b7727d97ff2cb82ddf6874604f7d3"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case138/evaluator/evaluate_model_patch.py",
+        "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-139",
+      "case": "case139",
+      "cohort": "python50",
+      "base_commit": "b780969870a9dd8b42b88c8317679e125b5e2aae",
+      "image": {
+        "image_id": "sha256:3ca1ea28317ca091b21d56022d7a8a3e5a08a2950640a83e4449595bd032c86a",
+        "pull_reference": "yutu0814/pyc-case-139-pycairo@sha256:3ca1ea28317ca091b21d56022d7a8a3e5a08a2950640a83e4449595bd032c86a"
+      },
+      "files": [
+        {
+          "path": "cases/case139/evaluator/case_adapter.sh",
+          "sha256": "1e77659cff7f61a87ebada633fde2c61bdb220d98e2d744967275799144b8c0f"
+        },
+        {
+          "path": "cases/case139/evaluator/case_config.json",
+          "sha256": "1a16dabda6b37b331673b3a6b9406d13484a02c8b910eb7fe30d22de1625c47f"
+        },
+        {
+          "path": "cases/case139/evaluator/evaluate_model_patch.py",
+          "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+        },
+        {
+          "path": "cases/case139/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case139/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case139/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case139/patches/test_patch.diff",
+          "sha256": "7add762871f5c59fb10d8cbe1f39ec1246b1853e0134f35e97fc3feff80eaeb4"
+        },
+        {
+          "path": "cases/case139/grading/expected_tests.json",
+          "sha256": "03613333223325411ed64d9a3cc510c973b8cd264cb7ee6f87cf436eb5c3eef7"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case139/evaluator/evaluate_model_patch.py",
+        "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-141",
+      "case": "case141",
+      "cohort": "python50",
+      "base_commit": "eeea4de31f9c8f4496f5695ee0258040b401f0b4",
+      "image": {
+        "image_id": "sha256:058270e42edd92e8231b22ec7536f033a17bf3bb0e9a674a6fe4793b6c6488ae",
+        "pull_reference": "yutu0814/pyc-case-141-pycairo@sha256:058270e42edd92e8231b22ec7536f033a17bf3bb0e9a674a6fe4793b6c6488ae"
+      },
+      "files": [
+        {
+          "path": "cases/case141/evaluator/case_adapter.sh",
+          "sha256": "98a71e107d0987393f5f9996b4af03b2ae30c98023603e903b195965204dae09"
+        },
+        {
+          "path": "cases/case141/evaluator/case_config.json",
+          "sha256": "ac4a87e124eefd236187fdc80d56693012ac384c9b23906e828d4df10aebed99"
+        },
+        {
+          "path": "cases/case141/evaluator/evaluate_model_patch.py",
+          "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+        },
+        {
+          "path": "cases/case141/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case141/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case141/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case141/patches/test_patch.diff",
+          "sha256": "958dfb5e41ac966f7fb6b294e09a2e15e748158fecf6efa59c59671346b0b28e"
+        },
+        {
+          "path": "cases/case141/grading/expected_tests.json",
+          "sha256": "ad940b8d117bad66ad13c34b8a6b793f8a6b3fb977d414e1324b401459857c95"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case141/evaluator/evaluate_model_patch.py",
+        "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-142",
+      "case": "case142",
+      "cohort": "python50",
+      "base_commit": "cd6b840aeab1515343a71a997b0a2ce48fce6d82",
+      "image": {
+        "image_id": "sha256:020d2f34e4341dd12b010801affd93f55ec641d516486848b26389ba8e785c4a",
+        "pull_reference": "yutu0814/pyc-case-142-pycairo@sha256:020d2f34e4341dd12b010801affd93f55ec641d516486848b26389ba8e785c4a"
+      },
+      "files": [
+        {
+          "path": "cases/case142/evaluator/case_adapter.sh",
+          "sha256": "9804f2a47c0a3c58449cb57901f27891dd0c9a68815e3140baf0aea4be2b5342"
+        },
+        {
+          "path": "cases/case142/evaluator/case_config.json",
+          "sha256": "7928e4286b586bd807e43aa49e8f6f0958f2dd47ed07d641e266bf163f08877a"
+        },
+        {
+          "path": "cases/case142/evaluator/evaluate_model_patch.py",
+          "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+        },
+        {
+          "path": "cases/case142/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case142/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case142/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case142/patches/test_patch.diff",
+          "sha256": "06e1d10ff74cca95e31be4011464eeb96c87a14e62eaeb509671167d1757505b"
+        },
+        {
+          "path": "cases/case142/grading/expected_tests.json",
+          "sha256": "85ddd9906fcac9512b6a9275d2cafee8bf1dcbdefb103ec5cbfe276b424d337e"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case142/evaluator/evaluate_model_patch.py",
+        "sha256": "d0794abd254ab0801662705503a1f17b9d27bc7b561ac0b813a7b3ac0ea90731"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-156",
+      "case": "case156",
+      "cohort": "python50",
+      "base_commit": "d7c44a6b62ccf27ae2a006d32dc25cd49ca45320",
+      "image": {
+        "image_id": "sha256:b50c96b41175954a45f6372c0271846b3ebe4c3c74422ad91b0d025f38b82ac0",
+        "pull_reference": "yutu0814/pyc-case-156-pysqlite@sha256:b50c96b41175954a45f6372c0271846b3ebe4c3c74422ad91b0d025f38b82ac0"
+      },
+      "files": [
+        {
+          "path": "cases/case156/evaluator/case_adapter.sh",
+          "sha256": "89fc1c970aecee5cc184477ab260c56635c27280d86e771dc3f18ad947f096e1"
+        },
+        {
+          "path": "cases/case156/evaluator/case_config.json",
+          "sha256": "240aee767738839f74b810e6f06b62534f45f703dd6733edf9421224da2166d6"
+        },
+        {
+          "path": "cases/case156/evaluator/evaluate_model_patch.py",
+          "sha256": "fd07ff7c6bb0dd391f51cc409f7d2e1571a364dc4e31e0e1df19b63b83d9e4da"
+        },
+        {
+          "path": "cases/case156/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case156/evaluator/pysqlite_unittest_nodes.py",
+          "sha256": "b60aa3b991a3544140359f90ce9bf0fcd065416de77bac709a5496c8624b0bba"
+        },
+        {
+          "path": "cases/case156/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case156/patches/test_patch.diff",
+          "sha256": "028fb4dd8e1ac574de2e30c7edc9228d2ea207e783df62a23d3d8ed528b8d346"
+        },
+        {
+          "path": "cases/case156/grading/expected_tests.json",
+          "sha256": "657711f0a850c9f0ab145e68b625f9f86c7dd085196c31e0a6fb828c288c31dc"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case156/evaluator/evaluate_model_patch.py",
+        "sha256": "fd07ff7c6bb0dd391f51cc409f7d2e1571a364dc4e31e0e1df19b63b83d9e4da"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-159",
+      "case": "case159",
+      "cohort": "python50",
+      "base_commit": "085efdad6570e25440beab781ef70e1f81605c12",
+      "image": {
+        "image_id": "sha256:6c5fb4016d7c9713831eb383ae90b667367d51538afd93fd0bdfd6edefa11313",
+        "pull_reference": "yutu0814/pyc-case-159-fast-histogram@sha256:6c5fb4016d7c9713831eb383ae90b667367d51538afd93fd0bdfd6edefa11313"
+      },
+      "files": [
+        {
+          "path": "cases/case159/evaluator/case_adapter.sh",
+          "sha256": "28c4b08d4b9b39a57904df621ef9b921caee2d2038517d3163fe5d010f079b92"
+        },
+        {
+          "path": "cases/case159/evaluator/case_config.json",
+          "sha256": "1377eead0d29bdb925ff169ac7c2ba1e8e33375fa7a6a8a125530965dde50629"
+        },
+        {
+          "path": "cases/case159/evaluator/evaluate_model_patch.py",
+          "sha256": "6023026dcd5a2d5e7f1c8d29cb59e0f4904b97b53336c96b31fa68ee88e94b16"
+        },
+        {
+          "path": "cases/case159/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case159/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case159/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case159/patches/test_patch.diff",
+          "sha256": "ba98e779d6ddea231560f6c01b2cc4ed60af7c415731056580cd860cc42a2311"
+        },
+        {
+          "path": "cases/case159/grading/expected_tests.json",
+          "sha256": "a9bdafcad6b8dec052dcd060eb5f2a25c972d937032a68caaa3811b92ef931af"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case159/evaluator/evaluate_model_patch.py",
+        "sha256": "6023026dcd5a2d5e7f1c8d29cb59e0f4904b97b53336c96b31fa68ee88e94b16"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-160",
+      "case": "case160",
+      "cohort": "python50",
+      "base_commit": "76b6f57a27f31cdefc23444f91611a00c9b4332d",
+      "image": {
+        "image_id": "sha256:137667158630a877c17512394db970de833e35f35720c82c792bda08c712a10e",
+        "pull_reference": "yutu0814/pyc-case-160-fast-histogram@sha256:137667158630a877c17512394db970de833e35f35720c82c792bda08c712a10e"
+      },
+      "files": [
+        {
+          "path": "cases/case160/evaluator/case_adapter.sh",
+          "sha256": "194185663123c70c5e124fce9ccad48d0df033c455b64732e95ab3e737d29f9d"
+        },
+        {
+          "path": "cases/case160/evaluator/case_config.json",
+          "sha256": "7237fa315238f39d7ad06536b0597829c9403a429e0a4cb90a4c2d8f8aa4bf71"
+        },
+        {
+          "path": "cases/case160/evaluator/evaluate_model_patch.py",
+          "sha256": "6023026dcd5a2d5e7f1c8d29cb59e0f4904b97b53336c96b31fa68ee88e94b16"
+        },
+        {
+          "path": "cases/case160/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case160/evaluator/pytest_no_dump.py",
+          "sha256": "3413e36c66700393b40a9bf91ea0177d8e118efae63a753bdfb9912778015c57"
+        },
+        {
+          "path": "cases/case160/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case160/patches/test_patch.diff",
+          "sha256": "d75a4d26d1a44c8a94fd843829aafb2e1146cf665b9cfcb214c93d57f3e8d51f"
+        },
+        {
+          "path": "cases/case160/grading/expected_tests.json",
+          "sha256": "5db9265d0fa383ef4cf01b1752533537aad95aa07d56b2b352c78f112b7e6ad1"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case160/evaluator/evaluate_model_patch.py",
+        "sha256": "6023026dcd5a2d5e7f1c8d29cb59e0f4904b97b53336c96b31fa68ee88e94b16"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-174",
+      "case": "case174",
+      "cohort": "python50",
+      "base_commit": "9458171a2eb9bea9036632a408da7b269ea07bbb",
+      "image": {
+        "image_id": "sha256:370afac41f58090a6e2e5b252836e1f5aedc8a31127910c403ce5782eb0c89a1",
+        "pull_reference": "yutu0814/pyc-case-174-spglib@sha256:370afac41f58090a6e2e5b252836e1f5aedc8a31127910c403ce5782eb0c89a1"
+      },
+      "files": [
+        {
+          "path": "cases/case174/evaluator/case_adapter.sh",
+          "sha256": "f59462a975c0afaac43aec1c5e25d68ac475edc28b7712820e1ae46c1ceec015"
+        },
+        {
+          "path": "cases/case174/evaluator/case_config.json",
+          "sha256": "101adc5408fb51bb216320481af365643f1940d68daafdaa0553edd2f61997a0"
+        },
+        {
+          "path": "cases/case174/evaluator/evaluate_model_patch.py",
+          "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+        },
+        {
+          "path": "cases/case174/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case174/evaluator/native_gtest_runner.py",
+          "sha256": "f0d672255f4ab530b5cf835289f537df34cdb728898f98e26fcc383273441a1a"
+        },
+        {
+          "path": "cases/case174/evaluator/native_no_core.c",
+          "sha256": "5b32083c29114a8e2d37a40885115aefd5df200de00e6dcfd6a8df426e2d630d"
+        },
+        {
+          "path": "cases/case174/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case174/patches/test_patch.diff",
+          "sha256": "ea7efff73435dfe28aff80c47b4ece44b6ab4b77f9ffa58edd26dc2cbe8a1f5f"
+        },
+        {
+          "path": "cases/case174/grading/expected_tests.json",
+          "sha256": "fbbe2eb649697dd90317707a375779a8cd661b6bf6ea048b1f6af2946e6bab78"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case174/evaluator/evaluate_model_patch.py",
+        "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-175",
+      "case": "case175",
+      "cohort": "python50",
+      "base_commit": "4afa84322f83b368dada7e3c6f64c3a17114aaa0",
+      "image": {
+        "image_id": "sha256:06d09d8c8172c328860448ed7055be235f954a2331396cb29766080771363983",
+        "pull_reference": "yutu0814/pyc-case-175-spglib@sha256:06d09d8c8172c328860448ed7055be235f954a2331396cb29766080771363983"
+      },
+      "files": [
+        {
+          "path": "cases/case175/evaluator/case_adapter.sh",
+          "sha256": "9420e3f59c2d09bea0fd48242a8568f51fb815b8fa838e7d710bf6488bbcd5e3"
+        },
+        {
+          "path": "cases/case175/evaluator/case_config.json",
+          "sha256": "c2802030d0c074fcd02c9467bbe03b735645f9864aa499a7f24ba9a57c364bbe"
+        },
+        {
+          "path": "cases/case175/evaluator/evaluate_model_patch.py",
+          "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+        },
+        {
+          "path": "cases/case175/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case175/evaluator/native_gtest_runner.py",
+          "sha256": "f0d672255f4ab530b5cf835289f537df34cdb728898f98e26fcc383273441a1a"
+        },
+        {
+          "path": "cases/case175/evaluator/native_no_core.c",
+          "sha256": "5b32083c29114a8e2d37a40885115aefd5df200de00e6dcfd6a8df426e2d630d"
+        },
+        {
+          "path": "cases/case175/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case175/patches/test_patch.diff",
+          "sha256": "2131920bdbbeb21e4ced79d9e46ad570c13731899f48239ea21f1ba00a31a486"
+        },
+        {
+          "path": "cases/case175/grading/expected_tests.json",
+          "sha256": "e21f5a209c6ceb6f2dad39a9973e02e0b7d29269fe708abaa29a57fd0df59c74"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case175/evaluator/evaluate_model_patch.py",
+        "sha256": "e1358c0a207bf4dcd21ee0d1e6497a63dd325f97dca5a51e19332ea3ec607dcf"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-176",
+      "case": "case176",
+      "cohort": "python50",
+      "base_commit": "20cdbb714300bdb2502d9ac44740c85c64cce691",
+      "image": {
+        "image_id": "sha256:b71d6af3399f5af04eeda403e5f39f855e644d8e8574e9b7279a0d3e71dcd221",
+        "pull_reference": "yutu0814/pyc-case-176-jpy@sha256:b71d6af3399f5af04eeda403e5f39f855e644d8e8574e9b7279a0d3e71dcd221"
+      },
+      "files": [
+        {
+          "path": "cases/case176/evaluator/case_adapter.sh",
+          "sha256": "61e4c42792af372b7788931c83f131db0dfa4c0fdc836dce6eb4edab32a70b58"
+        },
+        {
+          "path": "cases/case176/evaluator/case_config.json",
+          "sha256": "ad571c31061e3eec19274a054dd5cbb5affff0c3b989140ac1b7574d2ec20ec0"
+        },
+        {
+          "path": "cases/case176/evaluator/evaluate_model_patch.py",
+          "sha256": "2b7f486f49d55ae95c1b6e046fa80325eee3e93d18ecc0a68a71c0af8c644a2d"
+        },
+        {
+          "path": "cases/case176/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case176/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case176/evaluator/unittest_native_runner.py",
+          "sha256": "0666a689fd7776915202ae6beb032b6f1f6ea11d0ca128796c10b1439cb8ea33"
+        },
+        {
+          "path": "cases/case176/patches/test_patch.diff",
+          "sha256": "3b90eec33ac74b3b1ec77067cc5dbf73478b9bc11932132d0c1598b08250abc7"
+        },
+        {
+          "path": "cases/case176/grading/expected_tests.json",
+          "sha256": "94978b97bd0aac72da9b36ac40ed39b659411be0325ad8a98c76e94ae7e27de9"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case176/evaluator/evaluate_model_patch.py",
+        "sha256": "2b7f486f49d55ae95c1b6e046fa80325eee3e93d18ecc0a68a71c0af8c644a2d"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-pyc-177",
+      "case": "case177",
+      "cohort": "python50",
+      "base_commit": "7e58cea7c2551d0b590eff3959341ee823ec43c1",
+      "image": {
+        "image_id": "sha256:ab2807d63d39277830ff04f241fbbfd256dfcac53b6445f4cfa0b1b0dd61e737",
+        "pull_reference": "yutu0814/pyc-case-177-jpy@sha256:ab2807d63d39277830ff04f241fbbfd256dfcac53b6445f4cfa0b1b0dd61e737"
+      },
+      "files": [
+        {
+          "path": "cases/case177/evaluator/case_adapter.sh",
+          "sha256": "18391613d83909824a9e68da8e74a58ac574087fbef2e12dee1cced752ab27cf"
+        },
+        {
+          "path": "cases/case177/evaluator/case_config.json",
+          "sha256": "77b53d295e23ae37bf4a3da6aa30577ccdf4581bd305d0384c0c285b1976dd21"
+        },
+        {
+          "path": "cases/case177/evaluator/evaluate_model_patch.py",
+          "sha256": "2b7f486f49d55ae95c1b6e046fa80325eee3e93d18ecc0a68a71c0af8c644a2d"
+        },
+        {
+          "path": "cases/case177/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/case177/evaluator/run_evaluation.sh",
+          "sha256": "c84b24fb700a4df058912348c879790d8668be71adca47c391b7a9ae7a060ce1"
+        },
+        {
+          "path": "cases/case177/evaluator/unittest_native_runner.py",
+          "sha256": "0666a689fd7776915202ae6beb032b6f1f6ea11d0ca128796c10b1439cb8ea33"
+        },
+        {
+          "path": "cases/case177/patches/test_patch.diff",
+          "sha256": "6de7ebaff782334ecc4c6fde711df221d58bc56240ead8a88471658808f3fe24"
+        },
+        {
+          "path": "cases/case177/grading/expected_tests.json",
+          "sha256": "69e8ed211b3358be1f3cb2e11b06d614555694f3d03f9b6b64bc734e83f11a70"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/case177/evaluator/evaluate_model_patch.py",
+        "sha256": "2b7f486f49d55ae95c1b6e046fa80325eee3e93d18ecc0a68a71c0af8c644a2d"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-056",
+      "case": "javac_case_056",
+      "cohort": "java_author11",
+      "base_commit": "307ebed6ef6ba420b2165ddb2ec21dd9a37479df",
+      "image": {
+        "image_id": "sha256:866ae42ecde1bbcaa0581fabe2380bdea159ed944f565066b7abe1c2922a7669",
+        "pull_reference": "yutu0814/javac-case-056-lwjgl3@sha256:866ae42ecde1bbcaa0581fabe2380bdea159ed944f565066b7abe1c2922a7669"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_056/evaluator/build_project.py",
+          "sha256": "4edfb096b2ccc55f2c73eb47edd683973c1e3f1bbe99a5161366461f71733755"
+        },
+        {
+          "path": "cases/javac_case_056/evaluator/case_adapter.sh",
+          "sha256": "fd99b9fc637640519aa547d4e84e30651474f9977e46dfbc92ef599aa4a9cab1"
+        },
+        {
+          "path": "cases/javac_case_056/evaluator/case_config.json",
+          "sha256": "81481daa8e37d4969658076bce970f57031ffbf6210aa2b10482b2fbb9630e16"
+        },
+        {
+          "path": "cases/javac_case_056/evaluator/evaluate_model_patch.py",
+          "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+        },
+        {
+          "path": "cases/javac_case_056/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_056/evaluator/run_evaluation.sh",
+          "sha256": "430fd2e97f7a5fccfcd5b8b2bbabf20a978f199b98ee093db8caabc5d6abc221"
+        },
+        {
+          "path": "cases/javac_case_056/evaluator/test_runner.py",
+          "sha256": "a79f5be545ec32ae1b470e57220b144e65d3337e1a687bb81bf4550465113a1c"
+        },
+        {
+          "path": "cases/javac_case_056/patches/test_patch.diff",
+          "sha256": "b0ad097a60eeee6b60c8207c3157c8385c4f569699e25815f74de4d56afad527"
+        },
+        {
+          "path": "cases/javac_case_056/grading/expected_tests.json",
+          "sha256": "df3c102cdc79985ae8c63c14c59041b1c64b9ae30bbe2c0bdd38ad00e5b1d7cc"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_056/evaluator/evaluate_model_patch.py",
+        "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-062",
+      "case": "javac_case_062",
+      "cohort": "java_author11",
+      "base_commit": "2c8811383487cd827f375abdc534a5d40a174edc",
+      "image": {
+        "image_id": "sha256:a6b182c03068ba6e408878304674f3a8ae922f42b6399c3f1b82fd34166a40a5",
+        "pull_reference": "yutu0814/javac-case-062-lwjgl3@sha256:a6b182c03068ba6e408878304674f3a8ae922f42b6399c3f1b82fd34166a40a5"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_062/evaluator/build_project.py",
+          "sha256": "5ce346ca30cda501896d97d8d480b605128804f2fc1185e6d3e14d185d82b082"
+        },
+        {
+          "path": "cases/javac_case_062/evaluator/case_adapter.sh",
+          "sha256": "2cdc6eed629b03dfd158f2e965833850d73a8112d7822f82e54c423088d25d38"
+        },
+        {
+          "path": "cases/javac_case_062/evaluator/case_config.json",
+          "sha256": "441d0bcf4566b88dc666364ec54f752ebabf2e7778cf98988582e897f93df953"
+        },
+        {
+          "path": "cases/javac_case_062/evaluator/evaluate_model_patch.py",
+          "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+        },
+        {
+          "path": "cases/javac_case_062/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_062/evaluator/run_evaluation.sh",
+          "sha256": "8d27a61a2b2d09fd1a3afcb99b1dc4017f00b6e81e4ba3144817c488dbe65f3b"
+        },
+        {
+          "path": "cases/javac_case_062/evaluator/test_runner.py",
+          "sha256": "eed32ffcbc6202b8bc314e05f146b1a0c8ae7f1c1ee272e05785390a11ee6391"
+        },
+        {
+          "path": "cases/javac_case_062/patches/test_patch.diff",
+          "sha256": "67cba0806260b685f68cf9c6ab969a2a724676715657a3087037debe81c0b11c"
+        },
+        {
+          "path": "cases/javac_case_062/grading/expected_tests.json",
+          "sha256": "19870cdb2204946b28d11310388e7b7e47efa738ae5cb767aef8217e18eb8617"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_062/evaluator/evaluate_model_patch.py",
+        "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-068",
+      "case": "javac_case_068",
+      "cohort": "java_author11",
+      "base_commit": "2c007161cff7ba12023ae48dd28a7856c0c6da3d",
+      "image": {
+        "image_id": "sha256:30a5258e746b1190c9b5d6c6aacbbaa04bdd0f11f4aff0b5605a3eeb8445dfaa",
+        "pull_reference": "yutu0814/javac-case-068-lwjgl3@sha256:30a5258e746b1190c9b5d6c6aacbbaa04bdd0f11f4aff0b5605a3eeb8445dfaa"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_068/evaluator/build_project.py",
+          "sha256": "466936016e5df83c80e347bd79ed07a977b1e70c8267b900b4587eca3aba48fa"
+        },
+        {
+          "path": "cases/javac_case_068/evaluator/case_adapter.sh",
+          "sha256": "5a8dcbe81b183cace261e61ad29c34f63a053188aa1889f1745a9eb68ba2e783"
+        },
+        {
+          "path": "cases/javac_case_068/evaluator/case_config.json",
+          "sha256": "273827fd9b91b942f1909ae989dc56bd2d2f50360eae68480059f999e6b9c85e"
+        },
+        {
+          "path": "cases/javac_case_068/evaluator/evaluate_model_patch.py",
+          "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+        },
+        {
+          "path": "cases/javac_case_068/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_068/evaluator/run_evaluation.sh",
+          "sha256": "4164bd8a5ff057a96d262a6576ae3f09a49ca4cb1ad00b2445979e2beeb60c07"
+        },
+        {
+          "path": "cases/javac_case_068/evaluator/test_runner.py",
+          "sha256": "cb26b785a06954dc43b635903eed9ed0b719e0362543b25080f9d8e942810ae9"
+        },
+        {
+          "path": "cases/javac_case_068/patches/test_patch.diff",
+          "sha256": "718d676eb6f103949e77690f43fde258fcacca9ae94b9db74f862d320700d672"
+        },
+        {
+          "path": "cases/javac_case_068/grading/expected_tests.json",
+          "sha256": "ccdc7babd2793ff6f1f2e2a6e44b756255d5c3d960f557ba2ae000a389c49aea"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_068/evaluator/evaluate_model_patch.py",
+        "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-074",
+      "case": "javac_case_074",
+      "cohort": "java_author11",
+      "base_commit": "1fa5a394949cad836a104d8e5093f734d26ff8e1",
+      "image": {
+        "image_id": "sha256:bf12eb7755f877cb56804e10e4a1336856d076f7fe76c92935124febce443226",
+        "pull_reference": "yutu0814/javac-case-074-lwjgl3@sha256:bf12eb7755f877cb56804e10e4a1336856d076f7fe76c92935124febce443226"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_074/evaluator/build_project.py",
+          "sha256": "53ee40d3631d3c1fc8afe97fd45dd61de3fe4ebd9251455350a3ab95d63725a3"
+        },
+        {
+          "path": "cases/javac_case_074/evaluator/case_adapter.sh",
+          "sha256": "5a8dcbe81b183cace261e61ad29c34f63a053188aa1889f1745a9eb68ba2e783"
+        },
+        {
+          "path": "cases/javac_case_074/evaluator/case_config.json",
+          "sha256": "fc3993e8400037473d41e212d5b8dd929f52521f6f253b91532c7aee9c3f02be"
+        },
+        {
+          "path": "cases/javac_case_074/evaluator/evaluate_model_patch.py",
+          "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+        },
+        {
+          "path": "cases/javac_case_074/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_074/evaluator/run_evaluation.sh",
+          "sha256": "03d5b81c6e331a13419323b5c17d2f78f8b93bab04e6bc0da7213a8cd1cc2978"
+        },
+        {
+          "path": "cases/javac_case_074/evaluator/test_runner.py",
+          "sha256": "c6d311ddf0b81ee0ef6b0da49382dc74eb665d692e650ecccd7507068759d814"
+        },
+        {
+          "path": "cases/javac_case_074/patches/test_patch.diff",
+          "sha256": "780fd6ea4dc6b4fcbc0298a33dcd0c35801bfd85a4f0b50e440ee5ab7ad371da"
+        },
+        {
+          "path": "cases/javac_case_074/grading/expected_tests.json",
+          "sha256": "ece7c184175c413a9f85e6ac0400464d84b7c9efa1addc1c2f6823309659f9b7"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_074/evaluator/evaluate_model_patch.py",
+        "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-075",
+      "case": "javac_case_075",
+      "cohort": "java_author11",
+      "base_commit": "f40cd981a1ff81e3da603059a062728ee33ddf02",
+      "image": {
+        "image_id": "sha256:4c7f04fc70f21a42683dff8794b39b0fdcc2d4e67e6d9d8a58362c89fe72a36f",
+        "pull_reference": "yutu0814/javac-case-075-lwjgl3@sha256:4c7f04fc70f21a42683dff8794b39b0fdcc2d4e67e6d9d8a58362c89fe72a36f",
+        "historical_image_id": "sha256:57f4a87865ffa18071bfc3ecb26619c4a7ee79309d58c745d8a786a514c3d56e"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_075/evaluator/build_project.py",
+          "sha256": "a0b15a9ec867359c66b860c5ca53072b6d7d7ece413d0837e5ca891c5037214d"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/case_adapter.sh",
+          "sha256": "985a01d18ad664bcfb14449cfbb6de8c0a55b2ea3b9fd70fb68a1ae10f30025d"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/case_config.json",
+          "sha256": "a2a6dfdd3b08216412628d28e9930f4cbe6e42843f408a2ac1dec45904fcd43a"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/evaluate_model_patch.py",
+          "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/run_evaluation.sh",
+          "sha256": "5a83702fe60154b89a773a1f20ba90f7a5d5ed0c106a3cca5351afc751ba1057"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/test_runner.py",
+          "sha256": "5966c71d338cdf7e446f1c37f41cbabc5be9e1a81edee94528f8b2bf706cfe43"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/upstream_results.py",
+          "sha256": "e62e42fff41d2f5f64979e034c167bd5317c995c37fe7420560b6a9ac876ad8b"
+        },
+        {
+          "path": "cases/javac_case_075/evaluator/upstream_tests.json",
+          "sha256": "00fcb1f91ed9e0c70975bd557daa35f7aa08d8cd96bbacd09ea371fc24c72cae"
+        },
+        {
+          "path": "cases/javac_case_075/patches/test_patch.diff",
+          "sha256": "c389434ff15aedc93ed3b69da7d61d49e8540ac00f12e70d5a90d7380e185a94"
+        },
+        {
+          "path": "cases/javac_case_075/grading/expected_tests.json",
+          "sha256": "db3f7101bdc67aacfc4da9f29b4b3f54a153f63ce6ff77c0e1a524de5d367d28"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_075/evaluator/evaluate_model_patch.py",
+        "sha256": "b9bc97db31567046d189ae0a33aa2ce44cea69a995df3c897e6feecc820e3be3"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-093",
+      "case": "javac_case_093",
+      "cohort": "java_author11",
+      "base_commit": "9eeb14c4c8b2d0e49feece90a6e330826b49c7dd",
+      "image": {
+        "image_id": "sha256:acc01f758d28a94ab99d3e35eeaee06bd65f9a119daf4b2522e469c6994e3942",
+        "pull_reference": "yutu0814/javac-case-093-jep@sha256:acc01f758d28a94ab99d3e35eeaee06bd65f9a119daf4b2522e469c6994e3942"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_093/evaluator/case_adapter.sh",
+          "sha256": "0d0ef3aabeddefc9757f36d8a7d1d46008824133c514acc4c72acaff0d569031"
+        },
+        {
+          "path": "cases/javac_case_093/evaluator/case_config.json",
+          "sha256": "e4a7d51fe9b2fe7c33a800c99b3328161632c3ca7a6db26bed4a5849d78e4026"
+        },
+        {
+          "path": "cases/javac_case_093/evaluator/evaluate_model_patch.py",
+          "sha256": "61944afc76f52f7226c32a15dd3874393d8e8192a2af583eec014220cdd70b25"
+        },
+        {
+          "path": "cases/javac_case_093/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_093/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_093/evaluator/run_tests_verbose.py",
+          "sha256": "f88a715c72692fe034a96ae93d270fb32cad3f4f6ff9b4679e835e6556b1010b"
+        },
+        {
+          "path": "cases/javac_case_093/patches/test_patch.diff",
+          "sha256": "135ebdfa4f6b25128fb56517ca18dc9b8b44bfff3cb530c79725c92e96f78dca"
+        },
+        {
+          "path": "cases/javac_case_093/grading/expected_tests.json",
+          "sha256": "82661edc4cb69e8e265c601c01283909cd99cf6dbd006504085c1ade27a60625"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_093/evaluator/evaluate_model_patch.py",
+        "sha256": "61944afc76f52f7226c32a15dd3874393d8e8192a2af583eec014220cdd70b25"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-094",
+      "case": "javac_case_094",
+      "cohort": "java_author11",
+      "base_commit": "bc2edaf0242736c2a2940104eebc6aed5a3ad9e6",
+      "image": {
+        "image_id": "sha256:afb82e4d2a5d2d58231b723073e32e41abfcdb48272923fbe8bb207908efd859",
+        "pull_reference": "yutu0814/javac-case-094-jep@sha256:afb82e4d2a5d2d58231b723073e32e41abfcdb48272923fbe8bb207908efd859"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_094/evaluator/case_adapter.sh",
+          "sha256": "19af23cb46d1e8b187849d1a6d81d1849d3c30ad42bdc61f89a6e1a6e129f0e9"
+        },
+        {
+          "path": "cases/javac_case_094/evaluator/case_config.json",
+          "sha256": "219da8b1dee0621c2c36eff63af666185963405c7b9caf6d14a98b6e13a8fd18"
+        },
+        {
+          "path": "cases/javac_case_094/evaluator/evaluate_model_patch.py",
+          "sha256": "61944afc76f52f7226c32a15dd3874393d8e8192a2af583eec014220cdd70b25"
+        },
+        {
+          "path": "cases/javac_case_094/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_094/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_094/evaluator/run_tests_verbose.py",
+          "sha256": "f88a715c72692fe034a96ae93d270fb32cad3f4f6ff9b4679e835e6556b1010b"
+        },
+        {
+          "path": "cases/javac_case_094/patches/test_patch.diff",
+          "sha256": "ed74f2a5a5f52cc521be26377edb9a23cc4f492ab7632a6fdb0b7e8d5fe7e698"
+        },
+        {
+          "path": "cases/javac_case_094/grading/expected_tests.json",
+          "sha256": "d4cfb65e8be2ee498697756e86b987f34011a88b3a1b95623b16cbbc231ae476"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_094/evaluator/evaluate_model_patch.py",
+        "sha256": "61944afc76f52f7226c32a15dd3874393d8e8192a2af583eec014220cdd70b25"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-097",
+      "case": "javac_case_097",
+      "cohort": "java_author11",
+      "base_commit": "e4f13ea277ce4809688dde766cc9fd173ec6f63d",
+      "image": {
+        "image_id": "sha256:8377bd71afd8d7673a7effb4473bbf204e57a1cad7c41fcc54caa11d3c7c1657",
+        "pull_reference": "yutu0814/javac-case-097-jep@sha256:8377bd71afd8d7673a7effb4473bbf204e57a1cad7c41fcc54caa11d3c7c1657"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_097/evaluator/case_adapter.sh",
+          "sha256": "ef8cc562e7be8ae2a82e9679b554ae92fc614ef1ef2f55baeab6863d5e226c63"
+        },
+        {
+          "path": "cases/javac_case_097/evaluator/case_config.json",
+          "sha256": "c067ddcd2ffca9ccb7baa1c970ce10e2593ce851ce78ee3ecfed4804f37f7750"
+        },
+        {
+          "path": "cases/javac_case_097/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_097/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_097/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_097/evaluator/run_tests_verbose.py",
+          "sha256": "f88a715c72692fe034a96ae93d270fb32cad3f4f6ff9b4679e835e6556b1010b"
+        },
+        {
+          "path": "cases/javac_case_097/patches/test_patch.diff",
+          "sha256": "f935b43c807e0e2fdf00ed0f82dcd4b86c6ad09493ee61f70ce24ad6306c1113"
+        },
+        {
+          "path": "cases/javac_case_097/grading/expected_tests.json",
+          "sha256": "a0f5250d8f9bcdd88c1d56345632e06c1483e8e5e41e86be0d31cae84256db51"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_097/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-099",
+      "case": "javac_case_099",
+      "cohort": "java_author11",
+      "base_commit": "b1ab138dd6d492c7547e24d0b117aeafb112613d",
+      "image": {
+        "image_id": "sha256:502cb2beb42e3c90413016c2d2ab33dc53fec30912f04ef8eadd47caeae629ee",
+        "pull_reference": "yutu0814/javac-case-099-jep@sha256:502cb2beb42e3c90413016c2d2ab33dc53fec30912f04ef8eadd47caeae629ee"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_099/evaluator/case_adapter.sh",
+          "sha256": "452b1d2b827e68bb603ba6d6dd27c164737eb9cff21e15e6c3a7629e6e1ad763"
+        },
+        {
+          "path": "cases/javac_case_099/evaluator/case_config.json",
+          "sha256": "827d1e8371ebab822cf013d33d6dd5e4baecdc6b8b622d1beb3bcb16f2863310"
+        },
+        {
+          "path": "cases/javac_case_099/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_099/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_099/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_099/evaluator/run_tests_verbose.py",
+          "sha256": "f88a715c72692fe034a96ae93d270fb32cad3f4f6ff9b4679e835e6556b1010b"
+        },
+        {
+          "path": "cases/javac_case_099/patches/test_patch.diff",
+          "sha256": "7cab6f4c9310cb87f14febb93adc6cec85467a5a41ef7e0ffcd7d6ecd685825f"
+        },
+        {
+          "path": "cases/javac_case_099/grading/expected_tests.json",
+          "sha256": "a8d620906ef74d24c0baae2a9af2e47dd2ae89df7fe7481d9dfd7f9beeddb2e0"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_099/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-163",
+      "case": "javac_case_163",
+      "cohort": "java_author11",
+      "base_commit": "90716d6008c5c9cfa8a061f3d23531acaea29777",
+      "image": {
+        "image_id": "sha256:c8b7c236569b9eb461c66197356b0b109088ce31fd0f0057f5441a3afb99e497",
+        "pull_reference": "yutu0814/javac-case-163-junixsocket@sha256:c8b7c236569b9eb461c66197356b0b109088ce31fd0f0057f5441a3afb99e497"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_163/evaluator/build_project.py",
+          "sha256": "9f2c56bd88bc1d51ab2222fffb41e99140ee473a083f4678ac7046e55a79f948"
+        },
+        {
+          "path": "cases/javac_case_163/evaluator/case_adapter.sh",
+          "sha256": "ab8cc705dbc2a43db6abb73539fd9a2005b9331cd3fccd3edeaf1556a672a22f"
+        },
+        {
+          "path": "cases/javac_case_163/evaluator/case_config.json",
+          "sha256": "b745c5d28350a3598a81e7af58e903b733e9feda1762ea85b0676115be12f47d"
+        },
+        {
+          "path": "cases/javac_case_163/evaluator/evaluate_model_patch.py",
+          "sha256": "398d18ec14e55e0d1c52e585c7205cf6bc4eec97dd440e4ecc3bdf3d0272798c"
+        },
+        {
+          "path": "cases/javac_case_163/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_163/evaluator/run_case_tests.py",
+          "sha256": "5cf4a49f43ed836a59275db14b2bd4e2c1d321c1e625a3eefead4a9e1b732ae2"
+        },
+        {
+          "path": "cases/javac_case_163/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_163/evaluator/upstream_tests.json",
+          "sha256": "89c5b49c7775b32ebd60a250674923b101d55b06af060873d4e4746d5313e306"
+        },
+        {
+          "path": "cases/javac_case_163/patches/test_patch.diff",
+          "sha256": "71e4aa501df5bd7e1e675d0baf2473c1ecbf6ad5f4462deb36cb12d2cb634c3d"
+        },
+        {
+          "path": "cases/javac_case_163/grading/expected_tests.json",
+          "sha256": "d44847435060315752934b0fe29d7610c7965a64eea3a796409df0c6b2d3bfbb"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_163/evaluator/evaluate_model_patch.py",
+        "sha256": "398d18ec14e55e0d1c52e585c7205cf6bc4eec97dd440e4ecc3bdf3d0272798c"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-170",
+      "case": "javac_case_170",
+      "cohort": "java_author11",
+      "base_commit": "71a134bce58a22fb17a7a14f00799196c0c71a60",
+      "image": {
+        "image_id": "sha256:1a70b55b3d05b7f18257b238ba0ab246f055b03023eb9483d1cafc58703fbde3",
+        "pull_reference": "yutu0814/javac-case-170-junixsocket@sha256:1a70b55b3d05b7f18257b238ba0ab246f055b03023eb9483d1cafc58703fbde3"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_170/evaluator/build_project.py",
+          "sha256": "e31436b544f765e0dc2d2dcb992c554a2b19f4ab8c5bddcdc65d1d70fd071ac0"
+        },
+        {
+          "path": "cases/javac_case_170/evaluator/case_adapter.sh",
+          "sha256": "ab8cc705dbc2a43db6abb73539fd9a2005b9331cd3fccd3edeaf1556a672a22f"
+        },
+        {
+          "path": "cases/javac_case_170/evaluator/case_config.json",
+          "sha256": "452e676015212d5cf746bab53ab941c295e69a88c0b6ce1a927262a3308e7a1b"
+        },
+        {
+          "path": "cases/javac_case_170/evaluator/evaluate_model_patch.py",
+          "sha256": "e47a4f8ef17f7b9dcdc29e1c50a2fb90fdb8c5ce676c2769f4b616c3b7ca5ad7"
+        },
+        {
+          "path": "cases/javac_case_170/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_170/evaluator/run_case_tests.py",
+          "sha256": "a7ef9f8473f896d653aecdc4af7f8cc200a5200ac94e2385f16b5cab5b37f697"
+        },
+        {
+          "path": "cases/javac_case_170/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_170/evaluator/upstream_tests.json",
+          "sha256": "c60fd73bc92480d14cd391a85ee38620ec472eab8b84bffd255786271757b07f"
+        },
+        {
+          "path": "cases/javac_case_170/patches/test_patch.diff",
+          "sha256": "1284e65b695d456cbf7c4211053eeefd8dee03dcd8ec06948097a6b7bf8fe245"
+        },
+        {
+          "path": "cases/javac_case_170/grading/expected_tests.json",
+          "sha256": "bb57a12261d27525871fc9865cc6fed4d236fb96110e85c68d3a1d4ca7a9f9b8"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_170/evaluator/evaluate_model_patch.py",
+        "sha256": "e47a4f8ef17f7b9dcdc29e1c50a2fb90fdb8c5ce676c2769f4b616c3b7ca5ad7"
+      },
+      "test_provenance": "dataset_author_constructed_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-069",
+      "case": "javac_case_069",
+      "cohort": "java_upstream11",
+      "base_commit": "427e278dc2402aca025cacd58a80eb4eaa8c4832",
+      "image": {
+        "image_id": "sha256:28841dd5e2c53ab5b4e5d54a6426005f3011e90ec2fd1fb70db3a5e897eecbda",
+        "pull_reference": "yutu0814/javac-case-069-lwjgl3@sha256:28841dd5e2c53ab5b4e5d54a6426005f3011e90ec2fd1fb70db3a5e897eecbda",
+        "historical_image_id": "sha256:8f2c37403299227261579735576bc5a395b8bffe826f44a9ba15f1a8fa3fa41f"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_069/evaluator/case_adapter.sh",
+          "sha256": "e4b1dab81092b98013c67f916349cd00bfe88a3f44013df2c08795b6c83bbd41"
+        },
+        {
+          "path": "cases/javac_case_069/evaluator/case_config.json",
+          "sha256": "30a8a0defefa8fdbc7de7c1fabc2d51d977ae3b6477970d6f04a9df29a2c6e2e"
+        },
+        {
+          "path": "cases/javac_case_069/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_069/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_069/evaluator/run_evaluation.sh",
+          "sha256": "ce63deeadb1b27c44a472345cf9d0bf25295d424afec1cf102415ac10bff793b"
+        },
+        {
+          "path": "cases/javac_case_069/patches/test_patch.diff",
+          "sha256": "485db1f47f04a6e28dfce1d9e335a6b770b4ca964f1dc4f5177ca779e21e399f"
+        },
+        {
+          "path": "cases/javac_case_069/grading/expected_tests.json",
+          "sha256": "04293f316a57a6406df1dd8b9e37827c27397a57fec2aa9ccb8488d4b780bbb0"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_069/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-092",
+      "case": "javac_case_092",
+      "cohort": "java_upstream11",
+      "base_commit": "d14567567ac1281e978790b9170c981113de282f",
+      "image": {
+        "image_id": "sha256:da9c9293093a89f2cfd0e2d584077080c640f0c002cef0589c64e28ac6b550d4",
+        "pull_reference": "yutu0814/javac-case-092-jep@sha256:da9c9293093a89f2cfd0e2d584077080c640f0c002cef0589c64e28ac6b550d4"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_092/evaluator/case_adapter.sh",
+          "sha256": "112b585130f5768b5398379403f876ce54c05639462945102a090bdd8191a5eb"
+        },
+        {
+          "path": "cases/javac_case_092/evaluator/case_config.json",
+          "sha256": "5cdd669def3f24006391c7390328d4eb1925b4b3118bc97efc4cb44b63c54054"
+        },
+        {
+          "path": "cases/javac_case_092/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_092/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_092/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_092/evaluator/run_tests_verbose.py",
+          "sha256": "f88a715c72692fe034a96ae93d270fb32cad3f4f6ff9b4679e835e6556b1010b"
+        },
+        {
+          "path": "cases/javac_case_092/patches/test_patch.diff",
+          "sha256": "916303011f0c64f9e095355bb6fbe67ae4da10c1ee515ac12d79e647d9752e03"
+        },
+        {
+          "path": "cases/javac_case_092/grading/expected_tests.json",
+          "sha256": "56d87b548c0161fda394af1f24502a54b0268c629423e253ef89e03a8f55aa1a"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_092/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-100",
+      "case": "javac_case_100",
+      "cohort": "java_upstream11",
+      "base_commit": "bbf96b5cbb83fe9e4edef71d410d29460084d5fc",
+      "image": {
+        "image_id": "sha256:be480bb4f1310e82d3b624cc62a6901dc084b6db19bd16ae44a50d19400e22bb",
+        "pull_reference": "yutu0814/javac-case-100-jep@sha256:be480bb4f1310e82d3b624cc62a6901dc084b6db19bd16ae44a50d19400e22bb"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_100/evaluator/case_adapter.sh",
+          "sha256": "46c8bd1f3c688b394b24db72e27cf0de1b49f36fb664b27e5f573b2dab061952"
+        },
+        {
+          "path": "cases/javac_case_100/evaluator/case_config.json",
+          "sha256": "0dd2e51e760b221bc5c2ca0b6ad8012f2cbc86ca0045c3b464bf2f9037535f8f"
+        },
+        {
+          "path": "cases/javac_case_100/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_100/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_100/evaluator/run_evaluation.sh",
+          "sha256": "e65da2cf6d001eaad430032c987e6acd4ddd2ef94ca87de24a0f332b08832bc9"
+        },
+        {
+          "path": "cases/javac_case_100/evaluator/run_tests_verbose.py",
+          "sha256": "81c63bf7205452353fa8c05d3d2626ac0f1119cf09b75c6d6d208a8796cbef4d"
+        },
+        {
+          "path": "cases/javac_case_100/patches/test_patch.diff",
+          "sha256": "94503ff465f7e1c45d65bc7aaf9dae803c914b2ff758cd9cb2cbfee8073dc8a1"
+        },
+        {
+          "path": "cases/javac_case_100/grading/expected_tests.json",
+          "sha256": "5e1b8941f1270effdb15995e40155a279c6fd80add55572187d1744c37d652b8"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_100/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-112",
+      "case": "javac_case_112",
+      "cohort": "java_upstream11",
+      "base_commit": "4f5ec07c315872bdee0885be085ebf57cede2db9",
+      "image": {
+        "image_id": "sha256:33a22445240b5d6abba03d5c41a277d721fc8940f51aa3e7b7138daeb2f87305",
+        "pull_reference": "yutu0814/javac-case-112-openjpeg@sha256:33a22445240b5d6abba03d5c41a277d721fc8940f51aa3e7b7138daeb2f87305"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_112/evaluator/case_adapter.sh",
+          "sha256": "1e796a7776396bde4eee686951d23cd438966c4847ab72796fe982a9daf28cc2"
+        },
+        {
+          "path": "cases/javac_case_112/evaluator/case_config.json",
+          "sha256": "6ab44730f35687c61a16d572d5500307688d6091dac2bc7d7e60291908024e1e"
+        },
+        {
+          "path": "cases/javac_case_112/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_112/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_112/evaluator/run_evaluation.sh",
+          "sha256": "f5832ad1cb77acacfc1e3a5da613565478263523e584366e0aa2c46ad63a51e0"
+        },
+        {
+          "path": "cases/javac_case_112/patches/test_patch.diff",
+          "sha256": "04a567f6d13d1f8821ab164cf7bc06ad3193278eb6500522430db2cb0d32e93b"
+        },
+        {
+          "path": "cases/javac_case_112/grading/expected_tests.json",
+          "sha256": "5e6238fbef4be101fa21e543320a68fdb0203e971fb447b60161b580c9037924"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_112/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-150",
+      "case": "javac_case_150",
+      "cohort": "java_upstream11",
+      "base_commit": "7578a2470871e12dd72716925f60d857ad7eb409",
+      "image": {
+        "image_id": "sha256:1e6da170e3dc03c5245f2c4ce3a47c2b4e200615df73876ed17a2ffa015d5a35",
+        "pull_reference": "yutu0814/javac-case-150-junixsocket@sha256:1e6da170e3dc03c5245f2c4ce3a47c2b4e200615df73876ed17a2ffa015d5a35"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_150/evaluator/case_adapter.sh",
+          "sha256": "c2f38f7ffe37cbcb2df3f012d2059dd929c53f1949b62323b61773651f8a3ccd"
+        },
+        {
+          "path": "cases/javac_case_150/evaluator/case_config.json",
+          "sha256": "05966b896acd7cd0bbe3b1afefab59120b0e110710772bd0570b69b2ec1e6cac"
+        },
+        {
+          "path": "cases/javac_case_150/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_150/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_150/evaluator/report_surefire.py",
+          "sha256": "f8f9ca24d3e101115ba256d5a36b08d66dfd2abfb9e76d762d0982d26b34b4bd"
+        },
+        {
+          "path": "cases/javac_case_150/evaluator/run_evaluation.sh",
+          "sha256": "f2ef0ea44e7a18b107d2dcf2e46dfcaea5aa3f25bab7e3f6bc2809581f461c48"
+        },
+        {
+          "path": "cases/javac_case_150/patches/test_patch.diff",
+          "sha256": "84a9dd88df4502b3e9e64b1e127eac785cd56896bf9aacc19c17dcbec79ba898"
+        },
+        {
+          "path": "cases/javac_case_150/grading/expected_tests.json",
+          "sha256": "d91003f8989663f997bccafdbce3914cfdf371bd71849b7d5c9927af51879b3e"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_150/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-152",
+      "case": "javac_case_152",
+      "cohort": "java_upstream11",
+      "base_commit": "4f7667c4655712fc7371c0dbab0de5bf785e5d3d",
+      "image": {
+        "image_id": "sha256:5962f393b2102bb2455cfd24dfcd510cfa97a1ec605644d59164651f63c4a390",
+        "pull_reference": "yutu0814/clb.eval.x86_64.kohlschutter_1776_junixsocket-97@sha256:5962f393b2102bb2455cfd24dfcd510cfa97a1ec605644d59164651f63c4a390"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_152/evaluator/case_adapter.sh",
+          "sha256": "3fa8366704588d9d4c1b370a9bdedb9f65cc7491f8cad9730f92037898244c3c"
+        },
+        {
+          "path": "cases/javac_case_152/evaluator/case_config.json",
+          "sha256": "fd5f85959cf1fa0f03812dd96d391929681a900edfa74cc5f2d90abe57fca828"
+        },
+        {
+          "path": "cases/javac_case_152/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_152/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_152/evaluator/run_evaluation.sh",
+          "sha256": "f2ef0ea44e7a18b107d2dcf2e46dfcaea5aa3f25bab7e3f6bc2809581f461c48"
+        },
+        {
+          "path": "cases/javac_case_152/patches/test_patch.diff",
+          "sha256": "6a34fa1d1a066363dfa8b3980118da89027d1b52a79a6e466c4cc29fb3823f6e"
+        },
+        {
+          "path": "cases/javac_case_152/grading/expected_tests.json",
+          "sha256": "54d7dabd156dff65bd89319f1511e8749fc64e3c9d8aa21c960d86b627473281"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_152/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-160",
+      "case": "javac_case_160",
+      "cohort": "java_upstream11",
+      "base_commit": "ba3d20f60e7fbf1a49ae1f4bac09111299d104ee",
+      "image": {
+        "image_id": "sha256:15fcd1b85e32e2b60df81e65888a891648cf05421aece7b8fbaa0e829be75e24",
+        "pull_reference": "yutu0814/javac-case-160-junixsocket@sha256:15fcd1b85e32e2b60df81e65888a891648cf05421aece7b8fbaa0e829be75e24"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_160/evaluator/case_adapter.sh",
+          "sha256": "d568b4513bfa69236cacbde70a99a646758ce1f604fd9800ea69427e6f29cabb"
+        },
+        {
+          "path": "cases/javac_case_160/evaluator/case_config.json",
+          "sha256": "8dffdb1ec47c91e21ac63e50552e94f783717eb9a00300fa5f6d2a3383d65fb4"
+        },
+        {
+          "path": "cases/javac_case_160/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_160/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_160/evaluator/report_surefire.py",
+          "sha256": "f8f9ca24d3e101115ba256d5a36b08d66dfd2abfb9e76d762d0982d26b34b4bd"
+        },
+        {
+          "path": "cases/javac_case_160/evaluator/run_evaluation.sh",
+          "sha256": "f2ef0ea44e7a18b107d2dcf2e46dfcaea5aa3f25bab7e3f6bc2809581f461c48"
+        },
+        {
+          "path": "cases/javac_case_160/patches/test_patch.diff",
+          "sha256": "ae53a68ebd9078aa90768465669eb6b50bc4032a74a974e79ff1314550ff0a5e"
+        },
+        {
+          "path": "cases/javac_case_160/grading/expected_tests.json",
+          "sha256": "5f876b2e8a9e83a25f7ae291fa7777a95071c8e7865be144e77eb8ac06c667fe"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_160/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-161",
+      "case": "javac_case_161",
+      "cohort": "java_upstream11",
+      "base_commit": "1df1513c64079a5100cdc2a372558e1f77849c0f",
+      "image": {
+        "image_id": "sha256:969c2650967701f77c0d620466db2df05b0f5f8b6706167dbf117545f54a2ad3",
+        "pull_reference": "yutu0814/javac-case-161-junixsocket@sha256:969c2650967701f77c0d620466db2df05b0f5f8b6706167dbf117545f54a2ad3"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_161/evaluator/case_adapter.sh",
+          "sha256": "7c2abcb8f4e70c8d06af10a938d44f778f3e4c174997e52b587f908966aaa130"
+        },
+        {
+          "path": "cases/javac_case_161/evaluator/case_config.json",
+          "sha256": "fd585338d072ad5c38498a987816613a1c9e1aefe09b5c2d757083c729a5eea3"
+        },
+        {
+          "path": "cases/javac_case_161/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_161/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_161/evaluator/report_surefire.py",
+          "sha256": "f8f9ca24d3e101115ba256d5a36b08d66dfd2abfb9e76d762d0982d26b34b4bd"
+        },
+        {
+          "path": "cases/javac_case_161/evaluator/run_evaluation.sh",
+          "sha256": "f2ef0ea44e7a18b107d2dcf2e46dfcaea5aa3f25bab7e3f6bc2809581f461c48"
+        },
+        {
+          "path": "cases/javac_case_161/patches/test_patch.diff",
+          "sha256": "214ca24e02af2078ba1df57569db087747abe640ff7f70f218002e164901ccf1"
+        },
+        {
+          "path": "cases/javac_case_161/grading/expected_tests.json",
+          "sha256": "662488627525c71becc34421c9141f0162537acd5cfd10cb2cdc81a696e2b654"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_161/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-175",
+      "case": "javac_case_175",
+      "cohort": "java_upstream11",
+      "base_commit": "2a159927761424440f7dbd7674992e4b5273a459",
+      "image": {
+        "image_id": "sha256:d5eaaed040c90536d22f0ef5548ad00d2ec61b59e698d725014695479df8a20d",
+        "pull_reference": "yutu0814/javac-case-175-junixsocket@sha256:d5eaaed040c90536d22f0ef5548ad00d2ec61b59e698d725014695479df8a20d"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_175/evaluator/case_adapter.sh",
+          "sha256": "e2fafa7f770a272464d0895b33c1174f6ead61faf3363ebc9fe4072249aa2b7c"
+        },
+        {
+          "path": "cases/javac_case_175/evaluator/case_config.json",
+          "sha256": "d5f0d5a7187e622f0fe172d3ea6754a58d5e87d5ba4f5b9906da907f687902fc"
+        },
+        {
+          "path": "cases/javac_case_175/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_175/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_175/evaluator/report_surefire.py",
+          "sha256": "f8f9ca24d3e101115ba256d5a36b08d66dfd2abfb9e76d762d0982d26b34b4bd"
+        },
+        {
+          "path": "cases/javac_case_175/evaluator/run_evaluation.sh",
+          "sha256": "f2ef0ea44e7a18b107d2dcf2e46dfcaea5aa3f25bab7e3f6bc2809581f461c48"
+        },
+        {
+          "path": "cases/javac_case_175/patches/test_patch.diff",
+          "sha256": "a4c817c4ebc0bad3851d1040ce22a5530d498a7a5b06fb5bd5331ffc6a6a6751"
+        },
+        {
+          "path": "cases/javac_case_175/grading/expected_tests.json",
+          "sha256": "25ccbc86770b77ba300871955792b161ab07be617ad517350a8c9e092f34eb17"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_175/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-194",
+      "case": "javac_case_194",
+      "cohort": "java_upstream11",
+      "base_commit": "a73d6e87149698e49026e3bf8055efc6bbe71d90",
+      "image": {
+        "image_id": "sha256:d12be7067ce51c31c085739c3a3fc4c69d273b8751059234700870a2ce9e5606",
+        "pull_reference": "yutu0814/javac-case-194-mdsplus@sha256:d12be7067ce51c31c085739c3a3fc4c69d273b8751059234700870a2ce9e5606"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_194/evaluator/case_adapter.sh",
+          "sha256": "10f55f51f962a821adedb73a53ca18ece4724bc921e8d3686043d9e6be14112e"
+        },
+        {
+          "path": "cases/javac_case_194/evaluator/case_config.json",
+          "sha256": "2c3422623272a8c8eb6c90858028090d7a818d7703126f69190f199823b52b91"
+        },
+        {
+          "path": "cases/javac_case_194/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_194/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_194/evaluator/run_evaluation.sh",
+          "sha256": "f2ef0ea44e7a18b107d2dcf2e46dfcaea5aa3f25bab7e3f6bc2809581f461c48"
+        },
+        {
+          "path": "cases/javac_case_194/patches/test_patch.diff",
+          "sha256": "4368bd9e46ca6c82d50305c6829ed850772b03722774a5654c756c957c59128f"
+        },
+        {
+          "path": "cases/javac_case_194/grading/expected_tests.json",
+          "sha256": "a9647420b0cae9e33cf40b61b29e31d7d1fe8d5d062cde59e98b876323a32058"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_194/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    },
+    {
+      "instance_id": "clb-javac-200",
+      "case": "javac_case_200",
+      "cohort": "java_upstream11",
+      "base_commit": "f6c82e695f5b6964daeec2c4e0bc449a89be892a",
+      "image": {
+        "image_id": "sha256:77c71ce09d01e830e0b98f3607636f0ffb03abc24ad51498190f6e7e0fb961dd",
+        "pull_reference": "yutu0814/javac-case-200-mdsplus@sha256:77c71ce09d01e830e0b98f3607636f0ffb03abc24ad51498190f6e7e0fb961dd"
+      },
+      "files": [
+        {
+          "path": "cases/javac_case_200/evaluator/case_adapter.sh",
+          "sha256": "61a0c9df81e4da6458b1dbfe1510e1b11f6a494842ced3c055554955a6c197f6"
+        },
+        {
+          "path": "cases/javac_case_200/evaluator/case_config.json",
+          "sha256": "0bd6a7a1b2cfe3df30cf5d1ee6de7b3455729171fac40c425006889897bcd14a"
+        },
+        {
+          "path": "cases/javac_case_200/evaluator/evaluate_model_patch.py",
+          "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+        },
+        {
+          "path": "cases/javac_case_200/evaluator/logging_v3.py",
+          "sha256": "add904e35fde3b61f757d2e9129fc33545591646f14011a93da4455e293aeb5f"
+        },
+        {
+          "path": "cases/javac_case_200/evaluator/run_evaluation.sh",
+          "sha256": "f2ef0ea44e7a18b107d2dcf2e46dfcaea5aa3f25bab7e3f6bc2809581f461c48"
+        },
+        {
+          "path": "cases/javac_case_200/patches/test_patch.diff",
+          "sha256": "cf71717fc0f44445d219f8ac16ee26fcebe33d209525df0c7034d46af8f7cea5"
+        },
+        {
+          "path": "cases/javac_case_200/grading/expected_tests.json",
+          "sha256": "e031981016e3a80cbc89be4c34017c14da16055a10fd4ae8844a1dbda7760141"
+        }
+      ],
+      "entrypoint": {
+        "path": "cases/javac_case_200/evaluator/evaluate_model_patch.py",
+        "sha256": "1696f5672178ca04e189db3611f3984a0d00889a5bc31186990315b42def4c1f"
+      },
+      "test_provenance": "upstream_tests_extracted_or_adapted"
+    }
+  ]
+}

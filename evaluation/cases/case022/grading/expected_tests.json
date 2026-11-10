@@ -1,0 +1,12 @@
+{
+  "instance_id": "clb-pyc-022",
+  "FAIL_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::TestArrayInterface::test_scalar_interface[val6-iface6-ValueError]",
+    "numpy/core/tests/test_multiarray.py::TestArrayInterface::test_scalar_interface[val8-iface8-ValueError]",
+    "numpy/core/tests/test_multiarray.py::TestArrayInterface::test_scalar_interface[val9-iface9-TypeError]"
+  ],
+  "PASS_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::test_interface_no_shape",
+    "numpy/core/tests/test_multiarray.py::test_array_interface_itemsize"
+  ]
+}

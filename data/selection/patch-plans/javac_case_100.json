@@ -1,0 +1,18 @@
+{
+  "case_id": "javac_case_100",
+  "instance_id": "clb-javac-100",
+  "repo": "ninia/jep",
+  "base_commit": "bbf96b5cbb83fe9e4edef71d410d29460084d5fc",
+  "fix_commit": "d2ab3f0343a518948ee44f09279e7ccf6922b856",
+  "upstream_diff_url": "https://github.com/ninia/jep/compare/bbf96b5cbb83fe9e4edef71d410d29460084d5fc...d2ab3f0343a518948ee44f09279e7ccf6922b856.diff",
+  "upstream_diff_sha256": "1b74af77e3b82470724f8f506df5e4aa4afb2923b73b2970c37644c620e2fb96",
+  "gold_files": [
+    "jep/hook.py",
+    "src/jep/pyjclass.c",
+    "src/jep/util.c"
+  ],
+  "test_files": [
+    "tests/test_exceptions.py",
+    "tests/test_import.py"
+  ]
+}

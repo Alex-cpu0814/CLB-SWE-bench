@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-041",
+  "FAIL_TO_PASS": [
+    "scipy/interpolate/tests/test_fitpack.py::test_splprep_segfault"
+  ],
+  "PASS_TO_PASS": [
+    "scipy/interpolate/tests/test_fitpack.py::test_dblint",
+    "scipy/interpolate/tests/test_fitpack.py::test_splev_der_k"
+  ]
+}

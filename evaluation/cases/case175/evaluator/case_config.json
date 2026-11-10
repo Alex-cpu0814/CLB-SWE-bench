@@ -1,0 +1,34 @@
+{
+  "template_version": "1.0",
+  "case_number": "175",
+  "instance_id": "clb-pyc-175",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/spglib/spglib.git",
+  "base_commit": "4afa84322f83b368dada7e3c6f64c3a17114aaa0",
+  "fix_commit": "c571f29d57d51ed5d8efa1eb78e42e7f48082897",
+  "image": "yutu0814/pyc-case-175-spglib:benchmark-v1",
+  "python_version": "3.8",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/native_gtest_runner.py",
+      "target": "/benchmark/native_gtest_runner.py"
+    },
+    {
+      "source": "evaluator/native_no_core.c",
+      "target": "/benchmark/native_no_core.c"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

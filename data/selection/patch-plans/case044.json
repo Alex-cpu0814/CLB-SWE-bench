@@ -1,0 +1,18 @@
+{
+  "case_id": "case044",
+  "instance_id": "clb-pyc-044",
+  "repo": "scipy/scipy",
+  "base_commit": "fc6b387bc0c51b5b252712584580b4f0975498fb",
+  "fix_commit": "88d625fc451d3714e640bbec693bb31abb6a05f5",
+  "upstream_diff_url": "https://github.com/scipy/scipy/compare/fc6b387bc0c51b5b252712584580b4f0975498fb...88d625fc451d3714e640bbec693bb31abb6a05f5.diff",
+  "upstream_diff_sha256": "60be6adb8badfa11481596ccca995f3673fcd785964c94fa72d27cc7b015da20",
+  "gold_files": [
+    "scipy/ndimage/src/ni_filters.c",
+    "scipy/ndimage/src/ni_interpolation.c",
+    "scipy/ndimage/src/ni_measure.c",
+    "scipy/ndimage/src/ni_morphology.c"
+  ],
+  "test_files": [
+    "scipy/ndimage/tests/test_ndimage.py"
+  ]
+}

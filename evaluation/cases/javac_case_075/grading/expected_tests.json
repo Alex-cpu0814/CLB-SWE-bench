@@ -1,0 +1,34 @@
+{
+  "instance_id": "clb-javac-075",
+  "FAIL_TO_PASS": [
+    "org.lwjgl.system.OriginalApiRegressionTest::nullBufferNoOp"
+  ],
+  "PASS_TO_PASS": [
+    "org.lwjgl.system.OriginalApiRegressionTest::mallocFree",
+    "org.lwjgl.system.OriginalApiRegressionTest::callocFree",
+    "org.lwjgl.system.OriginalApiRegressionTest::reallocNullFree",
+    "org.lwjgl.system.OriginalApiRegressionTest::unknownPointerRejected",
+    "org.lwjgl.system.OriginalApiRegressionTest::bufferFree",
+    "org.lwjgl.opencl.CLTest::testContext",
+    "org.lwjgl.opencl.CLTest::testEventCallback",
+    "org.lwjgl.opencl.CLTest::testLifecycle",
+    "org.lwjgl.opencl.CLTest::testMemObjectDestructor",
+    "org.lwjgl.opencl.CLTest::testNativeKernel",
+    "org.lwjgl.opencl.CLTest::testSubBuffer",
+    "org.lwjgl.system.APIBufferTest::testAlignment",
+    "org.lwjgl.system.APIBufferTest::testReset",
+    "org.lwjgl.system.APIBufferTest::testStack",
+    "org.lwjgl.system.APIBufferTest::testStackAlignment",
+    "org.lwjgl.system.MemoryUtilTest::testAddress",
+    "org.lwjgl.system.MemoryUtilTest::testDirectAccess",
+    "org.lwjgl.system.MemoryUtilTest::testJNINewBuffer",
+    "org.lwjgl.system.MemoryUtilTest::testMemCopy",
+    "org.lwjgl.system.MemoryUtilTest::testMemSet",
+    "org.lwjgl.system.MemoryUtilTest::testNewBuffer",
+    "org.lwjgl.system.StructTest::testStructConstructor",
+    "org.lwjgl.system.StructTest::testStructInstance",
+    "org.lwjgl.system.StructTest::testStructLayout",
+    "org.lwjgl.system.libffi.LibFFITest::testLibFFI",
+    "org.lwjgl.system.simd.SSETest::testControlRegister"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-075",
+  "FAIL_TO_PASS": [
+    "test/time_test.py::TimeModuleTest::test_set_timer"
+  ],
+  "PASS_TO_PASS": [
+    "test/event_test.py::EventModuleTest::test_post_large_user_event",
+    "test/event_test.py::EventModuleTest::test_get_type",
+    "test/event_test.py::EventModuleTest::test_post_blocked"
+  ]
+}

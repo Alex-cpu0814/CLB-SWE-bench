@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-037",
+  "FAIL_TO_PASS": [
+    "scipy/ndimage/tests/test_regression.py::test_ticket_742"
+  ],
+  "PASS_TO_PASS": [
+    "scipy/ndimage/tests/test_regression.py::test_byte_order_median",
+    "scipy/ndimage/tests/test_regression.py::test_zoom_output_shape"
+  ]
+}

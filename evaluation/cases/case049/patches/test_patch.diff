@@ -1,0 +1,17 @@
+diff --git a/Cheetah/Tests/SyntaxAndOutput.py b/Cheetah/Tests/SyntaxAndOutput.py
+index c6fa39d..a2ee63c 100755
+--- a/Cheetah/Tests/SyntaxAndOutput.py
++++ b/Cheetah/Tests/SyntaxAndOutput.py
+@@ -3049,6 +3049,12 @@ class GetVar(OutputTest):               # Template.getVar()
+         self.verify("$getVar('$bogus',  1234)",
+                     "1234")
+ 
++    def test6(self):
++        """$getVar('$') raises ValueError
++        """
++        with self.assertRaises(ValueError):
++            self.verify("$getVar('$')", "never get here")
++
+ 
+ class MiscComplexSyntax(OutputTest):
+     def test1(self):

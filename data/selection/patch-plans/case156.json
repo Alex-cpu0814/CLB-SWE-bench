@@ -1,0 +1,16 @@
+{
+  "case_id": "case156",
+  "instance_id": "clb-pyc-156",
+  "repo": "ghaering/pysqlite",
+  "base_commit": "d7c44a6b62ccf27ae2a006d32dc25cd49ca45320",
+  "fix_commit": "9b23d8d2863715e3654a8bb4a33483aa5adf40fd",
+  "upstream_diff_url": "https://github.com/ghaering/pysqlite/compare/d7c44a6b62ccf27ae2a006d32dc25cd49ca45320...9b23d8d2863715e3654a8bb4a33483aa5adf40fd.diff",
+  "upstream_diff_sha256": "9627a577bb4d209ff3ab4cfee8bf6e60abd9a0cdbf3bad17137466aa1bc09da6",
+  "gold_files": [
+    "doc/sphinx/sqlite3.rst",
+    "src/connection.c"
+  ],
+  "test_files": [
+    "lib/test/hooks.py"
+  ]
+}

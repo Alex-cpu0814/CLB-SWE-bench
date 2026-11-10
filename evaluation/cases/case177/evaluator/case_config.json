@@ -1,0 +1,30 @@
+{
+  "template_version": "1.0",
+  "case_number": "177",
+  "instance_id": "clb-pyc-177",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/bcdev/jpy.git",
+  "base_commit": "7e58cea7c2551d0b590eff3959341ee823ec43c1",
+  "fix_commit": "58f81d92b6fdf4bf2623b88a1414ba64bfc18788",
+  "image": "yutu0814/pyc-case-177-jpy:benchmark-v1",
+  "python_version": "2.7",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/unittest_native_runner.py",
+      "target": "/benchmark/unittest_native_runner.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

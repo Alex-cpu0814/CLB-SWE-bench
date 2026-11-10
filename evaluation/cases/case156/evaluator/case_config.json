@@ -1,0 +1,31 @@
+{
+  "template_version": "1.0",
+  "case_number": "156",
+  "instance_id": "clb-pyc-156",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/ghaering/pysqlite.git",
+  "base_commit": "d7c44a6b62ccf27ae2a006d32dc25cd49ca45320",
+  "fix_commit": "9b23d8d2863715e3654a8bb4a33483aa5adf40fd",
+  "image": "yutu0814/pyc-case-156-pysqlite:benchmark-v1",
+  "python_version": "2.7",
+  "numpy_version": "not required",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pysqlite_unittest_nodes.py",
+      "target": "/benchmark/pysqlite_unittest_nodes.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

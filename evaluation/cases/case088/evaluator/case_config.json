@@ -1,0 +1,35 @@
+{
+  "template_version": "1.0",
+  "case_number": "088",
+  "instance_id": "clb-pyc-088",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/pygame/pygame.git",
+  "base_commit": "cd173f0ebf77e2b652de1a20a5f3eccf78e8cf12",
+  "fix_commit": "0e7f7b8327a18386843cf7baf4c24f07d826520e",
+  "image": "yutu0814/pyc-case-088-pygame:benchmark-v1",
+  "python_version": "3.8",
+  "numpy_version": "not required",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    },
+    {
+      "source": "evaluator/legacy_unittest088.py",
+      "target": "/benchmark/legacy_unittest088.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

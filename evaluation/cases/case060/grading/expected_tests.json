@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-060",
+  "FAIL_TO_PASS": [
+    "Tests/test_image.py::TestImage::test_linear_gradient",
+    "Tests/test_image.py::TestImage::test_radial_gradient"
+  ],
+  "PASS_TO_PASS": [
+    "Tests/test_image.py::TestImage::test_linear_gradient_wrong_mode",
+    "Tests/test_image.py::TestImage::test_radial_gradient_wrong_mode"
+  ]
+}

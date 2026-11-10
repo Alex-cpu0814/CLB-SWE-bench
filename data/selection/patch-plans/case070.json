@@ -1,0 +1,15 @@
+{
+  "case_id": "case070",
+  "instance_id": "clb-pyc-070",
+  "repo": "ultrajson/ultrajson",
+  "base_commit": "9c589d1cb5dc81552aa8ee72694cb830bed099c6",
+  "fix_commit": "335ac83c1308b928bb316eb302114d76543868cf",
+  "upstream_diff_url": "https://github.com/ultrajson/ultrajson/compare/9c589d1cb5dc81552aa8ee72694cb830bed099c6...335ac83c1308b928bb316eb302114d76543868cf.diff",
+  "upstream_diff_sha256": "301e641ecb7788ee571e5ab9a1ea64045fccf49cc8fd73ad85e1ab928459b2e0",
+  "gold_files": [
+    "python/objToJSON.c"
+  ],
+  "test_files": [
+    "tests/test_ujson.py"
+  ]
+}

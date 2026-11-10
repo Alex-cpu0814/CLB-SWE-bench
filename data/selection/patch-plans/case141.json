@@ -1,0 +1,15 @@
+{
+  "case_id": "case141",
+  "instance_id": "clb-pyc-141",
+  "repo": "pygobject/pycairo",
+  "base_commit": "eeea4de31f9c8f4496f5695ee0258040b401f0b4",
+  "fix_commit": "e2154f115d8ef32221f8a1fe08bdee49d23518ba",
+  "upstream_diff_url": "https://github.com/pygobject/pycairo/compare/eeea4de31f9c8f4496f5695ee0258040b401f0b4...e2154f115d8ef32221f8a1fe08bdee49d23518ba.diff",
+  "upstream_diff_sha256": "f369727c49e8303fe03dc0807d95389107f1325dea819752904bcd01d27fa8ae",
+  "gold_files": [
+    "cairo/matrix.c"
+  ],
+  "test_files": [
+    "tests/test_api.py"
+  ]
+}

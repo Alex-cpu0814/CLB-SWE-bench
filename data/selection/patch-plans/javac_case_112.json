@@ -1,0 +1,17 @@
+{
+  "case_id": "javac_case_112",
+  "instance_id": "clb-javac-112",
+  "repo": "uclouvain/openjpeg",
+  "base_commit": "4f5ec07c315872bdee0885be085ebf57cede2db9",
+  "fix_commit": "5d953558de8dc4d939b8147fe9547533a8804297",
+  "upstream_diff_url": "https://github.com/uclouvain/openjpeg/compare/4f5ec07c315872bdee0885be085ebf57cede2db9...5d953558de8dc4d939b8147fe9547533a8804297.diff",
+  "upstream_diff_sha256": "55478ffb60d476e106c9a0e27990decdd71a3c052726e5480822def5a495cc52",
+  "gold_files": [
+    "src/lib/openjp2/tcd.c"
+  ],
+  "test_files": [
+    "tests/compare_images.c",
+    "tests/nonregression/CMakeLists.txt",
+    "tests/nonregression/test_suite.ctest.in"
+  ]
+}

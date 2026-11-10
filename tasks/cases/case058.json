@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-058",
+  "repo": "python-pillow/Pillow",
+  "base_commit": "b21508798ab548ed90eb4d6bf01db14b880c9c91",
+  "problem_statement": "JPEG Adobe APP14 color-transform metadata should use the twelfth payload byte. RGB and CMYK samples should report transforms 1 and 2; a shortened APP14 payload should retain Adobe metadata without inventing an absent transform value. Normal JPEG decoding and CMYK roundtripping should remain correct."
+}

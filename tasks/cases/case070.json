@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-070",
+  "repo": "ultrajson/ultrajson",
+  "base_commit": "9c589d1cb5dc81552aa8ee72694cb830bed099c6",
+  "problem_statement": "'indent' parameter for `dumps` doesn't indent properly in 3.0.0\nI'm unsure if this is also a problem in other places.\r\n\r\n### What actually happened?\r\n\r\nUsing the example in `README.rst`:\r\n\r\n- ujson version 3.0.0\r\n```python\r\n>>> import ujson\r\n>>> ujson.dumps({\"foo\": \"bar\"})\r\n'{\"foo\":\"bar\"}'\r\n>>> ujson.dumps({\"foo\": \"bar\"}, indent=4)\r\n'{\\n \"foo\": \"bar\"\\n}'\r\n>>> ujson.dumps({\"foo\": \"bar\"}, indent=20)\r\n'{\\n \"foo\": \"bar\"\\n}'\r\n```\r\n\r\n- ujson version 2.0.3\r\n```python\r\n>>> import ujson\r\n>>> ujson.dumps({\"foo\": \"bar\"})\r\n'{\"foo\":\"bar\"}'\r\n>>> ujson.dumps({\"foo\": \"bar\"}, indent=4)\r\n'{\\n    \"foo\": \"bar\"\\n}'\r\n>>> ujson.dumps({\"foo\": \"bar\"}, indent=20)\r\n'{\\n                    \"foo\": \"bar\"\\n}'\r\n```\r\n\r\n### What versions are you using?\r\n\r\n* OS: Ubuntu 18.04\r\n* Python: 3.8.1\r\n* UltraJSON: 3.0.0 (works properly in 2.0.3)\n"
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-042",
+  "FAIL_TO_PASS": [
+    "scipy/signal/tests/test_bsplines.py::test_sepfir2d_invalid_filter"
+  ],
+  "PASS_TO_PASS": [
+    "scipy/signal/tests/test_bsplines.py::TestBSplines::test_spline_filter",
+    "scipy/signal/tests/test_bsplines.py::TestBSplines::test_bspline"
+  ]
+}

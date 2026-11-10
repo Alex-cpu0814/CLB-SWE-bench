@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-137",
+  "repo": "pygobject/pycairo",
+  "base_commit": "9ebff889d4c68927ab1c152b6ae7c8327283b6ed",
+  "problem_statement": "assertion error on invalid value for Surface.set_device_scale\nRather than an exception.\r\n```Python\r\nsurface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 100, 100)\r\nsurface.set_device_scale(1, 0)\r\n```\r\n```\r\npython: /build/buildd/cairo-1.13.0~20140204/src/cairo-surface.c:1700: cairo_surface_set_device_scale: Assertion `status == CAIRO_STATUS_SUCCESS' failed.\r\n```\n"
+}

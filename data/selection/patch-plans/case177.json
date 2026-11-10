@@ -1,0 +1,18 @@
+{
+  "case_id": "case177",
+  "instance_id": "clb-pyc-177",
+  "repo": "bcdev/jpy",
+  "base_commit": "7e58cea7c2551d0b590eff3959341ee823ec43c1",
+  "fix_commit": "58f81d92b6fdf4bf2623b88a1414ba64bfc18788",
+  "upstream_diff_url": "https://github.com/bcdev/jpy/compare/7e58cea7c2551d0b590eff3959341ee823ec43c1...58f81d92b6fdf4bf2623b88a1414ba64bfc18788.diff",
+  "upstream_diff_sha256": "39396431ae22ed402893d258d12e26eba21915c1ecacffa8d706e16c94dee2e1",
+  "gold_files": [
+    "CHANGES.txt",
+    "src/main/c/jpy_jmethod.c",
+    "src/main/c/jpy_jtype.c",
+    "src/main/c/jpy_jtype.h"
+  ],
+  "test_files": [
+    "src/test/python/jpy_overload_test.py"
+  ]
+}

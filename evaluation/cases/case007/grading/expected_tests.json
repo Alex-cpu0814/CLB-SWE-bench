@@ -1,0 +1,9 @@
+{
+  "instance_id": "clb-pyc-007",
+  "FAIL_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::TestCreation::test_malloc_fails"
+  ],
+  "PASS_TO_PASS": [
+    "numpy/core/tests/test_multiarray.py::TestCreation::test_zeros"
+  ]
+}

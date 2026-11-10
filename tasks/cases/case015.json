@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-015",
+  "repo": "numpy/numpy",
+  "base_commit": "965ea2ff417bcb285beca5c36cd02a8790a3d8f6",
+  "problem_statement": "BUG: np.lexsort MemoryError on empty array with non-standard strides\nNumpy 1.17.0 raises MemoryError when using `lexsort` on an empty array with non-standard `strides`. If `strides` is the natural one, or if there is >= 1 element in the input, then it works as expected.\r\n\r\n### Reproducing code example:\r\n\r\n```python\r\nimport numpy as np\r\n\r\nxs = np.array([], dtype='i8')\r\nassert xs.strides == (8,)\r\nassert np.lexsort((xs,)).shape[0] == 0 # Works\r\n\r\nys = np.array([0], dtype='i8')\r\nys.strides = (16,)\r\nassert np.lexsort((ys,)).shape[0] == 1 # Works\r\n\r\nxs.strides = (16,)\r\nassert np.lexsort((xs,)).shape[0] == 0 # MemoryError\r\n```\r\n\r\n### Numpy/Python version information:\r\n\r\n1.17.0 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 18:41:36) [MSC v.1900 64 bit (AMD64)]\n"
+}

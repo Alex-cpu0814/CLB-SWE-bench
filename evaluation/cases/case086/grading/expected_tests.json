@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-086",
+  "FAIL_TO_PASS": [
+    "test/draw_test.py::DrawPolygonTest::test_draw_symetric_cross",
+    "test/draw_test.py::DrawPolygonTest::test_illumine_shape"
+  ],
+  "PASS_TO_PASS": [
+    "test/draw_test.py::DrawPolygonTest::test_draw_square",
+    "test/draw_test.py::DrawPolygonTest::test_draw_diamond"
+  ]
+}

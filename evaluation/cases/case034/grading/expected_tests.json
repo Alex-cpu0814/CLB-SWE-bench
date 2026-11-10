@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-034",
+  "FAIL_TO_PASS": [
+    "scipy/integrate/tests/test_integrate.py::test_repeated_t_values"
+  ],
+  "PASS_TO_PASS": [
+    "scipy/integrate/tests/test_integrate.py::test_odeint_trivial_time",
+    "scipy/integrate/tests/test_integrate.py::test_odeint_bad_shapes"
+  ]
+}

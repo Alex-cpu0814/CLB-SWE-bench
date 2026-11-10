@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-138",
+  "FAIL_TO_PASS": [
+    "tests/test_pattern.py::test_raster_source"
+  ],
+  "PASS_TO_PASS": [
+    "tests/test_pattern.py::test_cmp_hash",
+    "tests/test_pattern.py::test_get_extend",
+    "tests/test_pattern.py::test_get_filter"
+  ]
+}

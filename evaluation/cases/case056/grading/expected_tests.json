@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-056",
+  "FAIL_TO_PASS": [
+    "Tests/test_image.py::TestImage::test_pathlib"
+  ],
+  "PASS_TO_PASS": [
+    "Tests/test_image.py::TestImage::test_fp_name",
+    "Tests/test_image.py::TestImage::test_tempfile"
+  ]
+}

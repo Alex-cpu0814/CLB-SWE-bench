@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-044",
+  "FAIL_TO_PASS": [
+    "scipy/ndimage/tests/test_ndimage.py::TestNdimage::test_map_coordinates_large_data"
+  ],
+  "PASS_TO_PASS": [
+    "scipy/ndimage/tests/test_ndimage.py::TestNdimage::test_map_coordinates01",
+    "scipy/ndimage/tests/test_ndimage.py::TestNdimage::test_map_coordinates02"
+  ]
+}

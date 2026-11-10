@@ -1,0 +1,31 @@
+{
+  "template_version": "1.0",
+  "case_number": "142",
+  "instance_id": "clb-pyc-142",
+  "instance_file": "grading/expected_tests.json",
+  "repo_url": "https://github.com/pygobject/pycairo.git",
+  "base_commit": "cd6b840aeab1515343a71a997b0a2ce48fce6d82",
+  "fix_commit": "07ee64b3fb51a16ded90822a0fb00cb8b180b839",
+  "image": "yutu0814/pyc-case-142-pycairo:benchmark-v1",
+  "python_version": "3.6",
+  "numpy_version": "not required",
+  "extra_apt_packages": [],
+  "runtime_assets": [
+    {
+      "source": "evaluator/case_adapter.sh",
+      "target": "/benchmark/case_adapter.sh"
+    },
+    {
+      "source": "evaluator/pytest_no_dump.py",
+      "target": "/benchmark/pytest_no_dump.py"
+    }
+  ],
+  "docker_run_args": [
+    "--memory",
+    "2g",
+    "--cpus",
+    "4",
+    "--ulimit",
+    "core=0:0"
+  ]
+}

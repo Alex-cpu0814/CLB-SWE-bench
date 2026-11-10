@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-088",
+  "repo": "pygame/pygame",
+  "base_commit": "cd173f0ebf77e2b652de1a20a5f3eccf78e8cf12",
+  "problem_statement": "Segfault on surface.get_bounding_rect()\nOriginally reported by: **Anonymous**\n\n----------------------------------------\n\nHi!\n\nI keep getting a strange segfault using the surface.get_bounding_rect() method.\n\nI'm attaching a test case for it. It reliably produces a segmentation fault on my system:\nWindows 7 x64\nPython 2.7.5 x64\npygame-1.9.2a0.win-amd64-py2.7 (from lfd.uci.edu)\nSDL 1.2.15.0\nand\nSDL 1.2.14.0\n\nAlso tried:\nPython 2.7.5 32bit\npygame 1.9.1-py2.7\nSDL 1.2.15.0\nand\nSDL 1.2.14.0\n\n----------------------------------------\n- Bitbucket: https://bitbucket.org/pygame/pygame/issue/180\n\n"
+}

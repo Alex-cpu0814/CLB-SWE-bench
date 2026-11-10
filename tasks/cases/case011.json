@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-pyc-011",
+  "repo": "numpy/numpy",
+  "base_commit": "2acfd9851b6a5246e5e5e3faa97c9e728e88f8a9",
+  "problem_statement": "ndarray.searchsorted documents its required value argument as v, but the C method parser exposes the keyword as keys. Calling searchsorted(v=...) therefore raises a TypeError instead of accepting the documented keyword."
+}

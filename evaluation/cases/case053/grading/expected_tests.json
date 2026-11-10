@@ -1,0 +1,11 @@
+{
+  "instance_id": "clb-pyc-053",
+  "FAIL_TO_PASS": [
+    "Tests/test_imagedraw.py::test_point_I16",
+    "Tests/test_imagefont.py::test_I16[Layout.BASIC]"
+  ],
+  "PASS_TO_PASS": [
+    "Tests/test_imagedraw.py::test_sanity",
+    "Tests/test_imagefont.py::test_font_properties[Layout.BASIC]"
+  ]
+}

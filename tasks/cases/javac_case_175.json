@@ -1,0 +1,6 @@
+{
+  "instance_id": "clb-javac-175",
+  "repo": "kohlschutter/junixsocket",
+  "base_commit": "2a159927761424440f7dbd7674992e4b5273a459",
+  "problem_statement": "Sending large ByteBuffers is broken\n**Describe the bug**\r\n\r\nper @kevink-sq \r\n\r\nwe ran into response problems when using the jetty org.newsclub.net.unix.jetty.AFSocketServerConnector in version 2.6.2 in production. We were looking for alternatives to address the jnr-unixsocket load issue and tried junixsocket.\r\n\r\nsymptoms:\r\n\r\n* when the jetty service using the AFSocketServerConnector returned a response greater than 32KB, the same first 32KB (exactly every 0x8000 bytes) was repeated. For example, if the response was 100KB, then the same first 32KB was repeated until 100KB.\r\n* server did not log a warning or error and the request looked like a 200 response on the server side. Only when client attempted to parse the response was there an error (especially if it was supposed to be structured data).\r\n* OS socket SO_SNDBUF was verified to be 212MB.\r\n* Swapping out the connector to Jetty 10's UnixDomainServerConnector fixed the issue (note swapping the connector was the only diff in the server, no other changes/updates were present)\r\n\n"
+}

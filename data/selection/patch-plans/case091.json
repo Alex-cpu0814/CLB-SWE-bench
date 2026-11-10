@@ -1,0 +1,16 @@
+{
+  "case_id": "case091",
+  "instance_id": "clb-pyc-091",
+  "repo": "pygame/pygame",
+  "base_commit": "e26f569b1f3e28d935327b7dfc4cb10e722a9d09",
+  "fix_commit": "95bf50120604bf9367f2df043d57f7fda81d49ba",
+  "upstream_diff_url": "https://github.com/pygame/pygame/compare/e26f569b1f3e28d935327b7dfc4cb10e722a9d09...95bf50120604bf9367f2df043d57f7fda81d49ba.diff",
+  "upstream_diff_sha256": "4f18e4be1d89b9564c04fe63b0718b80146726fd7584f772b73c8a7ff99b219f",
+  "gold_files": [
+    "docs/reST/ref/freetype.rst",
+    "src/freetype/ft_layout.c"
+  ],
+  "test_files": [
+    "test/freetype_test.py"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": "clb-pyc-057",
+  "FAIL_TO_PASS": [
+    "Tests/test_file_psd.py::test_n_frames"
+  ],
+  "PASS_TO_PASS": [
+    "Tests/test_file_psd.py::test_sanity",
+    "Tests/test_file_psd.py::test_eoferror"
+  ]
+}
