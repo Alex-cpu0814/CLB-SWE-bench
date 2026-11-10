@@ -8,13 +8,13 @@ Each task uses a pinned Docker image and a Base commit. Use the same CLB instanc
 
 Use Python 3.12 in a virtual environment and Docker configured for Linux containers. The task checkout contains `tasks/index.json` and `evaluation/index.json`. Use a trusted checkout because the harness executes its case evaluators.
 
-Clone the code and check out the [matching task revision](https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks/tree/1721e744c5349429d6c2e5863369ab2180a5c8de). If you use a different task directory, substitute its path in the examples below.
+Clone the code and check out the [matching task revision](https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks/tree/5fbf1184dd07e3f60263afa1b94d9b6a279c7cf2). If you use a different task directory, substitute its path in the examples below.
 
 ```bash
 git clone https://github.com/Alex-cpu0814/CLB-SWE-bench.git
 cd CLB-SWE-bench
 git clone https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks.git ../CLB-SWE-bench-tasks
-git -C ../CLB-SWE-bench-tasks checkout --detach 1721e744c5349429d6c2e5863369ab2180a5c8de
+git -C ../CLB-SWE-bench-tasks checkout --detach 5fbf1184dd07e3f60263afa1b94d9b6a279c7cf2
 ```
 
 From the code repository root, install the CLI and check the task checkout.
