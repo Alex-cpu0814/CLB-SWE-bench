@@ -24,10 +24,15 @@ test "$(git rev-parse --show-toplevel)" = "$(pwd -P)"
 head=$(git rev-parse --verify HEAD)
 tree=$(git rev-parse --verify 'HEAD^{tree}')
 commit_count=$(git rev-list --count HEAD --all)
-shallow=$(git rev-parse --is-shallow-repository)
-object=$(printf '%s\n' "$1" | git cat-file --batch-check='%(objecttype)')
+shallow=$(git rev-parse --is-shallow-repository 2>/dev/null || true)
+if [[ "$shallow" != true && "$shallow" != false ]]; then
+    git_dir=$(git rev-parse --git-dir)
+    shallow=false
+    if [[ -s "$git_dir/shallow" ]]; then shallow=true; fi
+fi
+object=$(printf '%s\n' "$1" | git cat-file --batch-check)
 case "$object" in
-    commit) fix_object=true ;;
+    "$1 commit "*) fix_object=true ;;
     "$1 missing") fix_object=false ;;
     *) exit 3 ;;
 esac

@@ -22,6 +22,24 @@ def child(path, root):
         raise RuntimeError("Path outside disposable workspace: " + path)
 
 
+def pack_base(root, clone, head):
+    if git(root, "rev-list", "--count", head) != "1":
+        raise RuntimeError("Expected one reachable Base commit")
+    os.mkdir(clone)
+    git(clone, "init", "-q")
+    objects = subprocess.check_output(["git", "rev-list", "--objects", head], cwd=root).splitlines()
+    object_ids = b"\n".join(line.split(b" ", 1)[0] for line in objects) + b"\n"
+    metadata = os.path.join(clone, ".git")
+    pack = subprocess.Popen(["git", "pack-objects", os.path.join(metadata, "objects", "pack", "pack")],
+        cwd=root, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    _, error = pack.communicate(object_ids)
+    if pack.returncode:
+        raise RuntimeError("Cannot pack the local Base objects: " + error.decode("utf-8", "replace"))
+    with open(os.path.join(metadata, "shallow"), "w") as stream:
+        stream.write(head + "\n")
+    git(clone, "update-ref", "--no-deref", "HEAD", head)
+
+
 def shallow(root):
     head, tree = git(root, "rev-parse", "HEAD"), git(root, "rev-parse", "HEAD^{tree}")
     checkout_settings = {}
@@ -39,11 +57,18 @@ def shallow(root):
     temporary = tempfile.mkdtemp(prefix=".formal-git-", dir=root)
     try:
         clone = os.path.join(temporary, "clone")
-        subprocess.check_output(["git", "clone", "--no-local", "--no-checkout", "--depth=1",
-            "file://" + root, clone], stderr=subprocess.STDOUT)
+        try:
+            subprocess.check_output(["git", "clone", "--no-local", "--no-checkout", "--depth=1",
+                "file://" + root, clone], stderr=subprocess.STDOUT)
+        except subprocess.CalledProcessError as error:
+            if b"attempt to fetch/clone from a shallow repository" not in error.output:
+                raise
+            clone = os.path.join(temporary, "packed")
+            pack_base(root, clone, head)
+        else:
+            git(clone, "remote", "remove", "origin")
         if git(clone, "rev-parse", "HEAD") != head:
             raise RuntimeError("Base commit changed")
-        git(clone, "remote", "remove", "origin")
         for tag in git(clone, "tag", "--list").splitlines():
             git(clone, "tag", "--delete", tag)
         git(clone, "config", "core.autocrlf", "false")
@@ -111,7 +136,9 @@ def prepare(expected, case):
     root = "/testbed"
     if git(root, "rev-parse", "HEAD") != expected:
         raise RuntimeError("Wrong Base in image")
-    cache = isolate_075_cache() if case == "javac_case_075" else None
+    cache = None
+    if case == "javac_case_075" and os.path.isdir("/benchmark/dependencies"):
+        cache = isolate_075_cache()
     for private in ("/benchmark", "/inputs", "/results"):
         if os.path.exists(private) and (not os.path.isdir(private) or os.listdir(private)):
             raise RuntimeError("Unexpected private evaluation assets: " + private)
