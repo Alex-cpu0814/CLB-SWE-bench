@@ -2,19 +2,19 @@
 
 CLB SWE-bench evaluates software repair on 72 cross-language bugs. The test split includes 50 Python-C tasks, 11 Java-C tasks with upstream-derived tests, and 11 Java-C tasks with tests written by the CLB authors.
 
-Each task uses a pinned Docker image and a Base commit. Use the same CLB instance ID for generation and evaluation. [Hugging Face dataset](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench) · [Pinned dataset revision](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench/tree/e102d289822fa69ed92d5f2208dc728d032c2447)
+Each task uses a pinned Docker image and a Base commit. Use the same CLB instance ID for generation and evaluation. [Hugging Face dataset](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench) · [Pinned dataset revision](https://huggingface.co/datasets/Alex-cpu0814/CLB-SWE-bench/tree/95aa99829c466453595f86e401f0ea947d6a58a2)
 
 ## Setup
 
 Use Python 3.12 in a virtual environment and Docker configured for Linux containers. The task checkout contains `tasks/index.json` and `evaluation/index.json`. Use a trusted checkout because the harness executes its case evaluators.
 
-Clone the code and check out the [matching task revision](https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks/tree/1d6cac4e8cf1d44de0a2f088959f780ee5ab34a1). If you use a different task directory, substitute its path in the examples below.
+Clone the code and check out the [matching task revision](https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks/tree/eb11aaebe5c64b4998cbe427da6191cdd2ec1755). If you use a different task directory, substitute its path in the examples below.
 
 ```bash
 git clone https://github.com/Alex-cpu0814/CLB-SWE-bench.git
 cd CLB-SWE-bench
 git clone https://github.com/Alex-cpu0814/CLB-SWE-bench-tasks.git ../CLB-SWE-bench-tasks
-git -C ../CLB-SWE-bench-tasks checkout --detach 1d6cac4e8cf1d44de0a2f088959f780ee5ab34a1
+git -C ../CLB-SWE-bench-tasks checkout --detach eb11aaebe5c64b4998cbe427da6191cdd2ec1755
 ```
 
 From the code repository root, install the CLI and check the task checkout.
